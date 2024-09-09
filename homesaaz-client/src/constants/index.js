@@ -43,7 +43,7 @@ import {
 } from '../assets/images';
 
 export const navLinks = [
-  { href: '/#home', label: 'Home' },
+  { href: '/', label: 'Home' },
   { href: '/#products', label: 'Products & Services' },
   { href: '/#clients', label: 'Out Partners & Clients' },
   { href: '/#contact-us', label: 'Contact' }
