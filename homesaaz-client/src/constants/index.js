@@ -44,7 +44,7 @@ import {
 
 export const navLinks = [
   { href: '/', label: 'Home' },
-  { href: '/#products', label: 'Products & Services' },
+  { href: '/#categories', label: 'Range of Products' },
   { href: '/#clients', label: 'Out Partners & Clients' },
   { href: '/#contact-us', label: 'Contact' }
 ];
@@ -107,7 +107,7 @@ export const statistics = [
   { value: '250k+', label: 'Customers' }
 ];
 
-export const products = [
+export const categories = [
   {
     categoryId: 101,
     imgURL: comfyPillow,
@@ -380,4 +380,39 @@ export const cataloguesData = [
     name: 'Greenpanel',
     fileUrl: '/catalogue_uploads/gp-cat-v1.pdf',
   },
+];
+
+export const products = [
+  {
+    productId: 1,
+    name: 'Comfy Pillow',
+    availableSizes: ['17" x 27"', '19" x 29"'],
+    quality: 'Hollow Fiber',
+    description: 'A comfortable pillow made with hollow fiber, providing softness and support for a good night’s sleep.',
+    categoryId: 101, // Linked to the Pillows category
+  },
+  {
+    productId: 2,
+    name: 'Gravity Pillow',
+    availableSizes: ['15" x 25"'],
+    quality: 'Memory Foam',
+    description: 'Built for comfort and posture support, this orthopedic pillow uses high-quality memory foam to adapt to your head and neck.',
+    categoryId: 101, // Linked to the Pillows category
+  },
+  {
+    productId: 3,
+    name: 'Deluxe Bath Robe',
+    availableSizes: ['Standard (Universal)'],
+    quality: 'Cotton',
+    description: 'Luxury bath robe made from high-quality cotton, soft, and perfect for post-shower comfort.',
+    categoryId: 106, // Linked to the Bath Robe category
+  },
+  {
+    productId: 4,
+    name: 'Royal Carpet',
+    availableSizes: ['Custom'],
+    quality: 'Wool',
+    description: 'Elegant wool carpet designed to add a touch of luxury to your home, available in custom sizes.',
+    categoryId: 107, // Linked to the Carpets category
+  }
 ];

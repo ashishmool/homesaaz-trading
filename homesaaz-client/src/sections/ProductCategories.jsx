@@ -1,16 +1,16 @@
 import { useState } from 'react';
 import CategoryCard from '../components/CategoryCard.jsx';
-import { products } from '../constants';
+import { categories } from '../constants';
 
 const ProductCategories = ({ searchResults }) => {
-  const [filteredProducts, setFilteredProducts] = useState(products);
+  const [filteredProducts, setFilteredProducts] = useState(categories);
 
   // If searchResults are passed, use them to update the filtered products.
   const displayedProducts = searchResults && searchResults.length > 0 ? searchResults : filteredProducts;
 
   return (
       <section className="padding">
-        <div id="products" className="max-container max-sm:mt-12">
+        <div id="categories" className="max-container max-sm:mt-12">
           <div className="flex flex-col justify-center items-center gap-5">
             <h2 className="text-4xl font-palanquin font-bold text-center">
               Our <span className="text-coral-red">Range of Products</span>
