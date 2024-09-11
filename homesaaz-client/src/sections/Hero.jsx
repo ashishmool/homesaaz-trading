@@ -70,7 +70,7 @@ const Hero = () => {
             <p className="font-montserrat text-slate-gray text-lg leading-8 mt-6 mb-14 sm:max-w-sm dark:text-gray-400">
               At Homesaaz, we provide everything you need, from bedding and linens to towels, bathrobes, flooring, curtains, fabrics, and upholstery. We cover it all with care and style.
             </p>
-            <Button icon={arrowRight} onClick={() => navigate('/#products')}>
+            <Button icon={arrowRight} onClick={() => navigate('/#categories')}>
               Explore Product Range
             </Button>
             <div className="flex md:justify-start flex-wrap items-start w-full mt-20 gap-16 justify-center">

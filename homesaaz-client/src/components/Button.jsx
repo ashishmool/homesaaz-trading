@@ -7,7 +7,7 @@ const Button = ({ children, backgroundColor, borderColor, textColor, fullWidth, 
   const handleRedirect = () => {
     switch (children) {
       case 'Explore Product Range':  // Handle this specific case
-        window.location.href = '#products';  // Use anchor navigation
+        window.location.href = '#categories';  // Use anchor navigation
         break;
       case 'Shop now':
         console.log(children);

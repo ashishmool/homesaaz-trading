@@ -16,7 +16,7 @@ import Menu from './components/Menu';
 import { useState } from 'react';
 import Signin from './sections/Signin';
 import Signup from './sections/Signup';
-import ProductsPage from './sections/ProductsPage';
+import CategoriesPage from './sections/CategoriesPage.jsx';
 import SingleCategory from './components/SingleCategory.jsx';
 import { SnackbarProvider } from 'notistack';
 import Clients from "./sections/Clients.jsx";
@@ -72,7 +72,7 @@ const App = () => {
               <Route path={'/single_category/:id'} element={<SingleCategory />} />
               <Route path={'/login'} element={<Signin />} />
               <Route path={'/register'} element={<Signup />} />
-              <Route path={'/products'} element={<ProductsPage />} />
+              {/*<Route path={'/products'} element={<CategoriesPage />} />*/}
               <Route path="/catalogue" element={<Catalogue />} />
             </Routes>
             <Footer />

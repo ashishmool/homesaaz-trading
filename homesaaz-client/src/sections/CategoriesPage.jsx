@@ -1,10 +1,10 @@
 import { useState } from 'react';
 import CategoryCard from '../components/CategoryCard.jsx';
-import { products } from '../constants';
+import { categories } from '../constants';
 import Navbar from '../components/Navbar';
 import Cart from '../sections/Cart';
 
-const ProductsPage = () => {
+const CategoriesPage = () => {
   const [showCart, setShowCart] = useState(false);
   function handleShowCart() {
     setShowCart(true);
@@ -20,14 +20,14 @@ const ProductsPage = () => {
         <Cart />
       ) : (
         <section className="padding mt-8">
-          <div id="products" className="max-container max-sm:mt-12">
+          <div id="categories" className="max-container max-sm:mt-12">
             <div className="flex flex-col justify-start gap-5">
               <h2 className="text-4xl font-palanquin font-bold">
-                <span className="text-coral-red"> Jordans </span>
+                {/*<span className="text-coral-red"> Jordans </span>*/}
               </h2>
             </div>
             <div className="mt-16 grid grid-cols-2 lg:grid-cols-4 md:grid-cols-3 gap-4">
-              {products.map((product) => (
+              {categories.map((product) => (
                 <CategoryCard key={product.name} {...product} />
               ))}
             </div>
@@ -38,4 +38,4 @@ const ProductsPage = () => {
   );
 };
 
-export default ProductsPage;
+export default CategoriesPage;

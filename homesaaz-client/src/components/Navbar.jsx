@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';  // Import Link from react-router-dom
 import { headerLogo, homesaazLogo } from '../assets/images';
-import { navLinks, products } from '../constants';
+import { navLinks, categories } from '../constants';
 import ThemeSwitch from './ThemeSwitch';
 import { useMenuUpdateContext } from '../contexts/MenuContext';
 import { MagnifyingGlassIcon, Bars3Icon, ArrowDownTrayIcon } from '@heroicons/react/20/solid';
@@ -14,7 +14,7 @@ const Navbar = ({ handleClick, handleClick2, setSearchResults }) => {
 
   // Use useEffect to log products when the component mounts
   useEffect(() => {
-    console.log("Product List test::: ", products);
+    console.log("Product List test::: ", categories);
   }, []); // Runs only once when the component mounts
 
   // Handle search query changes
@@ -23,7 +23,7 @@ const Navbar = ({ handleClick, handleClick2, setSearchResults }) => {
     setSearchQuery(query);
 
     // Filter products based on search query
-    const filteredProducts = products.filter((product) =>
+    const filteredProducts = categories.filter((product) =>
         product.category.toLowerCase().includes(query) ||
         product.brand.toLowerCase().includes(query)
     );
@@ -31,8 +31,8 @@ const Navbar = ({ handleClick, handleClick2, setSearchResults }) => {
     // Update search results in parent (App or ProductCategories)
     setSearchResults(filteredProducts);
 
-    // Scroll to the #products section
-    const productsSection = document.getElementById('products');
+    // Scroll to the #categories section
+    const productsSection = document.getElementById('categories');
     if (productsSection) {
       productsSection.scrollIntoView({ behavior: 'smooth' });
     }
@@ -72,13 +72,8 @@ const Navbar = ({ handleClick, handleClick2, setSearchResults }) => {
             </div>
             <ThemeSwitch handleClick={handleClick} />
             {/* eCatalogue Button */}
-            <Link to="/catalogue"> {/* Use Link for navigation */}
-              <button
-                  className="bg-coral-red text-white py-2 px-4 rounded-lg flex items-center justify-center font-semibold hover:bg-red-600 transition duration-300"
-              >
-                <ArrowDownTrayIcon className="h-5 w-5 mr-2" /> {/* Download Icon */}
-                Catalogue
-              </button>
+            <Link to="/catalogue" className="flex items-center text-coral-red font-semibold hover:underline">
+              Download eCatalogue <ArrowDownTrayIcon className="h-5 w-5 ml-2" /> {/* Added space with `ml-2` */}
             </Link>
             <div className="lg:hidden dark:invert cursor-pointer" onClick={toggleShowMenu}>
               <Bars3Icon height={25} width={25} className="dark:text-coral-red" />
