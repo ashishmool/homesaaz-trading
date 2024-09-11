@@ -23,6 +23,7 @@ import Clients from "./sections/Clients.jsx";
 import PopUpScreen from "./components/PopUpScreen.jsx";
 import PopUp from "./sections/PopUp.jsx";
 import Contact from "./sections/Contact.jsx";
+import Catalogue from "./sections/Catalogue.jsx";
 
 const App = () => {
   const [showCart, setShowCart] = useState(false);
@@ -72,6 +73,7 @@ const App = () => {
               <Route path={'/login'} element={<Signin />} />
               <Route path={'/register'} element={<Signup />} />
               <Route path={'/products'} element={<ProductsPage />} />
+              <Route path="/catalogue" element={<Catalogue />} />
             </Routes>
             <Footer />
           </main>

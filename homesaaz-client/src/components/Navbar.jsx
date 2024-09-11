@@ -1,9 +1,10 @@
 import { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';  // Import Link from react-router-dom
 import { headerLogo, homesaazLogo } from '../assets/images';
 import { navLinks, products } from '../constants';
 import ThemeSwitch from './ThemeSwitch';
 import { useMenuUpdateContext } from '../contexts/MenuContext';
-import { MagnifyingGlassIcon, Bars3Icon } from '@heroicons/react/20/solid';
+import { MagnifyingGlassIcon, Bars3Icon, ArrowDownTrayIcon } from '@heroicons/react/20/solid';
 import useScroll from '../../helpers/useScroll';
 
 const Navbar = ({ handleClick, handleClick2, setSearchResults }) => {
@@ -58,7 +59,7 @@ const Navbar = ({ handleClick, handleClick2, setSearchResults }) => {
                 </li>
             ))}
           </ul>
-          <div className="flex items-center justify-center gap-x-2">
+          <div className="flex items-center justify-center gap-x-4">
             <div className="flex items-center justify-center sm:bg-transparent sm:p-2 rounded-3xl overflow-hidden sm:border dark:border-gray-500">
               <MagnifyingGlassIcon className="mr-3 h-6 w-6 transition duration-300 cursor-pointer text-slate-gray dark:text-coral-red" />
               <input
@@ -70,6 +71,15 @@ const Navbar = ({ handleClick, handleClick2, setSearchResults }) => {
               />
             </div>
             <ThemeSwitch handleClick={handleClick} />
+            {/* eCatalogue Button */}
+            <Link to="/catalogue"> {/* Use Link for navigation */}
+              <button
+                  className="bg-coral-red text-white py-2 px-4 rounded-lg flex items-center justify-center font-semibold hover:bg-red-600 transition duration-300"
+              >
+                <ArrowDownTrayIcon className="h-5 w-5 mr-2" /> {/* Download Icon */}
+                Catalogue
+              </button>
+            </Link>
             <div className="lg:hidden dark:invert cursor-pointer" onClick={toggleShowMenu}>
               <Bars3Icon height={25} width={25} className="dark:text-coral-red" />
             </div>

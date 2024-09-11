@@ -368,3 +368,16 @@ export const popUpScreenData = [
     redirectURL: 'https://facebook.com/homesaaz.trading', // Second example redirect URL
   }
 ];
+
+export const cataloguesData = [
+  {
+    id: 1,
+    name: 'King Koil',
+    fileUrl: '/catalogue_uploads/kk-cat-v1.pdf',
+  },
+  {
+    id: 2,
+    name: 'Greenpanel',
+    fileUrl: '/catalogue_uploads/gp-cat-v1.pdf',
+  },
+];
