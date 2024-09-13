@@ -4,7 +4,7 @@ const Catalogue = () => {
     return (
         <section className="padding mt-20">
             <h2 className="text-4xl font-palanquin font-bold text-center">
-                <span className="text-coral-red">Catalogue</span>
+                <span className="text-coral-red">Downloads</span>
             </h2>
             <div className="mt-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 max-container max-sm:mt-12">
                 {cataloguesData.map((catalogue) => (

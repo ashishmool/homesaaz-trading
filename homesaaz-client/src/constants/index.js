@@ -372,13 +372,63 @@ export const popUpScreenData = [
 export const cataloguesData = [
   {
     id: 1,
-    name: 'King Koil',
+    name: 'King Koil - Catalogue',
     fileUrl: '/catalogue_uploads/kk-cat-v1.pdf',
   },
   {
     id: 2,
-    name: 'Greenpanel',
+    name: 'Greenpanel - Laminate Flooring',
     fileUrl: '/catalogue_uploads/gp-cat-v1.pdf',
+  },
+  {
+    id: 3,
+    name: 'Aquasafe SPC Flooring by Gem Flooring',
+    fileUrl: '/catalogue_uploads/aquasafe-cat.pdf',
+  },
+  {
+    id: 4,
+    name: 'Darling Mattress Protector',
+    fileUrl: '/catalogue_uploads/darling-protector.pdf',
+  },
+  {
+    id: 5,
+    name: 'Herringbone Laminate Flooring',
+    fileUrl: '/catalogue_uploads/herringbone-cat.pdf',
+  },
+  {
+    id: 6,
+    name: 'King Koil Hospitality Series',
+    fileUrl: '/catalogue_uploads/kk-hospitality-cat.pdf',
+  },
+  {
+    id: 7,
+    name: 'Pillows by Home Saaz',
+    fileUrl: '/catalogue_uploads/pillows-homesaaz-cat.pdf',
+  },
+  {
+    id: 8,
+    name: 'Springtek Rollaway Bed',
+    fileUrl: '/catalogue_uploads/rollawaybed-springtek.pdf',
+  },
+  {
+    id: 9,
+    name: 'Shower Mat by Gem Flooring',
+    fileUrl: '/catalogue_uploads/shower-mat.pdf',
+  },
+  {
+    id: 10,
+    name: 'Carpet Tiles by Standard Carpets',
+    fileUrl: '/catalogue_uploads/standard-carpet-tiles.pdf',
+  },
+  {
+    id: 11,
+    name: 'Turf Mats by Uroturf',
+    fileUrl: '/catalogue_uploads/turf-uroturf.pdf',
+  },
+  {
+    id: 12,
+    name: 'Vinyl Planks by Wonderfloor',
+    fileUrl: '/catalogue_uploads/vinyl-planks.pdf',
   },
 ];
 
