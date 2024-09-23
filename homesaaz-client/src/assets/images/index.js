@@ -8,10 +8,13 @@ import hotelRoom2 from './hotel-room-2.jpg';
 import springtekRollaway1 from './springtek-rollaway.png';
 import mattressTopper from './mattress-topper.png';
 import comfyPillow from './comfy-pillow.png';
-import gravityPillow from './products/gravity-pillow.jpg';
+import ecstacyPillow from './products/ecstacy-pillow.jpg';
+import gravityPillow from './products/gravity-pillow.png';
 import mattressProtector from './kingkoil-protector.png';
+import springtekEndurance from './products/springtek-endurance.jpg';
 
 import categoryBathrobe from './category-bathrobe.jpg';
+import categoryPillow from './category-pillows.jpg';
 import categoryCarpet from './category-carpet.jpg';
 import categoryChairTableCover from './category-chair-table-cover.jpg';
 import categoryCurtain from './category-curtain.jpg';
@@ -68,7 +71,7 @@ import hsVideo from './../videos/hs-video.mp4';
 
 
 export {
-  gravityPillow,
+  gravityPillow, ecstacyPillow, categoryPillow,springtekEndurance,
   hsVideo,
   client1,client2, client3, client4,client5, client6, client7,
   ad1, ad2,

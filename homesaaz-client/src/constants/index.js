@@ -1,14 +1,15 @@
 import { facebook, instagram, shieldTick, support, truckFast, twitter, github } from '../assets/icons';
 import {
   client1,
-    client2,
-    client3,
-    client4,
-    client5,
-    client6,
-    client7,
-    ad1, ad2,
+  client2,
+  client3,
+  client4,
+  client5,
+  client6,
+  client7,
+  ad1, ad2,
   categoryBathrobe,
+  categoryPillow,
   categoryCarpet,
   categoryChairTableCover,
   categoryCurtain,
@@ -40,7 +41,7 @@ import {
   thumbnailShoe1,
   thumbnailShoe2,
   thumbnailShoe3, comfyPillow, mattressProtector, mattressTopper, gravityPillow,
-  hsVideo
+  hsVideo, ecstacyPillow, springtekEndurance
 } from '../assets/images';
 
 
@@ -112,7 +113,7 @@ export const statistics = [
 export const categories = [
   {
     categoryId: 101,
-    imgURL: comfyPillow,
+    imgURL: categoryPillow,
     brand: 'King Koil • Coirtuff • Gem',
     size: '17" x 27" •  20" x 30" • Others',
     category: 'Pillows'
@@ -458,5 +459,96 @@ export const products = [
     categoryId: 101, // Category: Pillows
     brand: "King Koil",
   },
-  // Add more products for other categories as needed...
+
+  {
+    productId: 1003,
+    imgURL: ecstacyPillow,
+    name: 'Ecstacy Pillow',
+    description: 'King Koil\'s Down & Feather Pillow range is made of all-natural',
+    dimensions: '16" x 25"',
+    color: 'White (Standard)',
+    categoryId: 101, // Category: Pillows
+    brand: "King Koil",
+  },
+
+  {
+    productId: 1004,
+    imgURL: categoryPillow,
+    name: 'Jasmine',
+    description: 'Jasmine Pillow by Gem',
+    dimensions: '17" x 27" • 19" x 29"',
+    color: 'White (Standard)',
+    categoryId: 101, // Category: Pillows
+    brand: "Gem",
+  },
+  {
+    productId: 1005,
+    imgURL: categoryPillow,
+    name: 'Serenity',
+    description: 'Serenity Pillow by Gem',
+    dimensions: '17" x 27" • 19" x 29"',
+    color: 'White (Standard)',
+    categoryId: 101, // Category: Pillows
+    brand: "Gem",
+  },
+  {
+    productId: 1006,
+    imgURL: categoryPillow,
+    name: 'Sprinkle',
+    description: 'Sprinkle Pillow by Gem',
+    dimensions: '17" x 27" • 19" x 29"',
+    color: 'White (Standard)',
+    categoryId: 101, // Category: Pillows
+    brand: "Gem",
+  },
+  {
+    productId: 1007,
+    imgURL: categoryPillow,
+    name: 'Memory Pillow',
+    description: 'Memory Pillow by Gem',
+    dimensions: '17" x 27"',
+    color: 'White (Standard)',
+    categoryId: 101, // Category: Pillows
+    brand: "Gem",
+  },
+  {
+    productId: 1008,
+    imgURL: springtekEndurance,
+    name: 'Endurance',
+    description: 'Micro Fiber by Springtek',
+    dimensions: '17" x 27" • 19" x 29"',
+    color: 'White (Standard)',
+    categoryId: 101, // Category: Pillows
+    brand: "Springtek",
+  },
+  {
+    productId: 1009,
+    imgURL: categoryPillow,
+    name: 'Hollow Fiber',
+    description: 'Hollow Fiber by Darling',
+    dimensions: '17" x 26"',
+    color: 'White (Standard)',
+    categoryId: 101, // Category: Pillows
+    brand: "Darling",
+  },
+  {
+    productId: 1010,
+    imgURL: categoryPillow,
+    name: 'Nanogel',
+    description: 'Micro/Nanogel Pillow by Darling',
+    dimensions: '17" x 26" • 19" x 29"',
+    color: 'White (Standard)',
+    categoryId: 101, // Category: Pillows
+    brand: "Darling",
+  },
+  {
+    productId: 1011,
+    imgURL: categoryPillow,
+    name: 'Down Feather',
+    description: 'Down Feather (80:20) by Darling',
+    dimensions: '17" x 26"',
+    color: 'White (Standard)',
+    categoryId: 101, // Category: Pillows
+    brand: "Darling",
+  },
 ];

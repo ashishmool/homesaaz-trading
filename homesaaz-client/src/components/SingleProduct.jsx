@@ -12,6 +12,7 @@ const SingleProduct = () => {
     const category = product ? categories.find((c) => c.categoryId === product.categoryId) : null;
 
     return (
+
         <div className="flex justify-center mt-20">
             {product ? (
                 <SingleProductCard
