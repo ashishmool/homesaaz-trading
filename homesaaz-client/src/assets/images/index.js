@@ -8,6 +8,7 @@ import hotelRoom2 from './hotel-room-2.jpg';
 import springtekRollaway1 from './springtek-rollaway.png';
 import mattressTopper from './mattress-topper.png';
 import comfyPillow from './comfy-pillow.png';
+import gravityPillow from './products/gravity-pillow.jpg';
 import mattressProtector from './kingkoil-protector.png';
 
 import categoryBathrobe from './category-bathrobe.jpg';
@@ -62,9 +63,13 @@ import client7 from './clients/soaltee.svg';
 import ad1 from './ad1.jpg';
 import ad2 from './ad2.jpg';
 
+import hsVideo from './../videos/hs-video.mp4';
+
 
 
 export {
+  gravityPillow,
+  hsVideo,
   client1,client2, client3, client4,client5, client6, client7,
   ad1, ad2,
   mattressTopper,

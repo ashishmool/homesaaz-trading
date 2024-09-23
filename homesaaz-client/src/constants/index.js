@@ -39,8 +39,10 @@ import {
   shoe7,
   thumbnailShoe1,
   thumbnailShoe2,
-  thumbnailShoe3, comfyPillow, mattressProtector, mattressTopper
+  thumbnailShoe3, comfyPillow, mattressProtector, mattressTopper, gravityPillow,
+  hsVideo
 } from '../assets/images';
+
 
 export const navLinks = [
   { href: '/', label: 'Home' },
@@ -259,6 +261,8 @@ export const categories = [
 ];
 
 
+
+
 export const services = [
   {
     imgURL: truckFast,
@@ -357,16 +361,17 @@ export const cartItems = [
 ];
 
 export const popUpScreenData = [
+
+  // {
+  //   id: 102,
+  //   imageURL: ad2, // Second example image URL
+  //   redirectURL: 'https://facebook.com/homesaaz.trading', // Second example redirect URL
+  // }
   {
     id: 101,
-    imageURL: ad1, // First example image URL
-    redirectURL: 'https://www.fbhnepal.com/', // First example redirect URL
+    videoURL: hsVideo, // Video URL for hs-video.mp4
+    redirectURL: 'https://facebook.com/homesaaz.trading', // Example redirect URL (if needed)
   },
-  {
-    id: 102,
-    imageURL: ad2, // Second example image URL
-    redirectURL: 'https://facebook.com/homesaaz.trading', // Second example redirect URL
-  }
 ];
 
 export const cataloguesData = [
@@ -434,35 +439,24 @@ export const cataloguesData = [
 
 export const products = [
   {
-    productId: 1,
+    productId: 1001,
+    imgURL: comfyPillow,
     name: 'Comfy Pillow',
-    availableSizes: ['17" x 27"', '19" x 29"'],
-    quality: 'Hollow Fiber',
-    description: 'A comfortable pillow made with hollow fiber, providing softness and support for a good night’s sleep.',
-    categoryId: 101, // Linked to the Pillows category
+    description: 'Hollow Fiber Pillow',
+    dimensions: '17" x 27" • 19" x 29"',
+    color: 'White (Standard)',
+    categoryId: 101, // Category: Pillows
+    brand: "King Koil",
   },
   {
-    productId: 2,
+    productId: 1002,
+    imgURL: gravityPillow,
     name: 'Gravity Pillow',
-    availableSizes: ['15" x 25"'],
-    quality: 'Memory Foam',
-    description: 'Built for comfort and posture support, this orthopedic pillow uses high-quality memory foam to adapt to your head and neck.',
-    categoryId: 101, // Linked to the Pillows category
+    description: 'Memory Foam Pillow',
+    dimensions: '16" x 25"',
+    color: 'White (Standard)',
+    categoryId: 101, // Category: Pillows
+    brand: "King Koil",
   },
-  {
-    productId: 3,
-    name: 'Deluxe Bath Robe',
-    availableSizes: ['Standard (Universal)'],
-    quality: 'Cotton',
-    description: 'Luxury bath robe made from high-quality cotton, soft, and perfect for post-shower comfort.',
-    categoryId: 106, // Linked to the Bath Robe category
-  },
-  {
-    productId: 4,
-    name: 'Royal Carpet',
-    availableSizes: ['Custom'],
-    quality: 'Wool',
-    description: 'Elegant wool carpet designed to add a touch of luxury to your home, available in custom sizes.',
-    categoryId: 107, // Linked to the Carpets category
-  }
+  // Add more products for other categories as needed...
 ];

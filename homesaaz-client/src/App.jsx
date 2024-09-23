@@ -24,6 +24,7 @@ import PopUpScreen from "./components/PopUpScreen.jsx";
 import PopUp from "./sections/PopUp.jsx";
 import Contact from "./sections/Contact.jsx";
 import Catalogue from "./sections/Catalogue.jsx";
+import SingleProduct from "./components/SingleProduct.jsx";
 
 const App = () => {
   const [showCart, setShowCart] = useState(false);
@@ -57,7 +58,7 @@ const App = () => {
                       ) : (
                           <section>
                             <div className={`padding-x py-6 lg:py-8 z-10 w-full`} />{' '}
-                            <PopUp />
+                            {/*<PopUp />*/}
                             <Hero />
                             <ProductCategories searchResults={searchResults} />
                             <ScrollToTopButton />
@@ -70,6 +71,7 @@ const App = () => {
                   }
               />
               <Route path={'/single_category/:id'} element={<SingleCategory />} />
+              <Route path={'/product/:productId'} element={<SingleProduct />} /> {/* Added route */}
               <Route path={'/login'} element={<Signin />} />
               <Route path={'/register'} element={<Signup />} />
               {/*<Route path={'/products'} element={<CategoriesPage />} />*/}

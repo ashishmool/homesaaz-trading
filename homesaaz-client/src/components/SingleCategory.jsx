@@ -1,52 +1,58 @@
-import { categories } from '../constants/index.js';
+import { categories, products } from '../constants/index.js';
 import CategoryCard from './CategoryCard.jsx';
 import SingleProductCard from './SingleProductCard.jsx';
 import { useLocation } from 'react-router-dom';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 
 const SingleCategory = () => {
-  const currentURL = useLocation();
-  const urlString = currentURL.pathname;
-  const parts = urlString.split('/');
-  const urlProductId = parseInt(parts[parts.length - 1]);
-  console.log(urlProductId);
+    const currentURL = useLocation();
+    const urlString = currentURL.pathname;
+    const parts = urlString.split('/');
+    const urlCategoryId = parseInt(parts[parts.length - 1]);
+    const [categoryProducts, setCategoryProducts] = useState([]);
 
-  useEffect(() => {}, [urlProductId]);
 
-  return (
-    <>
-      <div className={'w-full h-full flex justify-center flex-row flex-wrap gap-5 mt-20'}>
-        {/*<div*/}
-        {/*  className={*/}
-        {/*    'flex justify-center flex-col align-center mt-2 lg:p-4 max-lg:w-1/2 max-md:p-0 max-md:w-9/12 max-sm:w-10/12'*/}
-        {/*  }*/}
-        {/*>*/}
-        {/*  <section className="padding mt-8">*/}
-        {/*    <div className="max-container max-sm:mt-12">*/}
-        {/*      /!* <div className="mt-16"> *!/*/}
-        {/*      {products.map(*/}
-        {/*        (product) => product.productId == urlProductId && <SingleProductCard key={product.name} {...product} />*/}
-        {/*      )}*/}
-        {/*      /!* </div> *!/*/}
-        {/*    </div>*/}
-        {/*  </section>*/}
-        {/*</div>*/}
-      </div>
+    useEffect(() => {
+        window.scrollTo(0, 0); // Scroll to top
+        // Filter products by categoryId
+        const filteredProducts = products.filter(
+            (product) => product.categoryId === urlCategoryId
+        );
+        setCategoryProducts(filteredProducts);
+    }, [urlCategoryId]);
 
-      <div className={'flex justify-center align-center mt-12 bg-pale-blue dark:bg-slate-700'}>
-        {/*<div id="products" className=" m-12 mb-20 max-container max-sm:mt-12">*/}
-        {/*  <div className="flex flex-col justify-start gap-5">*/}
-        {/*    <h2 className="text-2xl font-palanquin font-bold dark:text-slate-200">Similar Products You Might Enjoy</h2>*/}
-        {/*  </div>*/}
-        {/*  <div className="mt-5 grid grid-cols-2 lg:grid-cols-4 md:grid-cols-3 gap-4">*/}
-        {/*    {products.map((product) => (*/}
-        {/*      <CategoryCard key={product.name} {...product} />*/}
-        {/*    ))}*/}
-        {/*  </div>*/}
-        {/*</div>*/}
-      </div>
-    </>
-  );
+    return (
+        <section className="padding">
+            <div className="max-container max-sm:mt-12">
+                <div className="flex flex-col justify-center items-center gap-5">
+                    <h2 className="text-4xl font-palanquin font-bold text-center">
+                        Products in <span className="text-coral-red">This Category</span>
+                    </h2>
+                    <p className="lg:max-w-lg mt-2 font-montserrat text-slate-gray dark:text-gray-400 text-center">
+                        Explore our selection tailored just for you.
+                    </p>
+                </div>
+                <div className="mt-16 grid grid-cols-2 lg:grid-cols-4 md:grid-cols-3 gap-4">
+                    {categoryProducts.map((product) => (
+                        <SingleProductCard key={product.productId} {...product} />
+                    ))}
+                </div>
+            </div>
+
+            {/*<div className="flex justify-center align-center mt-12 bg-pale-blue dark:bg-slate-700">*/}
+            {/*    <div className="m-12 mb-20 max-container max-sm:mt-12">*/}
+            {/*        <h2 className="text-2xl font-palanquin font-bold dark:text-slate-200">*/}
+            {/*            Similar Products You Might Enjoy*/}
+            {/*        </h2>*/}
+            {/*        <div className="mt-5 grid grid-cols-2 lg:grid-cols-4 md:grid-cols-3 gap-4">*/}
+            {/*            {categoryProducts.map((product) => (*/}
+            {/*                <CategoryCard key={product.productId} {...product} />*/}
+            {/*            ))}*/}
+            {/*        </div>*/}
+            {/*    </div>*/}
+            {/*</div>*/}
+        </section>
+    );
 };
 
 export default SingleCategory;
