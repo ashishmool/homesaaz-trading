@@ -1,8 +1,8 @@
 import { categories, products } from '../constants/index.js';
-import CategoryCard from './CategoryCard.jsx';
 import SingleProductCard from './SingleProductCard.jsx';
 import { useLocation } from 'react-router-dom';
 import { useEffect, useState } from 'react';
+import Breadcrumbs from './Breadcrumbs.jsx'; // Import the Breadcrumbs component
 
 const SingleCategory = () => {
     const currentURL = useLocation();
@@ -29,6 +29,7 @@ const SingleCategory = () => {
     return (
         <section className="padding">
             <div className="max-container max-sm:mt-12">
+
                 <div className="flex flex-col justify-center items-center gap-5">
                     <h2 className="text-4xl font-palanquin font-bold text-center mt-24 mb-4">
                         Products in <span className="text-coral-red">{categoryName}</span>
@@ -37,6 +38,10 @@ const SingleCategory = () => {
                         Explore our selection tailored just for you.
                     </p>
                 </div>
+
+                {/* Breadcrumbs */}
+                <Breadcrumbs categoryName={categoryName} /> {/* Pass categoryName to Breadcrumbs */}
+
                 <div className="mt-16 grid grid-cols-2 lg:grid-cols-4 md:grid-cols-3 gap-4">
                     {categoryProducts.map((product) => (
                         <SingleProductCard key={product.productId} {...product} />

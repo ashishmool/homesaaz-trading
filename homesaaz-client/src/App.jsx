@@ -71,6 +71,7 @@ const App = () => {
                   }
               />
               <Route path={'/single_category/:id'} element={<SingleCategory />} />
+              <Route path={'/categories'} element={<ProductCategories />} />
               <Route path={'/product/:productId'} element={<SingleProduct />} /> {/* Added route */}
               <Route path={'/login'} element={<Signin />} />
               <Route path={'/register'} element={<Signup />} />

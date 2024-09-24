@@ -1,5 +1,7 @@
 import { facebook, instagram, shieldTick, support, truckFast, twitter, github } from '../assets/icons';
 import {
+  darlingProtector, gemSprinkle, gemJasmine,
+  darlingMicrogel, memoryPillow, fiberPillow, kingkoilRollaway,
   client1,
   client2,
   client3,
@@ -41,7 +43,7 @@ import {
   thumbnailShoe1,
   thumbnailShoe2,
   thumbnailShoe3, comfyPillow, mattressProtector, mattressTopper, gravityPillow,
-  hsVideo, ecstacyPillow, springtekEndurance
+  hsVideo, ecstacyPillow, springtekEndurance, gemSerenity, featherPillow, categoryRollaway, categoryProtector
 } from '../assets/images';
 
 
@@ -120,14 +122,14 @@ export const categories = [
   },
   {
     categoryId: 102,
-    imgURL: springtekRollaway1,
+    imgURL: categoryRollaway,
     brand: 'King Koil • Springtek • Darling',
     size: '36" x 75"',
     category: 'Rollaway Beds'
   },
   {
     categoryId: 103,
-    imgURL: mattressProtector,
+    imgURL: categoryProtector,
     brand: 'King Koil • Coirtuff • Darling',
     size: '• Single • Queen • King • Custom',
     category: 'Protectors'
@@ -473,7 +475,7 @@ export const products = [
 
   {
     productId: 1004,
-    imgURL: categoryPillow,
+    imgURL: gemJasmine,
     name: 'Jasmine',
     description: 'Jasmine Pillow by Gem',
     dimensions: '17" x 27" • 19" x 29"',
@@ -483,7 +485,7 @@ export const products = [
   },
   {
     productId: 1005,
-    imgURL: categoryPillow,
+    imgURL: gemSerenity,
     name: 'Serenity',
     description: 'Serenity Pillow by Gem',
     dimensions: '17" x 27" • 19" x 29"',
@@ -493,7 +495,7 @@ export const products = [
   },
   {
     productId: 1006,
-    imgURL: categoryPillow,
+    imgURL: gemSprinkle,
     name: 'Sprinkle',
     description: 'Sprinkle Pillow by Gem',
     dimensions: '17" x 27" • 19" x 29"',
@@ -503,7 +505,7 @@ export const products = [
   },
   {
     productId: 1007,
-    imgURL: categoryPillow,
+    imgURL: memoryPillow,
     name: 'Memory Pillow',
     description: 'Memory Pillow by Gem',
     dimensions: '17" x 27"',
@@ -523,7 +525,7 @@ export const products = [
   },
   {
     productId: 1009,
-    imgURL: categoryPillow,
+    imgURL: fiberPillow,
     name: 'Hollow Fiber',
     description: 'Hollow Fiber by Darling',
     dimensions: '17" x 26"',
@@ -533,7 +535,7 @@ export const products = [
   },
   {
     productId: 1010,
-    imgURL: categoryPillow,
+    imgURL: darlingMicrogel,
     name: 'Nanogel',
     description: 'Micro/Nanogel Pillow by Darling',
     dimensions: '17" x 26" • 19" x 29"',
@@ -543,12 +545,32 @@ export const products = [
   },
   {
     productId: 1011,
-    imgURL: categoryPillow,
+    imgURL: featherPillow,
     name: 'Down Feather',
     description: 'Down Feather (80:20) by Darling',
     dimensions: '17" x 26"',
     color: 'White (Standard)',
     categoryId: 101, // Category: Pillows
     brand: "Darling",
+  },
+  {
+    productId: 1012,
+    imgURL: springtekRollaway1,
+    name: 'Springtek Rollaway Bed',
+    description: 'Folding Rollaway Bed with 6" Mattress',
+    dimensions: '36" x 75"',
+    color: 'Standard',
+    categoryId: 102, // Category: Rollaway Bed
+    brand: "Springtek",
+  },
+  {
+    productId: 1013,
+    imgURL: kingkoilRollaway,
+    name: 'King Koil Rollaway Bed',
+    description: 'Folding Rollaway Bed with 6" Mattress',
+    dimensions: '36" x 75"',
+    color: 'Standard',
+    categoryId: 102, // Category: Rollaway Bed
+    brand: "King Koil",
   },
 ];

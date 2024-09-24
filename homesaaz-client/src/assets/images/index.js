@@ -6,12 +6,21 @@ import hotelRoom1 from './hotel-room-1.jpg';
 import hotelRoom2 from './hotel-room-2.jpg';
 
 import springtekRollaway1 from './springtek-rollaway.png';
+import kingkoilRollaway from './products/rollaway-kingkoil.png';
 import mattressTopper from './mattress-topper.png';
 import comfyPillow from './comfy-pillow.png';
-import ecstacyPillow from './products/ecstacy-pillow.jpg';
+import ecstacyPillow from './products/feather-pillow.png';
 import gravityPillow from './products/gravity-pillow.png';
 import mattressProtector from './kingkoil-protector.png';
 import springtekEndurance from './products/springtek-endurance.jpg';
+import darlingMicrogel from './products/darling-nanogel.png';
+import gemSprinkle from './products/gem-sprinkle.png';
+import gemJasmine from './products/gem-jasmine.png';
+import gemSerenity from './products/gem-serenity.png';
+import darlingProtector from './products/darling-protector.jpg';
+import featherPillow from './products/feather-pillow.jpg';
+import memoryPillow from './products/memory-pillow.png';
+import fiberPillow from './products/fiber-pillow-darling.jpg';
 
 import categoryBathrobe from './category-bathrobe.jpg';
 import categoryPillow from './category-pillows.jpg';
@@ -31,6 +40,8 @@ import categorySofaFabric from './category-safoa-fabric.jpg';
 import categoryShowerCurtain from './category-shower-curtain.jpg';
 import categorySpc from './category-spc.jpg';
 import categoryTowel from './category-towel.jpg';
+import categoryRollaway from './category-rollaway.jpg';
+import categoryProtector from './category-protector.jpg';
 
 import customer1 from './customer1.jpeg';
 import customer2 from './customer2.svg';
@@ -71,8 +82,9 @@ import hsVideo from './../videos/hs-video.mp4';
 
 
 export {
-  gravityPillow, ecstacyPillow, categoryPillow,springtekEndurance,
-  hsVideo,
+  gravityPillow, ecstacyPillow, categoryPillow,springtekEndurance, darlingMicrogel, darlingProtector,
+  kingkoilRollaway, categoryRollaway, categoryProtector,
+  gemSprinkle, hsVideo, gemJasmine, gemSerenity, featherPillow, memoryPillow, fiberPillow,
   client1,client2, client3, client4,client5, client6, client7,
   ad1, ad2,
   mattressTopper,
