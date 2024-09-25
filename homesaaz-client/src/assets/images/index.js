@@ -21,8 +21,10 @@ import darlingProtector from './products/darling-protector.jpg';
 import featherPillow from './products/feather-pillow.jpg';
 import memoryPillow from './products/memory-pillow.png';
 import fiberPillow from './products/fiber-pillow-darling.jpg';
+import towel from './products/towel.jpg';
+import tridentBathrobe from './category-bathrobe.jpg';
 
-import categoryBathrobe from './category-bathrobe.jpg';
+import categoryBathrobe from './category-robe.jpg';
 import categoryPillow from './category-pillows.jpg';
 import categoryCarpet from './category-carpet.jpg';
 import categoryChairTableCover from './category-chair-table-cover.jpg';
@@ -42,6 +44,7 @@ import categorySpc from './category-spc.jpg';
 import categoryTowel from './category-towel.jpg';
 import categoryRollaway from './category-rollaway.jpg';
 import categoryProtector from './category-protector.jpg';
+import categoryTopper from './category-topper.jpg';
 
 import customer1 from './customer1.jpeg';
 import customer2 from './customer2.svg';
@@ -83,10 +86,10 @@ import hsVideo from './../videos/hs-video.mp4';
 
 export {
   gravityPillow, ecstacyPillow, categoryPillow,springtekEndurance, darlingMicrogel, darlingProtector,
-  kingkoilRollaway, categoryRollaway, categoryProtector,
+  kingkoilRollaway, categoryRollaway, categoryProtector, categoryTopper,
   gemSprinkle, hsVideo, gemJasmine, gemSerenity, featherPillow, memoryPillow, fiberPillow,
   client1,client2, client3, client4,client5, client6, client7,
-  ad1, ad2,
+  ad1, ad2, tridentBathrobe, towel,
   mattressTopper,
   comfyPillow,
   mattressProtector,

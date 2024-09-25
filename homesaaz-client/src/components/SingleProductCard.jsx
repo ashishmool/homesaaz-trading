@@ -12,6 +12,11 @@ const SingleProductCard = ({ productId, imgURL, name, description, dimensions, c
           id={productId}
           className="relative flex flex-col justify-between w-full max-sm:w-full rounded-lg p-4 shadow-lg dark:bg-slate-800 gap-10"
       >
+        {/* Category Tag */}
+        <div className="absolute top-8 right-0 bg-coral-red text-white text-xs font-bold py-1 px-2 rounded-l-full">
+          {categoryName}
+        </div>
+
         {/* Product Image */}
         <div className="flex justify-center w-full mt-6">
           <img src={imgURL} alt={`${name}-product`} height={282} className="rounded-lg text-center" />
@@ -22,16 +27,16 @@ const SingleProductCard = ({ productId, imgURL, name, description, dimensions, c
           {/* Product Name */}
           <h3 className="mt-2 text-xl sm:text-2xl leading-normal font-semibold font-palanquin">{name}</h3>
 
-          {/* Category */}
-          <p className="mt-2 text-sm text-slate-gray dark:text-gray-300">Category: {categoryName}</p>
+          {/* Product Description */}
+          <p className="mt-4 text-sm leading-normal text-slate-gray dark:text-gray-300">{description}</p>
 
           {/* Product Dimensions, Color, and Brand */}
           <p className="mt-2 text-base font-bold text-slate-gray dark:text-gray-300">Dimensions: {dimensions}</p>
           <p className="mt-2 text-base font-bold text-slate-gray dark:text-gray-300">Color: {color}</p>
           <p className="mt-2 text-base font-bold text-slate-gray dark:text-gray-300">Brand: {brand}</p>
 
-          {/* Product Description */}
-          <p className="mt-4 text-sm leading-normal text-slate-gray dark:text-gray-300">{description}</p>
+          {/*/!* Category *!/*/}
+          {/*<p className="mt-2 text-sm text-slate-gray dark:text-gray-300">Category: {categoryName}</p>*/}
         </div>
       </div>
   );

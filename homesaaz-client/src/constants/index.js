@@ -1,7 +1,13 @@
 import { facebook, instagram, shieldTick, support, truckFast, twitter, github } from '../assets/icons';
 import {
-  darlingProtector, gemSprinkle, gemJasmine,
-  darlingMicrogel, memoryPillow, fiberPillow, kingkoilRollaway,
+  darlingProtector,
+  gemSprinkle,
+  gemJasmine,
+  darlingMicrogel,
+  memoryPillow,
+  fiberPillow,
+  kingkoilRollaway,
+  categoryTopper,
   client1,
   client2,
   client3,
@@ -9,7 +15,8 @@ import {
   client5,
   client6,
   client7,
-  ad1, ad2,
+  ad1,
+  ad2,
   categoryBathrobe,
   categoryPillow,
   categoryCarpet,
@@ -42,8 +49,19 @@ import {
   shoe7,
   thumbnailShoe1,
   thumbnailShoe2,
-  thumbnailShoe3, comfyPillow, mattressProtector, mattressTopper, gravityPillow,
-  hsVideo, ecstacyPillow, springtekEndurance, gemSerenity, featherPillow, categoryRollaway, categoryProtector
+  thumbnailShoe3,
+  comfyPillow,
+  mattressProtector,
+  mattressTopper,
+  gravityPillow,
+  hsVideo,
+  ecstacyPillow,
+  springtekEndurance,
+  gemSerenity,
+  featherPillow,
+  categoryRollaway,
+  categoryProtector,
+  tridentBathrobe, towel
 } from '../assets/images';
 
 
@@ -136,7 +154,7 @@ export const categories = [
   },
   {
     categoryId: 104,
-    imgURL: mattressTopper,
+    imgURL: categoryTopper,
     brand: 'Coirtuff • Darling',
     size: '• Single • Queen • King • Custom',
     category: 'Topper'
@@ -572,5 +590,115 @@ export const products = [
     color: 'Standard',
     categoryId: 102, // Category: Rollaway Bed
     brand: "King Koil",
+  },
+  {
+    productId: 1014,
+    imgURL: mattressProtector,
+    name: 'King Koil Protector',
+    description: '100% Waterproof Protector',
+    dimensions: '36" x 78" • 60" x 78" • 72" x 78" • Custom',
+    color: 'Standard',
+    categoryId: 103, // Category: Protector
+    brand: "King Koil",
+  },
+  {
+    productId: 1015,
+    imgURL: mattressProtector,
+    name: 'Darling Protector',
+    description: 'Standard Liquid Resistant  Protector',
+    dimensions: '36" x 78" • 60" x 78" • 72" x 78" • Custom',
+    color: 'Standard',
+    categoryId: 103, // Category: Protector
+    brand: "Darling",
+  },
+  {
+    productId: 1016,
+    imgURL: mattressProtector,
+    name: 'Springtek Protector',
+    description: 'Standard Liquid Resistant Protector',
+    dimensions: '36" x 78" • 60" x 78" • 72" x 78" • Custom',
+    color: 'Standard',
+    categoryId: 103, // Category: Protector
+    brand: "Springtek",
+  },
+  {
+    productId: 1017,
+    imgURL: mattressProtector,
+    name: 'Terry Protector',
+    description: 'Standard Terry mattress Protector',
+    dimensions: '36" x 78" • 60" x 78" • 72" x 78" • Custom',
+    color: 'Standard',
+    categoryId: 103, // Category: Protector
+    brand: "King Koil",
+  },
+  {
+    productId: 1018,
+    imgURL: mattressTopper,
+    name: 'Coirtuff Topper',
+    description: 'Standard Topper using High Resilient Foam 2"',
+    dimensions: '36" x 78" • 60" x 78" • 72" x 78" • Custom',
+    color: 'Standard',
+    categoryId: 104, // Category: Topper
+    brand: "Coirtuff",
+  },
+  {
+    productId: 1019,
+    imgURL: mattressTopper,
+    name: 'Coirtuff Memory Topper',
+    description: 'Luxury Memory Foam Topper 2"',
+    dimensions: '36" x 78" • 60" x 78" • 72" x 78" • Custom',
+    color: 'Standard',
+    categoryId: 104, // Category: Topper
+    brand: "Coirtuff",
+  },
+  {
+    productId: 1020,
+    imgURL: towel,
+    name: 'Bath Towel',
+    description: 'Luxury',
+    dimensions: '30" x 60"',
+    color: 'White • Sand',
+    categoryId: 105, // Category: Towel
+    brand: "Trident",
+  },
+  {
+    productId: 1020,
+    imgURL: towel,
+    name: 'Hand Towel',
+    description: 'Luxury',
+    dimensions: '20" x 30"',
+    color: 'White • Sand',
+    categoryId: 105, // Category: Towel
+    brand: "Trident",
+  },
+  {
+    productId: 1021,
+    imgURL: towel,
+    name: 'Hand Towel',
+    description: 'Luxury',
+    dimensions: '12" x 12"',
+    color: 'White • Sand',
+    categoryId: 105, // Category: Towel
+    brand: "Trident",
+  },
+  {
+    productId: 1022,
+    imgURL: towel,
+    name: 'Bath Mat',
+    description: 'Luxury',
+    dimensions: '30" x 40"',
+    color: 'White • Sand',
+    categoryId: 105, // Category: Towel
+    brand: "Trident",
+  },
+  {
+    productId: 1023,
+    imgURL: tridentBathrobe,
+    name: 'Terry Bath Robe',
+    description: 'Premium',
+    dimensions: 'Standard',
+    color: 'White',
+    categoryId: 106, // Category: Bathrobe
+    brand: "Trident",
   },
 ];
