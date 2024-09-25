@@ -77,6 +77,13 @@ import client5 from './clients/lemon-tree.svg';
 import client6 from './clients/ihg.svg';
 import client7 from './clients/soaltee.svg';
 
+import kkLogo from '../logos/kk-logo.svg';
+import coirtuffLogo from '../logos/coirtuff-logo.svg';
+import gemLogo from '../logos/gem-logo.svg';
+import springtekLogo from '../logos/springtek-logo.svg';
+import darlingLogo from '../logos/darling-logo.svg';
+import tridentLogo from '../logos/trident-logo.svg';
+
 import ad1 from './ad1.jpg';
 import ad2 from './ad2.jpg';
 
@@ -89,6 +96,7 @@ export {
   kingkoilRollaway, categoryRollaway, categoryProtector, categoryTopper,
   gemSprinkle, hsVideo, gemJasmine, gemSerenity, featherPillow, memoryPillow, fiberPillow,
   client1,client2, client3, client4,client5, client6, client7,
+  kkLogo, coirtuffLogo, gemLogo, springtekLogo, darlingLogo, tridentLogo,
   ad1, ad2, tridentBathrobe, towel,
   mattressTopper,
   comfyPillow,

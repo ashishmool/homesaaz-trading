@@ -33,10 +33,11 @@ const SingleProductCard = ({ productId, imgURL, name, description, dimensions, c
           {/* Product Dimensions, Color, and Brand */}
           <p className="mt-2 text-base font-bold text-slate-gray dark:text-gray-300">Dimensions: {dimensions}</p>
           <p className="mt-2 text-base font-bold text-slate-gray dark:text-gray-300">Color: {color}</p>
-          <p className="mt-2 text-base font-bold text-slate-gray dark:text-gray-300">Brand: {brand}</p>
+        </div>
 
-          {/*/!* Category *!/*/}
-          {/*<p className="mt-2 text-sm text-slate-gray dark:text-gray-300">Category: {categoryName}</p>*/}
+        {/* Brand Logo (Centered) */}
+        <div className="flex justify-center items-center mt-4 mb-4">
+          <img src={brand} alt={`${name}-brand-logo`} width={130} className="rounded-lg" />
         </div>
       </div>
   );

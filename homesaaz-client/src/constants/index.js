@@ -61,7 +61,7 @@ import {
   featherPillow,
   categoryRollaway,
   categoryProtector,
-  tridentBathrobe, towel
+  tridentBathrobe, towel, kkLogo, coirtuffLogo, gemLogo, springtekLogo, darlingLogo, tridentLogo
 } from '../assets/images';
 
 
@@ -395,37 +395,77 @@ export const popUpScreenData = [
   },
 ];
 
+// export const cataloguesData = [
+//   {
+//     id: 1,
+//     name: 'King Koil - Catalogue',
+//     fileUrl: '/catalogue_uploads/kk-cat-v1.pdf',
+//   },
+//   {
+//     id: 2,
+//     name: 'Greenpanel - Laminate Flooring',
+//     fileUrl: '/catalogue_uploads/gp-cat-v1.pdf',
+//   },
+//   {
+//     id: 3,
+//     name: 'Aquasafe SPC Flooring by Gem Flooring',
+//     fileUrl: '/catalogue_uploads/aquasafe-cat.pdf',
+//   },
+//   {
+//     id: 4,
+//     name: 'Darling Mattress Protector',
+//     fileUrl: '/catalogue_uploads/darling-protector.pdf',
+//   },
+//   {
+//     id: 5,
+//     name: 'Herringbone Laminate Flooring',
+//     fileUrl: '/catalogue_uploads/herringbone-cat.pdf',
+//   },
+//   {
+//     id: 6,
+//     name: 'King Koil Hospitality Series',
+//     fileUrl: '/catalogue_uploads/kk-hospitality-cat.pdf',
+//   },
+//   {
+//     id: 7,
+//     name: 'Pillows by Home Saaz',
+//     fileUrl: '/catalogue_uploads/pillows-homesaaz-cat.pdf',
+//   },
+//   {
+//     id: 8,
+//     name: 'Springtek Rollaway Bed',
+//     fileUrl: '/catalogue_uploads/rollawaybed-springtek.pdf',
+//   },
+//   {
+//     id: 9,
+//     name: 'Shower Mat by Gem Flooring',
+//     fileUrl: '/catalogue_uploads/shower-mat.pdf',
+//   },
+//   {
+//     id: 10,
+//     name: 'Carpet Tiles by Standard Carpets',
+//     fileUrl: '/catalogue_uploads/standard-carpet-tiles.pdf',
+//   },
+//   {
+//     id: 11,
+//     name: 'Turf Mats by Uroturf',
+//     fileUrl: '/catalogue_uploads/turf-uroturf.pdf',
+//   },
+//   {
+//     id: 12,
+//     name: 'Vinyl Planks by Wonderfloor',
+//     fileUrl: '/catalogue_uploads/vinyl-planks.pdf',
+//   },
+// ];
+
 export const cataloguesData = [
-  {
-    id: 1,
-    name: 'King Koil - Catalogue',
-    fileUrl: '/catalogue_uploads/kk-cat-v1.pdf',
-  },
-  {
-    id: 2,
-    name: 'Greenpanel - Laminate Flooring',
-    fileUrl: '/catalogue_uploads/gp-cat-v1.pdf',
-  },
-  {
-    id: 3,
-    name: 'Aquasafe SPC Flooring by Gem Flooring',
-    fileUrl: '/catalogue_uploads/aquasafe-cat.pdf',
-  },
-  {
-    id: 4,
-    name: 'Darling Mattress Protector',
-    fileUrl: '/catalogue_uploads/darling-protector.pdf',
-  },
+
   {
     id: 5,
     name: 'Herringbone Laminate Flooring',
     fileUrl: '/catalogue_uploads/herringbone-cat.pdf',
   },
-  {
-    id: 6,
-    name: 'King Koil Hospitality Series',
-    fileUrl: '/catalogue_uploads/kk-hospitality-cat.pdf',
-  },
+
   {
     id: 7,
     name: 'Pillows by Home Saaz',
@@ -436,26 +476,13 @@ export const cataloguesData = [
     name: 'Springtek Rollaway Bed',
     fileUrl: '/catalogue_uploads/rollawaybed-springtek.pdf',
   },
-  {
-    id: 9,
-    name: 'Shower Mat by Gem Flooring',
-    fileUrl: '/catalogue_uploads/shower-mat.pdf',
-  },
+
   {
     id: 10,
     name: 'Carpet Tiles by Standard Carpets',
     fileUrl: '/catalogue_uploads/standard-carpet-tiles.pdf',
   },
-  {
-    id: 11,
-    name: 'Turf Mats by Uroturf',
-    fileUrl: '/catalogue_uploads/turf-uroturf.pdf',
-  },
-  {
-    id: 12,
-    name: 'Vinyl Planks by Wonderfloor',
-    fileUrl: '/catalogue_uploads/vinyl-planks.pdf',
-  },
+
 ];
 
 export const products = [
@@ -467,7 +494,7 @@ export const products = [
     dimensions: '17" x 27" • 19" x 29"',
     color: 'White (Standard)',
     categoryId: 101, // Category: Pillows
-    brand: "King Koil",
+    brand: kkLogo,
   },
   {
     productId: 1002,
@@ -477,7 +504,7 @@ export const products = [
     dimensions: '16" x 25"',
     color: 'White (Standard)',
     categoryId: 101, // Category: Pillows
-    brand: "King Koil",
+    brand: kkLogo,
   },
 
   {
@@ -488,7 +515,7 @@ export const products = [
     dimensions: '16" x 25"',
     color: 'White (Standard)',
     categoryId: 101, // Category: Pillows
-    brand: "King Koil",
+    brand: kkLogo,
   },
 
   {
@@ -499,7 +526,7 @@ export const products = [
     dimensions: '17" x 27" • 19" x 29"',
     color: 'White (Standard)',
     categoryId: 101, // Category: Pillows
-    brand: "Gem",
+    brand: gemLogo,
   },
   {
     productId: 1005,
@@ -509,7 +536,7 @@ export const products = [
     dimensions: '17" x 27" • 19" x 29"',
     color: 'White (Standard)',
     categoryId: 101, // Category: Pillows
-    brand: "Gem",
+    brand: gemLogo,
   },
   {
     productId: 1006,
@@ -519,7 +546,7 @@ export const products = [
     dimensions: '17" x 27" • 19" x 29"',
     color: 'White (Standard)',
     categoryId: 101, // Category: Pillows
-    brand: "Gem",
+    brand: gemLogo,
   },
   {
     productId: 1007,
@@ -529,7 +556,7 @@ export const products = [
     dimensions: '17" x 27"',
     color: 'White (Standard)',
     categoryId: 101, // Category: Pillows
-    brand: "Gem",
+    brand: gemLogo,
   },
   {
     productId: 1008,
@@ -539,7 +566,7 @@ export const products = [
     dimensions: '17" x 27" • 19" x 29"',
     color: 'White (Standard)',
     categoryId: 101, // Category: Pillows
-    brand: "Springtek",
+    brand: springtekLogo,
   },
   {
     productId: 1009,
@@ -549,7 +576,7 @@ export const products = [
     dimensions: '17" x 26"',
     color: 'White (Standard)',
     categoryId: 101, // Category: Pillows
-    brand: "Darling",
+    brand: darlingLogo,
   },
   {
     productId: 1010,
@@ -559,7 +586,7 @@ export const products = [
     dimensions: '17" x 26" • 19" x 29"',
     color: 'White (Standard)',
     categoryId: 101, // Category: Pillows
-    brand: "Darling",
+    brand: darlingLogo,
   },
   {
     productId: 1011,
@@ -569,7 +596,7 @@ export const products = [
     dimensions: '17" x 26"',
     color: 'White (Standard)',
     categoryId: 101, // Category: Pillows
-    brand: "Darling",
+    brand: darlingLogo,
   },
   {
     productId: 1012,
@@ -579,7 +606,7 @@ export const products = [
     dimensions: '36" x 75"',
     color: 'Standard',
     categoryId: 102, // Category: Rollaway Bed
-    brand: "Springtek",
+    brand: springtekLogo,
   },
   {
     productId: 1013,
@@ -589,7 +616,7 @@ export const products = [
     dimensions: '36" x 75"',
     color: 'Standard',
     categoryId: 102, // Category: Rollaway Bed
-    brand: "King Koil",
+    brand: kkLogo,
   },
   {
     productId: 1014,
@@ -599,7 +626,7 @@ export const products = [
     dimensions: '36" x 78" • 60" x 78" • 72" x 78" • Custom',
     color: 'Standard',
     categoryId: 103, // Category: Protector
-    brand: "King Koil",
+    brand: kkLogo,
   },
   {
     productId: 1015,
@@ -609,7 +636,7 @@ export const products = [
     dimensions: '36" x 78" • 60" x 78" • 72" x 78" • Custom',
     color: 'Standard',
     categoryId: 103, // Category: Protector
-    brand: "Darling",
+    brand: darlingLogo,
   },
   {
     productId: 1016,
@@ -619,7 +646,7 @@ export const products = [
     dimensions: '36" x 78" • 60" x 78" • 72" x 78" • Custom',
     color: 'Standard',
     categoryId: 103, // Category: Protector
-    brand: "Springtek",
+    brand: springtekLogo,
   },
   {
     productId: 1017,
@@ -629,27 +656,27 @@ export const products = [
     dimensions: '36" x 78" • 60" x 78" • 72" x 78" • Custom',
     color: 'Standard',
     categoryId: 103, // Category: Protector
-    brand: "King Koil",
+    brand: gemLogo,
   },
   {
     productId: 1018,
     imgURL: mattressTopper,
-    name: 'Coirtuff Topper',
+    name: 'Topper',
     description: 'Standard Topper using High Resilient Foam 2"',
     dimensions: '36" x 78" • 60" x 78" • 72" x 78" • Custom',
     color: 'Standard',
     categoryId: 104, // Category: Topper
-    brand: "Coirtuff",
+    brand: springtekLogo,
   },
   {
     productId: 1019,
     imgURL: mattressTopper,
-    name: 'Coirtuff Memory Topper',
+    name: 'Memory Topper',
     description: 'Luxury Memory Foam Topper 2"',
     dimensions: '36" x 78" • 60" x 78" • 72" x 78" • Custom',
     color: 'Standard',
     categoryId: 104, // Category: Topper
-    brand: "Coirtuff",
+    brand: springtekLogo,
   },
   {
     productId: 1020,
@@ -659,46 +686,46 @@ export const products = [
     dimensions: '30" x 60"',
     color: 'White • Sand',
     categoryId: 105, // Category: Towel
-    brand: "Trident",
-  },
-  {
-    productId: 1020,
-    imgURL: towel,
-    name: 'Hand Towel',
-    description: 'Luxury',
-    dimensions: '20" x 30"',
-    color: 'White • Sand',
-    categoryId: 105, // Category: Towel
-    brand: "Trident",
+    brand: tridentLogo,
   },
   {
     productId: 1021,
     imgURL: towel,
     name: 'Hand Towel',
     description: 'Luxury',
-    dimensions: '12" x 12"',
+    dimensions: '20" x 30"',
     color: 'White • Sand',
     categoryId: 105, // Category: Towel
-    brand: "Trident",
+    brand: tridentLogo,
   },
   {
     productId: 1022,
+    imgURL: towel,
+    name: 'Hand Towel',
+    description: 'Luxury',
+    dimensions: '12" x 12"',
+    color: 'White • Sand',
+    categoryId: 105, // Category: Towel
+    brand: tridentLogo,
+  },
+  {
+    productId: 1023,
     imgURL: towel,
     name: 'Bath Mat',
     description: 'Luxury',
     dimensions: '30" x 40"',
     color: 'White • Sand',
     categoryId: 105, // Category: Towel
-    brand: "Trident",
+    brand: tridentLogo,
   },
   {
-    productId: 1023,
+    productId: 1024,
     imgURL: tridentBathrobe,
     name: 'Terry Bath Robe',
     description: 'Premium',
     dimensions: 'Standard',
     color: 'White',
     categoryId: 106, // Category: Bathrobe
-    brand: "Trident",
+    brand: tridentLogo,
   },
 ];

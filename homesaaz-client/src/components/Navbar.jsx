@@ -73,7 +73,7 @@ const Navbar = ({ handleClick, handleClick2, setSearchResults }) => {
             <ThemeSwitch handleClick={handleClick} />
             {/* eCatalogue Button */}
             <Link to="/catalogue" className="flex items-center text-coral-red font-semibold hover:underline">
-              Download eCatalogue <ArrowDownTrayIcon className="h-5 w-5 ml-2" /> {/* Added space with `ml-2` */}
+              Downloads <ArrowDownTrayIcon className="h-5 w-5 ml-2" /> {/* Added space with `ml-2` */}
             </Link>
             <div className="lg:hidden dark:invert cursor-pointer" onClick={toggleShowMenu}>
               <Bars3Icon height={25} width={25} className="dark:text-coral-red" />
