@@ -2,7 +2,7 @@ import { ShoppingCartIcon } from '@heroicons/react/24/outline';
 import { useNavigate } from 'react-router-dom';
 import { enqueueSnackbar } from 'notistack';
 
-const CategoryCard = ({ categoryId, imgURL, brand, size, category }) => {
+const CategoryCard = ({ categoryId, imgURL, brand, description, category }) => {
 
 
   const navigate = useNavigate();
@@ -14,7 +14,7 @@ const CategoryCard = ({ categoryId, imgURL, brand, size, category }) => {
   return (
     <div
       id={categoryId}
-      className="relative flex flex-col w-full max-sm:w-full hover:scale-105 duration-300 ease-in-out rounded-lg p-4 shadow-lg dark:bg-slate-800"
+      className="relative flex flex-col w-full max-sm:w-full hover:scale-105 duration-300 ease-in-out rounded-lg p-4 shadow-lg dark:bg-slate-800 justify-center items-center"
     >
       <img
         src={imgURL}
@@ -28,19 +28,19 @@ const CategoryCard = ({ categoryId, imgURL, brand, size, category }) => {
         <p className="font-montserrat sm:text-lg leading-normal text-slate-gray dark:text-gray-300">{category}</p>
       </div>
 
-      <div
-        className="mt-2 text-sm sm:text-2sm leading-normal font-semibold font-palanquin cursor-pointer"
-        onClick={() => handleClick(categoryId)}
-      >
-        Brands: {brand}
-      </div>
 
       <div className="flex justify-between items-center">
         <p className="mt-2 sm:text-sm leading-normal font-semibold font-montserrat text-coral-red">
-          Available Sizes: {size}
+          {description}
         </p>
 
       </div>
+      {/*<div*/}
+      {/*    className="mt-2 text-sm sm:text-2sm leading-normal font-semibold font-palanquin cursor-pointer"*/}
+      {/*    onClick={() => handleClick(categoryId)}*/}
+      {/*>*/}
+      {/*  {brand}*/}
+      {/*</div>*/}
     </div>
   );
 };

@@ -89,9 +89,51 @@ import ad2 from './ad2.jpg';
 
 import hsVideo from './../videos/hs-video.mp4';
 
+import fabric101op from './outdoor-fabric/101-Outdoor-Plain.jpg';
+import fabric102op from './outdoor-fabric/102-Outdoor-Plain.jpg';
+import fabric103op from './outdoor-fabric/103-Outdoor-Plain.jpg';
+import fabric104op from './outdoor-fabric/104-Outdoor-Plain.jpg';
+import fabric105op from './outdoor-fabric/105-Outdoor-Plain.jpg';
+import fabric106op from './outdoor-fabric/106-Outdoor-Plain.jpg';
+import fabric107op from './outdoor-fabric/107-Outdoor-Plain.jpg';
+import fabric108op from './outdoor-fabric/108-Outdoor-Plain.jpg';
+import fabric109op from './outdoor-fabric/109-Outdoor-Plain.jpg';
+import fabric110op from './outdoor-fabric/110-Outdoor-Plain.jpg';
+import fabric111op from './outdoor-fabric/111-Outdoor-Plain.jpg';
+import fabric112op from './outdoor-fabric/112-Outdoor-Plain.jpg';
+import fabric113op from './outdoor-fabric/113-Outdoor-Plain.jpg';
+import fabric114op from './outdoor-fabric/114-Outdoor-Plain.jpg';
+import fabric115op from './outdoor-fabric/115-Outdoor-Plain.jpg';
+import fabric116op from './outdoor-fabric/116-Outdoor-Plain.jpg';
+import fabric118op from './outdoor-fabric/118-Outdoor-Plain.jpg';
+import fabric119op from './outdoor-fabric/119-Outdoor-Plain.jpg';
+import fabric120op from './outdoor-fabric/120-Outdoor-Plain.jpg';
+import fabric121op from './outdoor-fabric/121-Outdoor-Plain.jpg';
+import fabric122op from './outdoor-fabric/122-Outdoor-Plain.jpg';
+import fabric123op from './outdoor-fabric/123-Outdoor-Plain.jpg';
+
+import fabric1004of from './outdoor-fabric/1004-Outdoor-Texture.jpg';
+import fabric1011of from './outdoor-fabric/1011-Outdoor-Texture.jpg';
+import fabric1019of from './outdoor-fabric/1019-Outdoor-Texture.jpg';
+import fabric1022of from './outdoor-fabric/1022-Outdoor-Texture.jpg';
+import fabric1027of from './outdoor-fabric/1027-Outdoor-Texture.jpg';
+import fabric1030of from './outdoor-fabric/1030-Outdoor-Texture.jpg';
+import fabric1041of from './outdoor-fabric/1041-Outdoor-Texture.jpg';
+import fabric1047of from './outdoor-fabric/1047-Outdoor-Texture.jpg';
+import fabric1059of from './outdoor-fabric/1059-Outdoor-Texture.jpg';
+import fabric1069of from './outdoor-fabric/1069-Outdoor-Texture.jpg';
+import fabric1074of from './outdoor-fabric/1074-Outdoor-Texture.jpg';
+
 
 
 export {
+  fabric101op, fabric102op, fabric103op, fabric104op, fabric105op,
+  fabric106op, fabric107op, fabric108op, fabric109op, fabric110op,
+  fabric111op, fabric112op, fabric113op, fabric114op, fabric115op,
+  fabric116op, fabric118op, fabric119op, fabric120op, fabric121op,
+  fabric122op, fabric123op, fabric1004of, fabric1011of, fabric1019of,
+  fabric1022of, fabric1027of, fabric1030of, fabric1041of, fabric1047of,
+  fabric1059of, fabric1069of, fabric1074of,
   gravityPillow, ecstacyPillow, categoryPillow,springtekEndurance, darlingMicrogel, darlingProtector,
   kingkoilRollaway, categoryRollaway, categoryProtector, categoryTopper,
   gemSprinkle, hsVideo, gemJasmine, gemSerenity, featherPillow, memoryPillow, fiberPillow,

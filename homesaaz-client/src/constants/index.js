@@ -61,7 +61,14 @@ import {
   featherPillow,
   categoryRollaway,
   categoryProtector,
-  tridentBathrobe, towel, kkLogo, coirtuffLogo, gemLogo, springtekLogo, darlingLogo, tridentLogo
+  tridentBathrobe, towel, kkLogo, coirtuffLogo, gemLogo, springtekLogo, darlingLogo, tridentLogo,
+  fabric101op, fabric102op, fabric103op, fabric104op, fabric105op,
+  fabric106op, fabric107op, fabric108op, fabric109op, fabric110op,
+  fabric111op, fabric112op, fabric113op, fabric114op, fabric115op,
+  fabric116op, fabric118op, fabric119op, fabric120op, fabric121op,
+  fabric122op, fabric123op, fabric1004of, fabric1011of, fabric1019of,
+  fabric1022of, fabric1027of, fabric1030of, fabric1041of, fabric1047of,
+  fabric1059of, fabric1069of, fabric1074of
 } from '../assets/images';
 
 
@@ -134,148 +141,140 @@ export const categories = [
   {
     categoryId: 101,
     imgURL: categoryPillow,
-    brand: 'King Koil • Coirtuff • Gem',
-    size: '17" x 27" •  20" x 30" • Others',
+    description: '17" x 27" •  20" x 30" • Others',
     category: 'Pillows'
   },
   {
     categoryId: 102,
     imgURL: categoryRollaway,
-    brand: 'King Koil • Springtek • Darling',
-    size: '36" x 75"',
+    description: '36" x 75"',
     category: 'Rollaway Beds'
   },
   {
     categoryId: 103,
     imgURL: categoryProtector,
-    brand: 'King Koil • Coirtuff • Darling',
-    size: '• Single • Queen • King • Custom',
+    description: '• Single • Queen • King • Custom',
     category: 'Protectors'
   },
   {
     categoryId: 104,
     imgURL: categoryTopper,
-    brand: 'Coirtuff • Darling',
-    size: '• Single • Queen • King • Custom',
+    description: '• Single • Queen • King • Custom',
     category: 'Topper'
   },
   {
     categoryId: 105,
     imgURL: categoryTowel,
-    brand: 'Trident • Gem',
-    size: '• Face • Hand • Bath • Bath Mat • Spa Sheet',
+    description: '• Face • Hand • Bath • Bath Mat • Spa Sheet',
     category: 'Towel'
   },
   {
     categoryId: 106,
     imgURL: categoryBathrobe,
-    brand: 'Trident',
-    size: 'Standard (Universal)',
+    description: 'Standard (Universal)',
     category: 'Bath Robe'
   },
   {
     categoryId: 107,
     imgURL: categoryCarpet,
     brand: 'Prestige • Royal Wilton • Others',
-    size: 'Custom',
+    description: 'Custom',
     category: 'Carpets'
   },
   {
     categoryId: 108,
     imgURL: categoryRug,
-    brand: 'Prestige  • Others',
-    size: 'Standard • Custom',
+    description: 'Standard • Custom',
     category: 'Rugs'
   },
   {
     categoryId: 109,
     imgURL: categoryLaminate,
-    brand: 'Greenpanel',
-    size: 'Custom',
+    description: 'Custom',
     category: 'Laminate Flooring'
   },
   {
     categoryId: 110,
     imgURL: categorySpc,
-    brand: 'Aquasafe by Gem Flooring',
-    size: 'Custom •Thickness 5mm',
+    description: 'Custom • Thickness 5mm',
     category: 'SPC Flooring'
   },
   {
     categoryId: 111,
     imgURL: categoryRunner,
-    brand: 'Gem Collection',
-    size: 'Custom',
+    description: 'Custom',
     category: 'Bed Runner'
   },
   {
     categoryId: 112,
     imgURL: categorySofaFabric,
-    brand: 'Gem Collection',
-    size: 'Custom',
+    description: 'Custom',
     category: 'Sofa Fabric'
   },
   {
     categoryId: 113,
     imgURL: categoryCurtain,
-    brand: 'Gem Collection',
-    size: 'Custom',
+    description: 'Custom',
     category: 'Curtain Fabric'
   },
   {
     categoryId: 114,
     imgURL: categoryChairTableCover,
-    brand: 'Gem Collection',
-    size: 'Custom',
+    description: 'Custom',
     category: 'Chair & Table Covers'
   },
   {
     categoryId: 115,
     imgURL: categoryNapkin,
-    brand: 'Gem Collection',
-    size: 'Custom',
+    description: 'Custom',
     category: 'Table Napkin'
   },
   {
     categoryId: 116,
     imgURL: categoryCushion,
-    brand: 'Gem Collection',
-    size: 'Custom',
+    description: 'Custom',
     category: 'Cushion & Covers'
   },
   {
     categoryId: 117,
     imgURL: categoryLinen,
-    brand: 'Trident • Gem Collection • Others',
-    size: '• Single • Queen • King • Custom',
+    description: '• Single • Queen • King • Custom',
     category: 'Linens'
   },
   {
     categoryId: 118,
     imgURL: categoryGymTile,
-    brand: 'Gem Flooring',
-    size: '507mm x 507mm x 20mm (LxBxH)',
+    description: '507mm x 507mm x 20mm (LxBxH)',
     category: 'Gym Rubber Tiles'
   },
   {
     categoryId: 119,
     imgURL: categoryOutdoorFabric,
-    brand: 'Gem Collection',
-    size: 'Custom',
+    description: 'Custom',
     category: 'Outdoor Fabric'
   },
   {
     categoryId: 120,
     imgURL: categoryDoormat,
-    brand: 'Prestige',
-    size: '16" x 24 • 20" x 30"',
+    description: '16" x 24" • 20" x 30"',
     category: 'Anti-Skid Doormats'
   },
   {
     categoryId: 121,
     imgURL: categoryShowerCurtain,
-    brand: 'Others',
-    size: '180cm x 180cm',
+    description: '180cm x 180cm',
+    category: 'Shower Curtain'
+  },
+  {
+    categoryId: 120,
+    imgURL: categoryDoormat,
+    description: '16" x 24 • 20" x 30"',
+    category: 'Anti-Skid Doormats'
+  },
+  {
+    categoryId: 121,
+    imgURL: categoryShowerCurtain,
+    description: '180cm x 180cm',
     category: 'Shower Curtain'
   }
 
@@ -727,5 +726,236 @@ export const products = [
     color: 'White',
     categoryId: 106, // Category: Bathrobe
     brand: tridentLogo,
+  },
+  {
+    productId: 1025,
+    imgURL: fabric101op,
+    name: '101',
+    description: 'Outdoor Plain',
+    categoryId: 119, // Category: Outdoor Fabric
+  },
+  {
+    productId: 1026,
+    imgURL: fabric102op,
+    name: '102',
+    description: 'Outdoor Plain',
+    categoryId: 119,
+  },
+  {
+    productId: 1027,
+    imgURL: fabric103op,
+    name: '103',
+    description: 'Outdoor Plain',
+    categoryId: 119,
+  },
+  {
+    productId: 1028,
+    imgURL: fabric104op,
+    name: '104',
+    description: 'Outdoor Plain',
+    categoryId: 119,
+  },
+  {
+    productId: 1029,
+    imgURL: fabric105op,
+    name: '105',
+    description: 'Outdoor Plain',
+    categoryId: 119,
+  },
+  {
+    productId: 1030,
+    imgURL: fabric106op,
+    name: '106',
+    description: 'Outdoor Plain',
+    categoryId: 119,
+  },
+  {
+    productId: 1031,
+    imgURL: fabric107op,
+    name: '107',
+    description: 'Outdoor Plain',
+    categoryId: 119,
+  },
+  {
+    productId: 1032,
+    imgURL: fabric108op,
+    name: '108',
+    description: 'Outdoor Plain',
+    categoryId: 119,
+  },
+  {
+    productId: 1033,
+    imgURL: fabric109op,
+    name: '109',
+    description: 'Outdoor Plain',
+    categoryId: 119,
+  },
+  {
+    productId: 1034,
+    imgURL: fabric110op,
+    name: '110',
+    description: 'Outdoor Plain',
+    categoryId: 119,
+  },
+  {
+    productId: 1035,
+    imgURL: fabric111op,
+    name: '111',
+    description: 'Outdoor Plain',
+    categoryId: 119,
+  },
+  {
+    productId: 1036,
+    imgURL: fabric112op,
+    name: '112',
+    description: 'Outdoor Plain',
+    categoryId: 119,
+  },
+  {
+    productId: 1037,
+    imgURL: fabric113op,
+    name: '113',
+    description: 'Outdoor Plain',
+    categoryId: 119,
+  },
+  {
+    productId: 1038,
+    imgURL: fabric114op,
+    name: '114',
+    description: 'Outdoor Plain',
+    categoryId: 119,
+  },
+  {
+    productId: 1039,
+    imgURL: fabric115op,
+    name: '115',
+    description: 'Outdoor Plain',
+    categoryId: 119,
+  },
+  {
+    productId: 1040,
+    imgURL: fabric116op,
+    name: '116',
+    description: 'Outdoor Plain',
+    categoryId: 119,
+  },
+  {
+    productId: 1041,
+    imgURL: fabric118op,
+    name: '118',
+    description: 'Outdoor Plain',
+    categoryId: 119,
+  },
+  {
+    productId: 1042,
+    imgURL: fabric119op,
+    name: '119',
+    description: 'Outdoor Plain',
+    categoryId: 119,
+  },
+  {
+    productId: 1043,
+    imgURL: fabric120op,
+    name: '120',
+    description: 'Outdoor Plain',
+    categoryId: 119,
+  },
+  {
+    productId: 1044,
+    imgURL: fabric121op,
+    name: '121',
+    description: 'Outdoor Plain',
+    categoryId: 119,
+  },
+  {
+    productId: 1045,
+    imgURL: fabric122op,
+    name: '122',
+    description: 'Outdoor Plain',
+    categoryId: 119,
+  },
+  {
+    productId: 1046,
+    imgURL: fabric123op,
+    name: '123',
+    description: 'Outdoor Plain',
+    categoryId: 119,
+  },
+  {
+    productId: 1047,
+    imgURL: fabric1004of,
+    name: '1004',
+    description: 'Outdoor Texture',
+    categoryId: 119,
+  },
+  {
+    productId: 1048,
+    imgURL: fabric1011of,
+    name: '1011',
+    description: 'Outdoor Texture',
+    categoryId: 119,
+  },
+  {
+    productId: 1049,
+    imgURL: fabric1019of,
+    name: '1019',
+    description: 'Outdoor Texture',
+    categoryId: 119,
+  },
+  {
+    productId: 1050,
+    imgURL: fabric1022of,
+    name: '1022',
+    description: 'Outdoor Texture',
+    categoryId: 119,
+  },
+  {
+    productId: 1051,
+    imgURL: fabric1027of,
+    name: '1027',
+    description: 'Outdoor Texture',
+    categoryId: 119,
+  },
+  {
+    productId: 1052,
+    imgURL: fabric1030of,
+    name: '1030',
+    description: 'Outdoor Texture',
+    categoryId: 119,
+  },
+  {
+    productId: 1053,
+    imgURL: fabric1041of,
+    name: '1041',
+    description: 'Outdoor Texture',
+    categoryId: 119,
+  },
+  {
+    productId: 1054,
+    imgURL: fabric1047of,
+    name: '1047',
+    description: 'Outdoor Texture',
+    categoryId: 119,
+  },
+  {
+    productId: 1055,
+    imgURL: fabric1059of,
+    name: '1059',
+    description: 'Outdoor Texture',
+    categoryId: 119,
+  },
+  {
+    productId: 1056,
+    imgURL: fabric1069of,
+    name: '1069',
+    description: 'Outdoor Texture',
+    categoryId: 119,
+  },
+  {
+    productId: 1057,
+    imgURL: fabric1074of,
+    name: '1074',
+    description: 'Outdoor Texture',
+    categoryId: 119,
   },
 ];
