@@ -260,12 +260,12 @@ export const categories = [
     categoryImage5: catOutdoorImage5,
     categoryImage6: catOutdoorImage6
   },
-  {
-    categoryId: 120,
-    imgURL: categoryDoormat,
-    description: '16" x 24" • 20" x 30"',
-    category: 'Anti-Skid Doormats'
-  },
+  // {
+  //   categoryId: 120,
+  //   imgURL: categoryDoormat,
+  //   description: '16" x 24" • 20" x 30"',
+  //   category: 'Anti-Skid Doormats'
+  // },
   {
     categoryId: 121,
     imgURL: categoryShowerCurtain,

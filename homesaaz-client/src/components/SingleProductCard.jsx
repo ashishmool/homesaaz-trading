@@ -22,10 +22,11 @@ const SingleProductCard = ({ productId, imgURL, name, description, dimensions, c
 
         {/* Product Image */}
         {imgURL && (
-            <div className="flex justify-center w-full mt-6">
-              <img src={imgURL} alt={`${name}-product`} height={282} className="rounded-lg text-center" />
+            <div className="flex justify-center items-center w-full mt-6 aspect-square overflow-hidden">
+              <img src={imgURL} alt={`${name}-product`} className="h-full w-full object-cover rounded-lg" />
             </div>
         )}
+
 
         {/* Product Details */}
         <div className={`flex flex-col ${hasDetails ? 'justify-start' : 'justify-center items-center mt-0'} w-full`}>
