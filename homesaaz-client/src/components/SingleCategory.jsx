@@ -11,11 +11,12 @@ const SingleCategory = () => {
     const urlCategoryId = parseInt(parts[parts.length - 1]);
     const [categoryProducts, setCategoryProducts] = useState([]);
     const [categoryName, setCategoryName] = useState('');
+    const [categoryImages, setCategoryImages] = useState([]);
 
     useEffect(() => {
         window.scrollTo(0, 0); // Scroll to top
 
-        // Find the category name based on the category ID
+        // Find the category based on the category ID
         const category = categories.find(cat => cat.categoryId === urlCategoryId);
         setCategoryName(category ? category.category : 'Unknown Category');
 
@@ -24,6 +25,18 @@ const SingleCategory = () => {
             (product) => product.categoryId === urlCategoryId
         );
         setCategoryProducts(filteredProducts);
+
+        // Collect all category images
+        const images = [];
+        for (let i = 1; i <= 10; i++) { // Assuming a maximum of 10 images for each category
+            const imageKey = `categoryImage${i}`;
+            if (category && category[imageKey]) {
+                images.push(category[imageKey]);
+            } else {
+                break; // Exit loop if no more images exist
+            }
+        }
+        setCategoryImages(images);
     }, [urlCategoryId]);
 
     return (
@@ -62,6 +75,20 @@ const SingleCategory = () => {
             {/*        </div>*/}
             {/*    </div>*/}
             {/*</div>*/}
+
+            {/* Image Gallery Section */}
+            {categoryImages.length > 0 && (
+                <div className="mt-16">
+                    <h1 className="text-3xl text-coral-red font-palanquin font-bold text-center mb-8">{categoryName} Gallery</h1>
+                    <div className="grid grid-cols-2 lg:grid-cols-4 md:grid-cols-3 gap-4">
+                        {categoryImages.map((image, index) => (
+                            <div key={index} className="overflow-hidden">
+                                <img src={image} alt={`Category Image ${index + 1}`} className="w-full h-auto object-cover" />
+                            </div>
+                        ))}
+                    </div>
+                </div>
+            )}
         </section>
     );
 };

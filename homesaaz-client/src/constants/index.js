@@ -1,5 +1,7 @@
 import { facebook, instagram, shieldTick, support, truckFast, twitter, github } from '../assets/icons';
 import {
+  cloudyAlley, diana, dianaAlley, honeyComb, nigel, parity, ripple, river, softy, sprinkle, stones, stripe, twill, wavy,
+  catOutdoorImage1, catOutdoorImage2, catOutdoorImage3, catOutdoorImage4, catOutdoorImage5, catOutdoorImage6,
   darlingProtector,
   gemSprinkle,
   gemJasmine,
@@ -142,7 +144,7 @@ export const categories = [
     categoryId: 101,
     imgURL: categoryPillow,
     description: '17" x 27" •  20" x 30" • Others',
-    category: 'Pillows'
+    category: 'Pillows',
   },
   {
     categoryId: 102,
@@ -177,8 +179,7 @@ export const categories = [
   {
     categoryId: 107,
     imgURL: categoryCarpet,
-    brand: 'Prestige • Royal Wilton • Others',
-    description: 'Custom',
+    description: 'Digital Printed Carpets • Custom',
     category: 'Carpets'
   },
   {
@@ -251,7 +252,13 @@ export const categories = [
     categoryId: 119,
     imgURL: categoryOutdoorFabric,
     description: 'Custom',
-    category: 'Outdoor Fabric'
+    category: 'Outdoor Fabric',
+    categoryImage1: catOutdoorImage1,
+    categoryImage2: catOutdoorImage2,
+    categoryImage3: catOutdoorImage3,
+    categoryImage4: catOutdoorImage4,
+    categoryImage5: catOutdoorImage5,
+    categoryImage6: catOutdoorImage6
   },
   {
     categoryId: 120,
@@ -266,17 +273,11 @@ export const categories = [
     category: 'Shower Curtain'
   },
   {
-    categoryId: 120,
+    categoryId: 122,
     imgURL: categoryDoormat,
     description: '16" x 24 • 20" x 30"',
     category: 'Anti-Skid Doormats'
   },
-  {
-    categoryId: 121,
-    imgURL: categoryShowerCurtain,
-    description: '180cm x 180cm',
-    category: 'Shower Curtain'
-  }
 
 ];
 
@@ -958,4 +959,103 @@ export const products = [
     description: 'Outdoor Texture',
     categoryId: 119,
   },
+  {
+    productId: 1058,
+    imgURL: cloudyAlley,
+    name: 'Cloudy Alley',
+    description: 'Smoke Grey • Bordo Red • Hazel • Carmine',
+    categoryId: 122,
+  },
+  {
+    productId: 1059,
+    imgURL: diana,
+    name: 'Diana',
+    description: 'Scarlet Red • Silver • Laguna • Cherry • Coffee • Walnut • Mocha • Moss Green',
+    categoryId: 122,
+  },
+  {
+    productId: 1060,
+    imgURL: dianaAlley,
+    name: 'Diana Alley',
+    description: 'Rust • Scarlet Red • Mocha • Wine',
+    categoryId: 122,
+  },
+  {
+    productId: 1061,
+    imgURL: honeyComb,
+    name: 'Honeycomb',
+    description: 'Grey • Brown • Green • Chocolate',
+    categoryId: 122,
+  },
+  {
+    productId: 1062,
+    imgURL: nigel,
+    name: 'Nigel',
+    description: 'Golden Yellow • Beige • Brown',
+    categoryId: 122,
+  },
+  {
+    productId: 1063,
+    imgURL: parity,
+    name: 'Parity',
+    description: 'Silver • Red • Wine • Mocha • Moss Green • Rust',
+    categoryId: 122,
+  },
+  {
+    productId: 1064,
+    imgURL: ripple,
+    name: 'Ripple',
+    description: 'Green • Med. Grey • Blue • Red',
+    categoryId: 122,
+  },
+  {
+    productId: 1065,
+    imgURL: river,
+    name: 'River',
+    description: 'Brown • Chocolate • Green • Grey',
+    categoryId: 122,
+  },
+  {
+    productId: 1066,
+    imgURL: softy,
+    name: 'Softy',
+    description: 'L. Grey • Ivory • D. Grey • Salte Blue • Tortilla Beige • Taos Taupe • Stone Grey',
+    categoryId: 122,
+  },
+  {
+    productId: 1067,
+    imgURL: sprinkle,
+    name: 'Sprinkle',
+    description: 'Grey • Beige • Brown • Red',
+    categoryId: 122,
+  },
+  {
+    productId: 1068,
+    imgURL: stones,
+    name: 'Stones',
+    description: 'Brown • Chocolate • Green • Grey',
+    categoryId: 122,
+  },
+  {
+    productId: 1069,
+    imgURL: stripe,
+    name: 'Stripe',
+    description: 'Royal Blue • Beige • Brown • Red • Chocolate • Grey • Red/Grey • Silver/Green • Red/Black',
+    categoryId: 122,
+  },
+  {
+    productId: 1070,
+    imgURL: twill,
+    name: 'Twill',
+    description: 'Chocolate • Brown • Red • Grey',
+    categoryId: 122,
+  },
+  {
+    productId: 1071,
+    imgURL: wavy,
+    name: 'Wavy',
+    description: 'Silver • Cherry Red • Almond • Moss Green',
+    categoryId: 122,
+  },
+
 ];

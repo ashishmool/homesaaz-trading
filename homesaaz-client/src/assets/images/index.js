@@ -124,9 +124,34 @@ import fabric1059of from './outdoor-fabric/1059-Outdoor-Texture.jpg';
 import fabric1069of from './outdoor-fabric/1069-Outdoor-Texture.jpg';
 import fabric1074of from './outdoor-fabric/1074-Outdoor-Texture.jpg';
 
+import cloudyAlley from './prestige-doormat/CloudyAlley.png';
+import diana from './prestige-doormat/Diana.png';
+import dianaAlley from './prestige-doormat/DianaAlley.png';
+import honeyComb from './prestige-doormat/Honeycomb.png';
+import nigel from './prestige-doormat/Nigel.png';
+import parity from './prestige-doormat/Parity.jpg';
+import ripple from './prestige-doormat/Ripple.png';
+import river from './prestige-doormat/River.png';
+import softy from './prestige-doormat/Softy.png';
+import sprinkle from './prestige-doormat/Sprinkle.png';
+import stones from './prestige-doormat/Stones.png';
+import stripe from './prestige-doormat/Stripe.png';
+import twill from './prestige-doormat/Twill.png';
+import wavy from './prestige-doormat/Wavy.png';
+
+import catOutdoorImage1 from './category/cat-outdoor-fabric/Image1.jpg';
+import catOutdoorImage2 from './category/cat-outdoor-fabric/Image2.jpg';
+import catOutdoorImage3 from './category/cat-outdoor-fabric/Image3.jpg';
+import catOutdoorImage4 from './category/cat-outdoor-fabric/Image4.jpg';
+import catOutdoorImage5 from './category/cat-outdoor-fabric/Image5.jpg';
+import catOutdoorImage6 from './category/cat-outdoor-fabric/Image6.jpg';
+
 
 
 export {
+  cloudyAlley, diana, dianaAlley, honeyComb, nigel, parity, ripple, river, softy, sprinkle, stones, stripe, twill, wavy,
+
+  catOutdoorImage1, catOutdoorImage2, catOutdoorImage3, catOutdoorImage4, catOutdoorImage5, catOutdoorImage6,
   fabric101op, fabric102op, fabric103op, fabric104op, fabric105op,
   fabric106op, fabric107op, fabric108op, fabric109op, fabric110op,
   fabric111op, fabric112op, fabric113op, fabric114op, fabric115op,

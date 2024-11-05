@@ -25,7 +25,7 @@ const Navbar = ({ handleClick, handleClick2, setSearchResults }) => {
     // Filter products based on search query
     const filteredProducts = categories.filter((product) =>
         product.category.toLowerCase().includes(query) ||
-        product.brand.toLowerCase().includes(query)
+        product.description.toLowerCase().includes(query)
     );
 
     // Update search results in parent (App or ProductCategories)
