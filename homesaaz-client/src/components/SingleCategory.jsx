@@ -11,6 +11,7 @@ const SingleCategory = () => {
     const urlCategoryId = parseInt(parts[parts.length - 1]);
     const [categoryProducts, setCategoryProducts] = useState([]);
     const [categoryName, setCategoryName] = useState('');
+    const [categoryDescription, setCategoryDescription] = useState('');
     const [categoryImages, setCategoryImages] = useState([]);
 
     useEffect(() => {
@@ -19,12 +20,24 @@ const SingleCategory = () => {
         // Find the category based on the category ID
         const category = categories.find(cat => cat.categoryId === urlCategoryId);
         setCategoryName(category ? category.category : 'Unknown Category');
+        setCategoryDescription(category ? category.description : ''); // Set category description
 
         // Filter products by categoryId
         const filteredProducts = products.filter(
             (product) => product.categoryId === urlCategoryId
         );
-        setCategoryProducts(filteredProducts);
+
+        // Group products by description
+        const groupedProducts = filteredProducts.reduce((groups, product) => {
+            const { description } = product;
+            if (!groups[description]) {
+                groups[description] = [];
+            }
+            groups[description].push(product);
+            return groups;
+        }, {});
+
+        setCategoryProducts(groupedProducts);
 
         // Collect all category images
         const images = [];
@@ -48,33 +61,39 @@ const SingleCategory = () => {
                         Products in <span className="text-coral-red">{categoryName}</span>
                     </h2>
                     <p className="lg:max-w-lg mt-2 font-montserrat text-slate-gray dark:text-gray-400 text-center">
-                        Explore our selection tailored just for you.
+                        {categoryDescription}
                     </p>
                 </div>
 
                 {/* Breadcrumbs */}
                 <Breadcrumbs categoryName={categoryName} /> {/* Pass categoryName to Breadcrumbs */}
 
-                <div className="mt-16 grid grid-cols-2 lg:grid-cols-4 md:grid-cols-3 gap-4">
-                    {categoryProducts.map((product) => (
-                        <SingleProductCard key={product.productId} {...product} />
+                <div className="mt-16">
+                    {Object.entries(categoryProducts).map(([description, products], index, array) => (
+                        <div
+                            key={description}
+                            className={`mb-12 ${products.length === 1 && array[index + 1] && array[index + 1][1].length === 1 ? 'flex items-start space-x-4' : ''}`}
+                        >
+                            {/* Render description header */}
+                            <h3 className="text-2xl font-palanquin font-semibold mb-6">{description}</h3>
+
+                            {/* Product Grid */}
+                            <div
+                                className={
+                                    products.length === 1 && array[index + 1] && array[index + 1][1].length === 1
+                                        ? 'grid grid-cols-1 sm:grid-cols-2 gap-4 flex-1'
+                                        : 'grid grid-cols-2 lg:grid-cols-4 md:grid-cols-3 gap-4'
+                                }
+                            >
+                                {products.map((product) => (
+                                    <SingleProductCard key={product.productId} {...product} />
+                                ))}
+                            </div>
+                        </div>
                     ))}
                 </div>
-            </div>
 
-            {/* Uncomment if you want to show similar products */}
-            {/*<div className="flex justify-center align-center mt-12 bg-pale-blue dark:bg-slate-700">*/}
-            {/*    <div className="m-12 mb-20 max-container max-sm:mt-12">*/}
-            {/*        <h2 className="text-2xl font-palanquin font-bold dark:text-slate-200">*/}
-            {/*            Similar Products You Might Enjoy*/}
-            {/*        </h2>*/}
-            {/*        <div className="mt-5 grid grid-cols-2 lg:grid-cols-4 md:grid-cols-3 gap-4">*/}
-            {/*            {categoryProducts.map((product) => (*/}
-            {/*                <CategoryCard key={product.productId} {...product} />*/}
-            {/*            ))}*/}
-            {/*        </div>*/}
-            {/*    </div>*/}
-            {/*</div>*/}
+            </div>
 
             {/* Image Gallery Section */}
             {categoryImages.length > 0 && (

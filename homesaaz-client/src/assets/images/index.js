@@ -146,9 +146,35 @@ import catOutdoorImage4 from './category/cat-outdoor-fabric/Image4.jpg';
 import catOutdoorImage5 from './category/cat-outdoor-fabric/Image5.jpg';
 import catOutdoorImage6 from './category/cat-outdoor-fabric/Image6.jpg';
 
+import aquasafeD2836 from './aquasafe-spc/d-2836.jpg';
+import aquasafeD2837 from './aquasafe-spc/d-2837.jpg';
+import aquasafeD2839 from './aquasafe-spc/d-2839.jpg';
+import aquasafeD2861 from './aquasafe-spc/d-2861.jpg';
+import aquasafeD2864 from './aquasafe-spc/d-2864.jpg';
+import aquasafeD2865 from './aquasafe-spc/d-2865.jpg';
+import aquasafeD2873 from './aquasafe-spc/d-2873.jpg';
+import aquasafeD2885 from './aquasafe-spc/d-2885.jpg';
+
+
+import avalon1 from './sofa-fabric/avalon/1.jpg';
+import avalon2 from './sofa-fabric/avalon/2A.jpg';
+import avalon3 from './sofa-fabric/avalon/3.jpg';
+import avalon4 from './sofa-fabric/avalon/4.jpg';
+import avalon5 from './sofa-fabric/avalon/5.jpg';
+
+import bitcoin1 from './sofa-fabric/bitcoin/1.jpg';
+import bitcoin2 from './sofa-fabric/bitcoin/2.jpg';
+import bitcoin3 from './sofa-fabric/bitcoin/4.jpg';
+
+
+
+
 
 
 export {
+  bitcoin1, bitcoin2, bitcoin3,
+  avalon1, avalon2, avalon3, avalon4, avalon5,
+  aquasafeD2836, aquasafeD2837, aquasafeD2839, aquasafeD2861, aquasafeD2864, aquasafeD2865, aquasafeD2873, aquasafeD2885,
   cloudyAlley, diana, dianaAlley, honeyComb, nigel, parity, ripple, river, softy, sprinkle, stones, stripe, twill, wavy,
 
   catOutdoorImage1, catOutdoorImage2, catOutdoorImage3, catOutdoorImage4, catOutdoorImage5, catOutdoorImage6,

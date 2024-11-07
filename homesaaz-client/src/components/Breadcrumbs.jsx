@@ -24,12 +24,12 @@ const Breadcrumbs = ({ categoryName }) => {
                 </li>
                 {parts.length > 1 && (
                     <>
-                        <li>
-                            <span className="mx-2">/</span>
-                        </li>
-                        <li>
-                            <Link to="/categories" className="text-coral-red hover:underline">Categories</Link>
-                        </li>
+                        {/*<li>*/}
+                        {/*    <span className="mx-2">/</span>*/}
+                        {/*</li>*/}
+                        {/*<li>*/}
+                        {/*    <Link to="/#categories" className="text-coral-red hover:underline">Categories</Link>*/}
+                        {/*</li>*/}
                         <li>
                             <span className="mx-2">/</span>
                         </li>

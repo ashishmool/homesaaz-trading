@@ -51,7 +51,7 @@ const Navbar = ({ handleClick, handleClick2, setSearchResults }) => {
                   <button onClick={handleClick2}>
                     <a
                         href={item.href}
-                        className="font-montserrat leading-normal text-lg text-slate-gray dark:text-slate-100 hoverUnderline dark:mix-blend-difference"
+                        className="font-montserrat leading-normal text-sm text-slate-gray dark:text-slate-100 hoverUnderline dark:mix-blend-difference"
                     >
                       {item.label}
                     </a>
@@ -59,6 +59,11 @@ const Navbar = ({ handleClick, handleClick2, setSearchResults }) => {
                 </li>
             ))}
           </ul>
+          {/* eCatalogue Button */}
+          <Link to="/catalogue" className="flex items-center text-coral-red font-semibold hover:underline">
+            <ArrowDownTrayIcon className="h-5 w-5 ml-2 mr-8" /> {/* Added space with `ml-2` */}
+          </Link>
+
           <div className="flex items-center justify-center gap-x-4">
             <div className="flex items-center justify-center sm:bg-transparent sm:p-2 rounded-3xl overflow-hidden sm:border dark:border-gray-500">
               <MagnifyingGlassIcon className="mr-3 h-6 w-6 transition duration-300 cursor-pointer text-slate-gray dark:text-coral-red" />
@@ -71,10 +76,7 @@ const Navbar = ({ handleClick, handleClick2, setSearchResults }) => {
               />
             </div>
             <ThemeSwitch handleClick={handleClick} />
-            {/* eCatalogue Button */}
-            <Link to="/catalogue" className="flex items-center text-coral-red font-semibold hover:underline">
-              Downloads <ArrowDownTrayIcon className="h-5 w-5 ml-2" /> {/* Added space with `ml-2` */}
-            </Link>
+
             <div className="lg:hidden dark:invert cursor-pointer" onClick={toggleShowMenu}>
               <Bars3Icon height={25} width={25} className="dark:text-coral-red" />
             </div>
