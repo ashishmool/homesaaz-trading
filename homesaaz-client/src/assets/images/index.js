@@ -166,12 +166,16 @@ import bitcoin1 from './sofa-fabric/bitcoin/1.jpg';
 import bitcoin2 from './sofa-fabric/bitcoin/2.jpg';
 import bitcoin3 from './sofa-fabric/bitcoin/4.jpg';
 
+import canosa1 from './sofa-fabric/canosa/4.jpg';
+import canosa2 from './sofa-fabric/canosa/5.jpg';
+
 
 
 
 
 
 export {
+  canosa1, canosa2,
   bitcoin1, bitcoin2, bitcoin3,
   avalon1, avalon2, avalon3, avalon4, avalon5,
   aquasafeD2836, aquasafeD2837, aquasafeD2839, aquasafeD2861, aquasafeD2864, aquasafeD2865, aquasafeD2873, aquasafeD2885,

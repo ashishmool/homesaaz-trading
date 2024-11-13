@@ -72,18 +72,14 @@ const SingleCategory = () => {
                     {Object.entries(categoryProducts).map(([description, products], index, array) => (
                         <div
                             key={description}
-                            className={`mb-12 ${products.length === 1 && array[index + 1] && array[index + 1][1].length === 1 ? 'flex items-start space-x-4' : ''}`}
+                            className={`mb-12 space-x-4`}
                         >
                             {/* Render description header */}
                             <h3 className="text-2xl font-palanquin font-semibold mb-6">{description}</h3>
 
                             {/* Product Grid */}
                             <div
-                                className={
-                                    products.length === 1 && array[index + 1] && array[index + 1][1].length === 1
-                                        ? 'grid grid-cols-1 sm:grid-cols-2 gap-4 flex-1'
-                                        : 'grid grid-cols-2 lg:grid-cols-4 md:grid-cols-3 gap-4'
-                                }
+                                className={'grid grid-cols-4 lg:grid-cols-4 md:grid-cols-3 gap-4'}
                             >
                                 {products.map((product) => (
                                     <SingleProductCard key={product.productId} {...product} />

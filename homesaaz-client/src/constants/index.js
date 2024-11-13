@@ -1,5 +1,6 @@
 import { facebook, instagram, shieldTick, support, truckFast, twitter, github } from '../assets/icons';
 import {
+  canosa1, canosa2,
   bitcoin1, bitcoin2, bitcoin3,
   avalon1, avalon2, avalon3, avalon4, avalon5,
   aquasafeD2836, aquasafeD2837, aquasafeD2839, aquasafeD2861, aquasafeD2864, aquasafeD2865, aquasafeD2873, aquasafeD2885,
@@ -80,7 +81,7 @@ import {
 export const navLinks = [
   { href: '/', label: 'Home' },
   { href: '/#categories', label: 'Range of Products' },
-  { href: '/#clients', label: 'Out Partners & Clients' },
+  { href: '/#clients', label: 'Our Partners & Clients' },
   { href: '/#contact-us', label: 'Contact' }
 ];
 
@@ -679,46 +680,7 @@ export const products = [
     categoryId: 104, // Category: Topper
     brand: springtekLogo,
   },
-  {
-    productId: 1020,
-    imgURL: towel,
-    name: 'Bath Towel',
-    description: 'Luxury',
-    dimensions: '30" x 60"',
-    color: 'White • Sand',
-    categoryId: 105, // Category: Towel
-    brand: tridentLogo,
-  },
-  {
-    productId: 1021,
-    imgURL: towel,
-    name: 'Hand Towel',
-    description: 'Luxury',
-    dimensions: '20" x 30"',
-    color: 'White • Sand',
-    categoryId: 105, // Category: Towel
-    brand: tridentLogo,
-  },
-  {
-    productId: 1022,
-    imgURL: towel,
-    name: 'Face Towel',
-    description: 'Luxury',
-    dimensions: '12" x 12"',
-    color: 'White • Sand',
-    categoryId: 105, // Category: Towel
-    brand: tridentLogo,
-  },
-  {
-    productId: 1023,
-    imgURL: towel,
-    name: 'Bath Mat',
-    description: 'Luxury',
-    dimensions: '30" x 40"',
-    color: 'White • Sand',
-    categoryId: 105, // Category: Towel
-    brand: tridentLogo,
-  },
+
   {
     productId: 1024,
     imgURL: tridentBathrobe,
@@ -1184,5 +1146,223 @@ export const products = [
     description: 'Bitcoin',
     categoryId: 112,
   },
+  {
+    productId: 1088,
+    imgURL: canosa1,
+    name: '11113',
+    description: 'Canosa',
+    categoryId: 112,
+  },
+  {
+    productId: 1089,
+    imgURL: canosa2,
+    name: '11114',
+    description: 'Canosa',
+    categoryId: 112,
+  },
+
+  // {
+  //   productId: 1020,
+  //   imgURL: towel,
+  //   name: 'Bath Towel',
+  //   description: 'Luxury',
+  //   dimensions: '30" x 60"',
+  //   color: 'White • Sand',
+  //   categoryId: 105, // Category: Towel
+  //   brand: tridentLogo,
+  // },
+  // {
+  //   productId: 1021,
+  //   imgURL: towel,
+  //   name: 'Hand Towel',
+  //   description: 'Luxury',
+  //   dimensions: '20" x 30"',
+  //   color: 'White • Sand',
+  //   categoryId: 105, // Category: Towel
+  //   brand: tridentLogo,
+  // },
+  // {
+  //   productId: 1022,
+  //   imgURL: towel,
+  //   name: 'Face Towel',
+  //   description: 'Luxury',
+  //   dimensions: '12" x 12"',
+  //   color: 'White • Sand',
+  //   categoryId: 105, // Category: Towel
+  //   brand: tridentLogo,
+  // },
+  // {
+  //   productId: 1023,
+  //   imgURL: towel,
+  //   name: 'Bath Mat',
+  //   description: 'Luxury',
+  //   dimensions: '30" x 40"',
+  //   color: 'White • Sand',
+  //   categoryId: 105, // Category: Towel
+  //   brand: tridentLogo,
+  // },
+
+  {
+    "productId": 2001,
+    "imgURL": towel,
+    "name": "Bath Towel (75 x 150 cm, 561 GSM)",
+    "description": "Gem (Standard)",
+    "dimensions": "30\" x 60\"",
+    "color": "White",
+    "categoryId": 105,
+    "brand": gemLogo
+  },
+  {
+    "productId": 2002,
+    "imgURL": towel,
+    "name": "Hand Towel (40 x 60 cm, 545 GSM)",
+    "description": "Gem (Standard)",
+    "dimensions": "16\" x 24\"",
+    "color": "White",
+    "categoryId": 105,
+    "brand": gemLogo
+  },
+  {
+    "productId": 2003,
+    "imgURL": towel,
+    "name": "Face Towel (30 x 30 cm, 603 GSM)",
+    "description": "Gem (Standard)",
+    "dimensions": "12\" x 12\"",
+    "color": "White",
+    "categoryId": 105,
+    "brand": gemLogo
+  },
+  {
+    "productId": 2004,
+    "imgURL": towel,
+    "name": "Floor Towel (50 x 80 cm, 816 GSM)",
+    "description": "Gem (Standard)",
+    "dimensions": "20\" x 32\"",
+    "color": "White",
+    "categoryId": 105,
+    "brand": gemLogo
+  },
+  {
+    "productId": 2005,
+    "imgURL": towel,
+    "name": "Bath Towel (75 x 150 cm, 515 GSM)",
+    "description": "Gem - Tulip",
+    "dimensions": "30\" x 60\"",
+    "color": "White",
+    "categoryId": 105,
+    "brand": gemLogo
+  },
+  {
+    "productId": 2006,
+    "imgURL": towel,
+    "name": "Hand Towel (40 x 65 cm, 555 GSM)",
+    "description": "Gem - Tulip",
+    "dimensions": "16\" x 26\"",
+    "color": "White",
+    "categoryId": 105,
+    "brand": gemLogo
+  },
+  {
+    "productId": 2007,
+    "imgURL": towel,
+    "name": "Face Towel (30 x 30 cm, 535 GSM)",
+    "description": "Gem - Tulip",
+    "dimensions": "12\" x 12\"",
+    "color": "White",
+    "categoryId": 105,
+    "brand": gemLogo
+  },
+  {
+    "productId": 2008,
+    "imgURL": towel,
+    "name": "Bath Mat (50 x 75 cm, 785 GSM)",
+    "description": "Gem - Tulip",
+    "dimensions": "20\" x 30\"",
+    "color": "White",
+    "categoryId": 105,
+    "brand": gemLogo
+  },
+  {
+    "productId": 3001,
+    "imgURL": towel,
+    "name": "Bath Towel (76 x 152 cm, 638 GSM)",
+    "description": "Trident - Luxury",
+    "dimensions": "30\" x 60\"",
+    "color": "White",
+    "categoryId": 105,
+    "brand": tridentLogo
+  },
+  {
+    "productId": 3002,
+    "imgURL": towel,
+    "name": "Bath Towel (75 x 150 cm, 557 GSM)",
+    "description": "Trident - Premium",
+    "dimensions": "30\" x 60\"",
+    "color": "White • Sand",
+    "categoryId": 105,
+    "brand": tridentLogo
+  },
+  {
+    "productId": 3003,
+    "imgURL": towel,
+    "name": "Bath Towel (75 x 150 cm, 450 GSM)",
+    "description": "Trident - Essential",
+    "dimensions": "30\" x 60\"",
+    "color": "White",
+    "categoryId": 105,
+    "brand": tridentLogo
+  },
+  {
+    "productId": 3004,
+    "imgURL": towel,
+    "name": "Face Towel (30.5 x 30.5 cm, 574 GSM)",
+    "description": "Trident - Premium",
+    "dimensions": "12\" x 12\"",
+    "color": "White • Sand",
+    "categoryId": 105,
+    "brand": tridentLogo
+  },
+  {
+    "productId": 3005,
+    "imgURL": towel,
+    "name": "Hand Towel (50 x 80 cm, 625 GSM)",
+    "description": "Trident - Luxury",
+    "dimensions": "20\" x 30\"",
+    "color": "White",
+    "categoryId": 105,
+    "brand": tridentLogo
+  },
+  {
+    "productId": 3006,
+    "imgURL": towel,
+    "name": "Hand Towel (41 x 64 cm, 564 GSM)",
+    "description": "Trident - Premium",
+    "dimensions": "16\" x 25\"",
+    "color": "White • Sand",
+    "categoryId": 105,
+    "brand": tridentLogo
+  },
+  {
+    "productId": 3007,
+    "imgURL": towel,
+    "name": "Bath Mat (53.34 x 76.2 cm, 812 GSM)",
+    "description": "Trident - Premium",
+    "dimensions": "21\" x 30\"",
+    "color": "White • Sand",
+    "categoryId": 105,
+    "brand": tridentLogo
+  },
+  {
+    "productId": 3008,
+    "imgURL": towel,
+    "name": "Pool Towel (92 x 183 cm, 550 GSM)",
+    "description": "Pool Towel",
+    "dimensions": "36\" x 72\"",
+    "color": "Yellow/White • Sand/White",
+    "categoryId": 105,
+    "brand": tridentLogo
+  }
+
+
 
 ];
