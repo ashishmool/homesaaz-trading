@@ -24,6 +24,25 @@ import fiberPillow from './products/fiber-pillow-darling.jpg';
 import towel from './products/towel.jpg';
 import tridentBathrobe from './category-bathrobe.jpg';
 
+import garwareFilm from './category-garware.jpg';
+import garwareTowel from './Trident-towel.jpg';
+import garwareWhiteout from './White-out.png';
+import garwareIce from './Ice-Garware.jpg';
+import garwareWritable from './writable-board.png';
+import garwareReflective from './reflective-film.png';
+import garwareReflewctive1 from './Reflective-01.png';
+import garwareReflewctive2 from './Reflective-02.jpg';
+import garwareRejection from './ir-rejection-film.jpg';
+import garwareReflective2 from './Grey-Reflective.jpg';
+import garwareIce2 from './Ice-Garware.jpg';
+import garwareSHR from './SHR-Grey-70.jpg';
+import garware4Mil from './4 MIL-SAFETY-FILM.jpg';
+import garwareGrey from './Grey-Reflective.jpg';
+import garwareSilver from './Silver-Reflective.jpg';
+import garwareCharcol from './Charcoal.jpg';
+import garwareMatte from './MATTE-WHITE.jpg';
+
+
 import categoryBathrobe from './category-robe.jpg';
 import categoryPillow from './category-pillows.jpg';
 import categoryCarpet from './category-carpet.jpg';
@@ -171,10 +190,24 @@ import canosa2 from './sofa-fabric/canosa/5.jpg';
 
 
 
-
-
-
 export {
+  garwareFilm,
+  garwareReflewctive1,
+  garwareTowel,
+  garwareWhiteout,
+  garwareWritable,
+  garwareIce,
+  garwareReflewctive2,
+  garwareReflective,
+  garwareRejection,
+  garwareIce2,
+  garwareReflective2,
+  garware4Mil,
+  garwareCharcol,
+  garwareGrey,
+  garwareSilver,
+  garwareSHR,
+    garwareMatte,
   canosa1, canosa2,
   bitcoin1, bitcoin2, bitcoin3,
   avalon1, avalon2, avalon3, avalon4, avalon5,
