@@ -1,6 +1,3 @@
-import bigShoe1 from './big-shoe1.png';
-import bigShoe2 from './big-shoe2.png';
-import bigShoe3 from './big-shoe3.png';
 
 import hotelRoom1 from './hotel-room-1.jpg';
 import hotelRoom2 from './hotel-room-2.jpg';
@@ -74,18 +71,9 @@ import footerLogo from './footer-logo.svg';
 import headerLogo from './header-logo.svg';
 import homesaazLogo from './homesaazLogo.png';
 
-import offer from './offer.svg';
 
-import shoe4 from './shoe4.svg';
-import shoe5 from './shoe5.svg';
-import shoe6 from './shoe6.svg';
-import shoe7 from './shoe7.svg';
-import shoe8 from './shoe8.svg';
 
 import thumbnailBackground from './thumbnail-background.svg';
-import thumbnailShoe1 from './thumbnail-shoe1.svg';
-import thumbnailShoe2 from './thumbnail-shoe2.svg';
-import thumbnailShoe3 from './thumbnail-shoe3.svg';
 
 
 import client1 from './clients/dusit-black.svg';
@@ -102,6 +90,8 @@ import gemLogo from '../logos/gem-logo.svg';
 import springtekLogo from '../logos/springtek-logo.svg';
 import darlingLogo from '../logos/darling-logo.svg';
 import tridentLogo from '../logos/trident-logo.svg';
+import prestigeLogo from '../logos/prestige-logo.svg';
+import garwareLogo from '../logos/garware-logo.svg';
 
 import ad1 from './ad1.jpg';
 import ad2 from './ad2.jpg';
@@ -191,6 +181,8 @@ import canosa2 from './sofa-fabric/canosa/5.jpg';
 
 
 export {
+  garwareLogo,
+  prestigeLogo,
   garwareFilm,
   garwareReflewctive1,
   garwareTowel,
@@ -250,10 +242,8 @@ export {
   categoryShowerCurtain,
   categorySpc,
   categoryTowel,
+  thumbnailBackground,
 
-  bigShoe1,
-  bigShoe2,
-  bigShoe3,
   hotelRoom1,
   hotelRoom2,
   customer1,
@@ -262,15 +252,6 @@ export {
   customer4,
   footerLogo,
   headerLogo,
-  homesaazLogo,
-  offer,
-  shoe4,
-  shoe5,
-  shoe6,
-  shoe7,
-  shoe8,
-  thumbnailBackground,
-  thumbnailShoe1,
-  thumbnailShoe2,
-  thumbnailShoe3
+  homesaazLogo
+  
 };

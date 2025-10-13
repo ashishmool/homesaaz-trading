@@ -74,20 +74,10 @@ import {
   categorySpc,
   categoryTowel,
   springtekRollaway1,
-  bigShoe1,
-  bigShoe2,
-  bigShoe3,
   customer1,
   customer2,
   customer3,
   customer4,
-  shoe4,
-  shoe5,
-  shoe6,
-  shoe7,
-  thumbnailShoe1,
-  thumbnailShoe2,
-  thumbnailShoe3,
   comfyPillow,
   mattressProtector,
   mattressTopper,
@@ -149,12 +139,15 @@ import {
   garwareReflewctive2,
   garwareWhiteout,
   garwareIce, garwareIce2, garwareWritable, garwareMatte, garware4Mil,
+  prestigeLogo, garwareLogo,
+
 } from '../assets/images';
 
 
 export const navLinks = [
   { href: '/', label: 'Home' },
-  { href: '/#categories', label: 'Range of Products' },
+  { href: '/products', label: 'All Products' },
+  { href: '/#categories', label: 'Categories' },
   { href: '/#clients', label: 'Our Partners & Clients' },
   { href: '/#contact-us', label: 'Contact' }
 ];
@@ -196,20 +189,7 @@ export const clients = [
     website: 'Client 7',
   },
 ];
-export const shoes = [
-  {
-    thumbnail: thumbnailShoe1,
-    bigShoe: bigShoe1
-  },
-  {
-    thumbnail: thumbnailShoe2,
-    bigShoe: bigShoe2
-  },
-  {
-    thumbnail: thumbnailShoe3,
-    bigShoe: bigShoe3
-  }
-];
+
 
 export const statistics = [
   { value: '1k+', label: 'Brands' },
@@ -569,6 +549,91 @@ export const cataloguesData = [
 
 ];
 
+// Enhanced brands data
+export const brands = [
+  {
+    brandId: 1,
+    name: 'King Koil',
+    logo: kkLogo,
+    description: 'Premium bedding solutions'
+  },
+  {
+    brandId: 2,
+    name: 'Gem',
+    logo: gemLogo,
+    description: 'Quality home textiles'
+  },
+  {
+    brandId: 3,
+    name: 'Springtek',
+    logo: springtekLogo,
+    description: 'Durable furniture solutions'
+  },
+  {
+    brandId: 4,
+    name: 'Darling',
+    logo: darlingLogo,
+    description: 'Comfort products'
+  },
+  {
+    brandId: 5,
+    name: 'Trident',
+    logo: tridentLogo,
+    description: 'Luxury bath products'
+  },
+  {
+    brandId: 6,
+    name: 'Prestige',
+    logo: prestigeLogo,
+    description: 'Anti-skid solutions'
+  },
+  {
+    brandId: 7,
+    name: 'Garware',
+    logo: garwareLogo,
+    description: 'Hi-tech films'
+  }
+];
+
+// Enhanced product categories with subcategories
+export const enhancedCategories = [
+  {
+    categoryId: 101,
+    imgURL: categoryPillow,
+    description: '17" x 27" •  20" x 30" • Others',
+    category: 'Pillows',
+    subcategories: [
+      { id: 1011, name: 'Fiber Pillow', description: 'Standard fiber-filled pillows' },
+      { id: 1012, name: 'Memory Foam Pillow', description: 'Memory foam comfort pillows' },
+      { id: 1013, name: 'Micro-Fiber Pillow', description: 'Premium micro-fiber pillows' },
+      { id: 1014, name: 'Feather Pillow', description: 'Natural feather pillows' },
+      { id: 1015, name: 'Nanogel Pillow', description: 'Advanced cooling technology' }
+    ]
+  },
+  {
+    categoryId: 109,
+    imgURL: categoryLaminate,
+    description: 'Custom',
+    category: 'Laminate Flooring',
+    subcategories: [
+      { id: 1091, name: 'Grade AC4', description: 'Heavy domestic use' },
+      { id: 1092, name: 'Grade AC5', description: 'Commercial use' },
+      { id: 1093, name: 'Herringbone', description: 'Herringbone pattern' }
+    ]
+  },
+  {
+    categoryId: 112,
+    imgURL: categorySofaFabric,
+    description: 'Custom',
+    category: 'Sofa Fabric',
+    subcategories: [
+      { id: 1121, name: 'Avalon Collection', description: 'Premium sofa fabrics' },
+      { id: 1122, name: 'Bitcoin Collection', description: 'Modern design patterns' },
+      { id: 1123, name: 'Canosa Collection', description: 'Classic fabric designs' }
+    ]
+  }
+];
+
 export const products = [
   {
     productId: 1001,
@@ -578,7 +643,12 @@ export const products = [
     dimensions: '17" x 27" • 19" x 29"',
     color: 'White (Standard)',
     categoryId: 101, // Category: Pillows
+    subcategoryId: 1011, // Fiber Pillow
+    brandId: 1, // King Koil
     brand: kkLogo,
+    tags: ['pillow', 'fiber', 'standard', 'white'],
+    price: null,
+    inStock: true,
   },
   {
     productId: 1002,
@@ -588,7 +658,12 @@ export const products = [
     dimensions: '16" x 25"',
     color: 'White (Standard)',
     categoryId: 101, // Category: Pillows
+    subcategoryId: 1012, // Memory Foam Pillow
+    brandId: 1, // King Koil
     brand: kkLogo,
+    tags: ['pillow', 'memory foam', 'gravity', 'white'],
+    price: null,
+    inStock: true,
   },
 
   {
@@ -599,7 +674,12 @@ export const products = [
     dimensions: '16" x 25"',
     color: 'White (Standard)',
     categoryId: 101, // Category: Pillows
+    subcategoryId: 1014, // Feather Pillow
+    brandId: 1, // King Koil
     brand: kkLogo,
+    tags: ['pillow', 'feather', 'ecstacy', 'white'],
+    price: null,
+    inStock: true,
   },
 
   {
@@ -610,7 +690,12 @@ export const products = [
     dimensions: '17" x 27" • 19" x 29"',
     color: 'White (Standard)',
     categoryId: 101, // Category: Pillows
+    subcategoryId: 1013, // Micro-Fiber Pillow
+    brandId: 2, // Gem
     brand: gemLogo,
+    tags: ['pillow', 'micro-fiber', 'jasmine', 'white'],
+    price: null,
+    inStock: true,
   },
   {
     productId: 1005,
@@ -670,7 +755,12 @@ export const products = [
     dimensions: '17" x 26" • 19" x 29"',
     color: 'White (Standard)',
     categoryId: 101, // Category: Pillows
+    subcategoryId: 1015, // Nanogel Pillow
+    brandId: 4, // Darling
     brand: darlingLogo,
+    tags: ['pillow', 'nanogel', 'cooling', 'white'],
+    price: null,
+    inStock: true,
   },
   {
     productId: 1011,
@@ -1176,6 +1266,12 @@ export const products = [
     name: '111',
     description: 'Avalon',
     categoryId: 112,
+    subcategoryId: 1121, // Avalon Collection
+    brandId: null,
+    brand: null,
+    tags: ['sofa fabric', 'avalon', 'premium', 'collection'],
+    price: null,
+    inStock: true,
   },
   {
     productId: 1081,
@@ -1183,6 +1279,12 @@ export const products = [
     name: '112',
     description: 'Avalon',
     categoryId: 112,
+    subcategoryId: 1121, // Avalon Collection
+    brandId: null,
+    brand: null,
+    tags: ['sofa fabric', 'avalon', 'premium', 'collection'],
+    price: null,
+    inStock: true,
   },
   {
     productId: 1082,
@@ -1211,6 +1313,12 @@ export const products = [
     name: '1111',
     description: 'Bitcoin',
     categoryId: 112,
+    subcategoryId: 1122, // Bitcoin Collection
+    brandId: null,
+    brand: null,
+    tags: ['sofa fabric', 'bitcoin', 'modern', 'collection'],
+    price: null,
+    inStock: true,
   },
   {
     productId: 1086,
@@ -1232,6 +1340,12 @@ export const products = [
     name: '11113',
     description: 'Canosa',
     categoryId: 112,
+    subcategoryId: 1123, // Canosa Collection
+    brandId: null,
+    brand: null,
+    tags: ['sofa fabric', 'canosa', 'classic', 'collection'],
+    price: null,
+    inStock: true,
   },
   {
     productId: 1089,
@@ -1571,8 +1685,68 @@ export const products = [
     "color": "Yellow/White • Sand/White",
     "categoryId": 105,
     "brand": tridentLogo
+  },
+
+  // Laminate Flooring Products with Grades
+  {
+    productId: 5001,
+    imgURL: categoryLaminate,
+    name: 'Classic Oak AC4',
+    description: 'Grade AC4 Laminate',
+    dimensions: 'Custom',
+    color: 'Oak Brown',
+    categoryId: 109, // Laminate Flooring
+    subcategoryId: 1091, // Grade AC4
+    brandId: null,
+    brand: null,
+    tags: ['laminate', 'flooring', 'ac4', 'oak', 'heavy domestic'],
+    price: null,
+    inStock: true,
+  },
+  {
+    productId: 5002,
+    imgURL: categoryLaminate,
+    name: 'Premium Walnut AC4',
+    description: 'Grade AC4 Laminate',
+    dimensions: 'Custom',
+    color: 'Walnut',
+    categoryId: 109, // Laminate Flooring
+    subcategoryId: 1091, // Grade AC4
+    brandId: null,
+    brand: null,
+    tags: ['laminate', 'flooring', 'ac4', 'walnut', 'heavy domestic'],
+    price: null,
+    inStock: true,
+  },
+  {
+    productId: 5003,
+    imgURL: categoryLaminate,
+    name: 'Commercial Grey AC5',
+    description: 'Grade AC5 Laminate',
+    dimensions: 'Custom',
+    color: 'Grey',
+    categoryId: 109, // Laminate Flooring
+    subcategoryId: 1092, // Grade AC5
+    brandId: null,
+    brand: null,
+    tags: ['laminate', 'flooring', 'ac5', 'grey', 'commercial'],
+    price: null,
+    inStock: true,
+  },
+  {
+    productId: 5004,
+    imgURL: categoryLaminate,
+    name: 'Herringbone Pattern',
+    description: 'Herringbone Laminate',
+    dimensions: 'Custom',
+    color: 'Multi-tone',
+    categoryId: 109, // Laminate Flooring
+    subcategoryId: 1093, // Herringbone
+    brandId: null,
+    brand: null,
+    tags: ['laminate', 'flooring', 'herringbone', 'pattern', 'multi-tone'],
+    price: null,
+    inStock: true,
   }
-
-
 
 ];

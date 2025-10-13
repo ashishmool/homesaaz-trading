@@ -1,6 +1,6 @@
 /** @format */
 
-import {hotelRoom2, offer} from '../assets/images';
+import {hotelRoom2} from '../assets/images';
 import Button from '../components/Button';
 import { arrowRight } from '../assets/icons';
 

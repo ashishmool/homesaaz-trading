@@ -4,39 +4,18 @@ import { headerLogo, homesaazLogo } from '../assets/images';
 import { navLinks, categories } from '../constants';
 import ThemeSwitch from './ThemeSwitch';
 import { useMenuUpdateContext } from '../contexts/MenuContext';
-import { MagnifyingGlassIcon, Bars3Icon, ArrowDownTrayIcon } from '@heroicons/react/20/solid';
+import { Bars3Icon, ArrowDownTrayIcon } from '@heroicons/react/20/solid';
 import useScroll from '../../helpers/useScroll';
+import SearchBar from './SearchBar';
 
 const Navbar = ({ handleClick, handleClick2, setSearchResults }) => {
   const toggleShowMenu = useMenuUpdateContext();
   const [isScrollingUp, isScrollingDown] = useScroll();
-  const [searchQuery, setSearchQuery] = useState('');
 
   // Use useEffect to log products when the component mounts
   useEffect(() => {
     console.log("Product List test::: ", categories);
   }, []); // Runs only once when the component mounts
-
-  // Handle search query changes
-  const handleSearchChange = (e) => {
-    const query = e.target.value.toLowerCase();
-    setSearchQuery(query);
-
-    // Filter products based on search query
-    const filteredProducts = categories.filter((product) =>
-        product.category.toLowerCase().includes(query) ||
-        product.description.toLowerCase().includes(query)
-    );
-
-    // Update search results in parent (App or ProductCategories)
-    setSearchResults(filteredProducts);
-
-    // Scroll to the #categories section
-    const productsSection = document.getElementById('categories');
-    if (productsSection) {
-      productsSection.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
 
   return (
       <header className={`dark:bg-[#1C1C1C] bg-white padding-x py-6 lg:py-6 z-10 w-full shadow-2xl fixed top-0 left-0 right-0 transition-transform duration-700`}>
@@ -51,7 +30,7 @@ const Navbar = ({ handleClick, handleClick2, setSearchResults }) => {
                   <button onClick={handleClick2}>
                     <a
                         href={item.href}
-                        className="font-montserrat leading-normal text-sm text-slate-gray dark:text-slate-100 hoverUnderline dark:mix-blend-difference"
+                        className="font-montserrat leading-normal text-md text-slate-gray dark:text-slate-100 hoverUnderline dark:mix-blend-difference"
                     >
                       {item.label}
                     </a>
@@ -65,16 +44,9 @@ const Navbar = ({ handleClick, handleClick2, setSearchResults }) => {
           </Link>
 
           <div className="flex items-center justify-center gap-x-4">
-            <div className="flex items-center justify-center sm:bg-transparent sm:p-2 rounded-3xl overflow-hidden sm:border dark:border-gray-500">
-              <MagnifyingGlassIcon className="mr-3 h-6 w-6 transition duration-300 cursor-pointer text-slate-gray dark:text-coral-red" />
-              <input
-                  placeholder="Search"
-                  type="text"
-                  className="bg-transparent hidden sm:block text-slate-gray outline-0 focus:outline-0 placeholder:font-semibold dark:placeholder-slate-400"
-                  value={searchQuery}
-                  onChange={handleSearchChange}
-              />
-            </div>
+            {/* <div className="hidden lg:block w-80">
+              <SearchBar showFilterToggle={false} />
+            </div> */}
             <ThemeSwitch handleClick={handleClick} />
 
             <div className="lg:hidden dark:invert cursor-pointer" onClick={toggleShowMenu}>

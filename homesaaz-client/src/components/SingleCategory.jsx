@@ -3,16 +3,20 @@ import SingleProductCard from './SingleProductCard.jsx';
 import { useLocation } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 import Breadcrumbs from './Breadcrumbs.jsx'; // Import the Breadcrumbs component
+import ProductGrid from './ProductGrid.jsx';
+import { useSearchContext } from '../contexts/SearchContext';
 
 const SingleCategory = () => {
     const currentURL = useLocation();
     const urlString = currentURL.pathname;
     const parts = urlString.split('/');
     const urlCategoryId = parseInt(parts[parts.length - 1]);
-    const [categoryProducts, setCategoryProducts] = useState([]);
     const [categoryName, setCategoryName] = useState('');
     const [categoryDescription, setCategoryDescription] = useState('');
     const [categoryImages, setCategoryImages] = useState([]);
+    
+    // Use search context for filtering
+    const { setSelectedCategory, filteredProducts } = useSearchContext();
 
     useEffect(() => {
         window.scrollTo(0, 0); // Scroll to top
@@ -22,22 +26,8 @@ const SingleCategory = () => {
         setCategoryName(category ? category.category : 'Unknown Category');
         setCategoryDescription(category ? category.description : ''); // Set category description
 
-        // Filter products by categoryId
-        const filteredProducts = products.filter(
-            (product) => product.categoryId === urlCategoryId
-        );
-
-        // Group products by description
-        const groupedProducts = filteredProducts.reduce((groups, product) => {
-            const { description } = product;
-            if (!groups[description]) {
-                groups[description] = [];
-            }
-            groups[description].push(product);
-            return groups;
-        }, {});
-
-        setCategoryProducts(groupedProducts);
+        // Set the selected category in search context
+        setSelectedCategory(urlCategoryId);
 
         // Collect all category images
         const images = [];
@@ -50,7 +40,7 @@ const SingleCategory = () => {
             }
         }
         setCategoryImages(images);
-    }, [urlCategoryId]);
+    }, [urlCategoryId, setSelectedCategory]);
 
     return (
         <section className="padding">
@@ -68,25 +58,14 @@ const SingleCategory = () => {
                 {/* Breadcrumbs */}
                 <Breadcrumbs categoryName={categoryName} /> {/* Pass categoryName to Breadcrumbs */}
 
-                <div className="mt-16">
-                    {Object.entries(categoryProducts).map(([description, products], index, array) => (
-                        <div
-                            key={description}
-                            className={`mb-12 space-x-4`}
-                        >
-                            {/* Render description header */}
-                            <h3 className="text-2xl font-palanquin font-semibold mb-6">{description}</h3>
-
-                            {/* Product Grid */}
-                            <div
-                                className={'grid grid-cols-4 lg:grid-cols-4 md:grid-cols-3 gap-4'}
-                            >
-                                {products.map((product) => (
-                                    <SingleProductCard key={product.productId} {...product} />
-                                ))}
-                            </div>
-                        </div>
-                    ))}
+                {/* Enhanced Product Grid with Search and Filtering */}
+                <div className="mt-8">
+                    <ProductGrid 
+                        showFilters={true}
+                        showSortOptions={true}
+                        showViewToggle={true}
+                        itemsPerPage={12}
+                    />
                 </div>
 
             </div>

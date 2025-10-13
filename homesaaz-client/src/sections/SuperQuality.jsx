@@ -1,4 +1,4 @@
-import {shoe8, springtekRollaway1} from '../assets/images';
+import {springtekRollaway1} from '../assets/images';
 import Button from '../components/Button';
 
 const SuperQuality = () => {

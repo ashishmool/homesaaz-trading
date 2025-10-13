@@ -25,6 +25,8 @@ import PopUp from "./sections/PopUp.jsx";
 import Contact from "./sections/Contact.jsx";
 import Catalogue from "./sections/Catalogue.jsx";
 import SingleProduct from "./components/SingleProduct.jsx";
+import { SearchProvider } from './contexts/SearchContext';
+import AllProducts from './sections/AllProducts';
 
 const App = () => {
   const [showCart, setShowCart] = useState(false);
@@ -41,47 +43,48 @@ const App = () => {
   return (
       <>
         <SnackbarProvider autoHideDuration={1500} />
-        <Router>
-          <main className={'scroll-smooth z-40 h-fit overflow-hidden relative'}>
-            <div>
-              <Navbar setSearchResults={setSearchResults} />
-              {/* Keep this instance if you want ProductCategories before Hero */}
-            </div>
-            <Routes>
-              <Route
-                  path={'/'}
-                  element={
-                    <>
-                      <Menu />
-                      {showCart ? (
-                          <Cart />
-                      ) : (
-                          <section>
-                            <div className={`padding-x py-6 lg:py-8 z-10 w-full`} />{' '}
-                            {/*<PopUp />*/}
-                            <Hero />
-                            <ProductCategories searchResults={searchResults} />
-                            <ScrollToTopButton />
-                            <Clients />
-                            <Contact />
-                            <Services />
-                          </section>
-                      )}
-                    </>
-                  }
-              />
-              <Route path={'/single_category/:id'} element={<SingleCategory />} />
-              <Route path={'/categories'} element={<ProductCategories />} />
-              <Route path={'/product/:productId'} element={<SingleProduct />} /> {/* Added route */}
-              <Route path={'/login'} element={<Signin />} />
-              <Route path={'/register'} element={<Signup />} />
-              {/*<Route path={'/products'} element={<CategoriesPage />} />*/}
-              <Route path="/catalogue" element={<Catalogue />} />
-            </Routes>
-            <Footer />
-          </main>
-        </Router>
-
+        <SearchProvider>
+          <Router>
+            <main className={'scroll-smooth z-40 h-fit overflow-hidden relative'}>
+              <div>
+                <Navbar setSearchResults={setSearchResults} />
+                {/* Keep this instance if you want ProductCategories before Hero */}
+              </div>
+              <Routes>
+                <Route
+                    path={'/'}
+                    element={
+                      <>
+                        <Menu />
+                        {showCart ? (
+                            <Cart />
+                        ) : (
+                            <section>
+                              <div className={`padding-x py-6 lg:py-8 z-10 w-full`} />{' '}
+                              {/* <PopUp /> */}
+                              <Hero />
+                              <ProductCategories searchResults={searchResults} />
+                              <ScrollToTopButton />
+                              <Clients />
+                              <Contact />
+                              <Services />
+                            </section>
+                        )}
+                      </>
+                    }
+                />
+                <Route path={'/single_category/:id'} element={<SingleCategory />} />
+                <Route path={'/categories'} element={<ProductCategories />} />
+                <Route path={'/products'} element={<AllProducts />} />
+                <Route path={'/product/:productId'} element={<SingleProduct />} /> {/* Added route */}
+                <Route path={'/login'} element={<Signin />} />
+                <Route path={'/register'} element={<Signup />} />
+                <Route path="/catalogue" element={<Catalogue />} />
+              </Routes>
+              <Footer />
+            </main>
+          </Router>
+        </SearchProvider>
       </>
   );
 };

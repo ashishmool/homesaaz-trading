@@ -2,7 +2,7 @@
 
 import Button from '../components/Button';
 import { arrowRight } from '../assets/icons';
-import { shoes, statistics } from '../constants';
+import { statistics } from '../constants';
 import { hotelRoom1 } from '../assets/images';
 import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
