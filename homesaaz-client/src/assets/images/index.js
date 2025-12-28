@@ -184,12 +184,17 @@ import canosa2 from './products/sofa-fabric/canosa/5.jpg';
 
 import restazure from './products/kingkoil-Hospitality/Mattress.jpeg';
 import restazure2 from './products/kingkoil-Hospitality/Rest-Azure.jpeg';
+import eurosoft from './products/kingkoil-Hospitality/Eurosoft.jpeg';
+import maharajagrand from './products/kingkoil-Hospitality/Maharaja-Grand.jpeg';
+import romanluxury from './products/kingkoil-Hospitality/Roman-Luxury.jpeg';
 
 
 
 export {
-  restazure,
-    restazure2,
+  restazure,restazure2,
+  eurosoft,
+  maharajagrand,
+  romanluxury,
   garwareLogo,
   prestigeLogo,
   garwareFilm,
