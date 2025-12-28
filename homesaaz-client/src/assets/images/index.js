@@ -8,6 +8,9 @@ import comfyPillow from './products/pillows/comfy-pillow.png';
 import ecstacyPillow from './products/pillows/feather-pillow.png';
 import gravityPillow from './products/pillows/gravity-pillow.png';
 import mattressProtector from './products/mattress-protectors/kingkoil-protector.png';
+import mattressProtectorImg from './products/mattress-protectors/mattress-protector.png';
+import terryProtector from './products/mattress-protectors/terry.jpg';
+import terryProtector1 from './products/mattress-protectors/terry-protector-1.jpg';
 import springtekEndurance from './products/pillows/springtek-endurance.jpg';
 import darlingMicrogel from './products/pillows/darling-nanogel.png';
 import gemSprinkle from './products/pillows/gem-sprinkle.png';
@@ -19,6 +22,11 @@ import memoryPillow from './products/pillows/memory-pillow.png';
 import fiberPillow from './products/pillows/fiber-pillow-darling.jpg';
 import towel from './products/towels/towel.jpg';
 import tridentBathrobe from './products/bath-robe/bathrobe-4.jpg';
+import bathrobe3 from './products/bath-robe/bathrobe-3.jpg';
+import bathrobe4 from './products/bath-robe/bathrobe-4.jpg';
+// Uncomment these when bathrobe-5.jpg and bathrobe-6.jpg files are added:
+// import bathrobe5 from './products/bath-robe/bathrobe-5.jpg';
+// import bathrobe6 from './products/bath-robe/bathrobe-6.jpg';
 
 import garwareFilm from './products/garware-films/category-garware.jpg';
 import garwareTowel from './products/towels/Trident-towel.jpg';
@@ -40,6 +48,7 @@ import garwareMatte from './products/garware-films/MATTE-WHITE.jpg';
 
 
 import categoryBathrobe from './products/bath-robe/category-robe.jpg';
+import categoryBathrobe2 from './products/bath-robe/category-bathrobe.jpg';
 import categoryPillow from './products/pillows/category-pillows.jpg';
 import categoryCarpet from './products/carpets/category-carpet.jpg';
 import categoryChairTableCover from './products/chair-table-covers/category-chair-table-cover.jpg';
@@ -173,9 +182,14 @@ import bitcoin3 from './products/sofa-fabric/bitcoin/4.jpg';
 import canosa1 from './products/sofa-fabric/canosa/4.jpg';
 import canosa2 from './products/sofa-fabric/canosa/5.jpg';
 
+import restazure from './products/kingkoil-Hospitality/Mattress.jpeg';
+import restazure2 from './products/kingkoil-Hospitality/Rest-Azure.jpeg';
+
 
 
 export {
+  restazure,
+    restazure2,
   garwareLogo,
   prestigeLogo,
   garwareFilm,
@@ -215,13 +229,20 @@ export {
   client1,client2, client3, client4,client5, client6, client7,
   kkLogo, coirtuffLogo, gemLogo, springtekLogo, darlingLogo, tridentLogo,greenpanelLogo,
   // ad1, ad2, 
-  tridentBathrobe, towel,
+  tridentBathrobe, bathrobe3, bathrobe4, 
+  // Uncomment these when bathrobe-5.jpg and bathrobe-6.jpg files are added:
+  // bathrobe5, bathrobe6, 
+  towel,
   mattressTopper,
   comfyPillow,
   mattressProtector,
+  mattressProtectorImg,
+  terryProtector,
+  terryProtector1,
   springtekRollaway1,
 
   categoryBathrobe,
+  categoryBathrobe2,
   categoryCarpet,
   categoryChairTableCover,
   categoryCurtain,

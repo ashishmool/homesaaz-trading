@@ -13,8 +13,20 @@ const SingleProduct = () => {
 
   const [selectedVariantId, setSelectedVariantId] = useState(() => family?.variants?.[0]?.variantId);
   const selectedVariant = family?.variants?.find((variant) => variant.variantId === selectedVariantId) || family?.variants?.[0];
+  const [selectedGalleryImage, setSelectedGalleryImage] = useState(() => {
+    const variant = family?.variants?.[0];
+    return variant?.gallery?.[0] || variant?.imgURL || null;
+  });
 
   const category = family ? categories.find((c) => c.categoryId === family.categoryId) : null;
+
+  // Update selected gallery image when variant changes
+  useEffect(() => {
+    if (selectedVariant) {
+      const firstGalleryImage = selectedVariant.gallery?.[0] || selectedVariant.imgURL;
+      setSelectedGalleryImage(firstGalleryImage);
+    }
+  }, [selectedVariantId, selectedVariant]);
 
   // Scroll to top when component mounts or product changes
   useEffect(() => {
@@ -51,9 +63,9 @@ const SingleProduct = () => {
           {/* Gallery */}
           <div className="bg-white dark:bg-slate-800 rounded-xl shadow-lg p-4">
             <div className="aspect-square overflow-hidden rounded-lg border border-gray-100 dark:border-gray-700">
-              {selectedVariant?.imgURL ? (
+              {selectedGalleryImage ? (
                 <img
-                  src={selectedVariant.imgURL}
+                  src={selectedGalleryImage}
                   alt={`${family.familyName} - ${selectedVariant.variantCode}`}
                   className="w-full h-full object-cover"
                 />
@@ -62,13 +74,13 @@ const SingleProduct = () => {
               )}
             </div>
 
-            {selectedVariant?.gallery && selectedVariant.gallery.length > 1 && (
+            {selectedVariant?.gallery && selectedVariant.gallery.length > 0 && (
               <div className="grid grid-cols-4 gap-3 mt-4">
                 {selectedVariant.gallery.map((img, idx) => (
                   <button
                     key={idx}
-                    onClick={() => setSelectedVariantId(selectedVariant.variantId)}
-                    className="aspect-square rounded-lg overflow-hidden border border-gray-100 dark:border-gray-700 hover:border-coral-red"
+                    onClick={() => setSelectedGalleryImage(img)}
+                    className="aspect-square rounded-lg overflow-hidden border border-gray-100 dark:border-gray-700 hover:border-coral-red transition-colors"
                   >
                     <img src={img} alt={`${family.familyName}-${idx}`} className="w-full h-full object-cover" />
                   </button>
@@ -82,9 +94,14 @@ const SingleProduct = () => {
           <div>
             <p className="text-sm text-gray-500 dark:text-gray-400">{category?.category}</p>
             <h1 className="text-3xl font-bold text-gray-900 dark:text-white mt-1">{family.familyName}</h1>
-            {family.brand && (
-              <div className="mt-2">
-                <img src={family.brand} alt={`${family.familyName}-brand`} className="h-10 object-contain" />
+            {(family.brand || family.brands) && (
+              <div className="mt-2 flex items-center gap-4">
+                {family.brand && (
+                  <img src={family.brand} alt={`${family.familyName}-brand`} className="h-10 object-contain" />
+                )}
+                {family.brands && family.brands.map((brandLogo, idx) => (
+                  <img key={idx} src={brandLogo} alt={`${family.familyName}-brand-${idx}`} className="h-10 object-contain" />
+                ))}
               </div>
             )}
           </div>
@@ -94,7 +111,7 @@ const SingleProduct = () => {
           </p>
 
           {/* Variant chooser */}
-          {family.variants?.length > 1 && (
+          {family.variants?.length > 1 && !family.description?.includes('Water Resistant Protector') && (
             <div>
               <h3 className="text-sm font-semibold text-gray-900 dark:text-white mb-2">Available shades</h3>
               <div className="flex flex-wrap gap-2">

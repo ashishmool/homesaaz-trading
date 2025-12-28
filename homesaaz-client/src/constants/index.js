@@ -1,5 +1,7 @@
 import { facebook, instagram, shieldTick, support, truckFast, twitter, github } from '../assets/icons';
 import {
+  restazure,
+  restazure2,
   canosa1,
   canosa2,
   bitcoin1,
@@ -56,6 +58,7 @@ import {
   // ad1,
   // ad2,
   categoryBathrobe,
+  categoryBathrobe2,
   categoryPillow,
   categoryCarpet,
   categoryChairTableCover,
@@ -76,6 +79,9 @@ import {
   springtekRollaway1,
   comfyPillow,
   mattressProtector,
+  mattressProtectorImg,
+  terryProtector,
+  terryProtector1,
   mattressTopper,
   gravityPillow,
   hsVideo,
@@ -86,6 +92,11 @@ import {
   categoryRollaway,
   categoryProtector,
   tridentBathrobe,
+  bathrobe3,
+  bathrobe4,
+  // Uncomment these when bathrobe-5.jpg and bathrobe-6.jpg files are added:
+  // bathrobe5,
+  // bathrobe6,
   towel,
   kkLogo,
   coirtuffLogo,
@@ -338,6 +349,13 @@ export const categories = [
     imgURL: garwareFilm,
     description: 'Architectural Films • Sun Control Films',
     category: 'Garware Hi-Tech Films'
+  },
+
+  {
+    categoryId: 124,
+    imgURL: garwareFilm,
+    description: 'Mattress',
+    category: 'Mattress'
   },
 
 ];
@@ -788,6 +806,19 @@ export const products = [
     brand: kkLogo,
   },
   {
+    productId: 1025,
+    imgURL: restazure,
+    name: 'Rest Azure',
+    familySlug: 'kingkoil-hopsitality',
+    familyName: 'Rest Azure',
+    description: 'Thickness : 6" • 8" ',
+    dimensions: '36" x 78" • 42" x 78" • 60" x 78" • 72" x 78" • Custom',
+    color: 'Standard',
+    categoryId: 124, // Category: Mattress
+    brand: kkLogo,
+    gallery: [restazure2],
+  },
+  {
     productId: 1014,
     imgURL: mattressProtector,
     name: 'King Koil Protector',
@@ -796,16 +827,19 @@ export const products = [
     color: 'Standard',
     categoryId: 103, // Category: Protector
     brand: kkLogo,
+    gallery: [mattressProtector],
   },
   {
     productId: 1015,
-    imgURL: mattressProtector,
+    imgURL: mattressProtectorImg,
     name: 'Darling Protector',
     description: 'Water Resistant Protector',
     dimensions: '36" x 78" • 60" x 78" • 72" x 78" • Custom',
     color: 'Standard',
     categoryId: 103, // Category: Protector
     brand: darlingLogo,
+    brands: [springtekLogo],
+    gallery: [categoryProtector, mattressProtectorImg],
   },
   {
     productId: 1016,
@@ -816,16 +850,18 @@ export const products = [
     color: 'Standard',
     categoryId: 103, // Category: Protector
     brand: springtekLogo,
+    gallery: [categoryProtector, mattressProtectorImg],
   },
   {
     productId: 1017,
-    imgURL: mattressProtector,
+    imgURL: terryProtector,
     name: 'Terry Protector',
     description: 'Terry Protector',
     dimensions: '36" x 78" • 60" x 78" • 72" x 78" • Custom',
     color: 'Standard',
     categoryId: 103, // Category: Protector
     brand: gemLogo,
+    gallery: [terryProtector, terryProtector1],
   },
   {
     productId: 1018,
@@ -857,6 +893,7 @@ export const products = [
     color: 'White',
     categoryId: 106, // Category: Bathrobe
     brand: tridentLogo,
+    gallery: [bathrobe3, bathrobe4, categoryBathrobe, categoryBathrobe2], // Add bathrobe5, bathrobe6 to this array when the image files are added
   },
   // {
   //   productId: 1025,
@@ -1841,6 +1878,7 @@ export const productFamilies = products.reduce((acc, product) => {
     existing.subcategoryId = existing.subcategoryId || product.subcategoryId || null;
     existing.brandId = existing.brandId || product.brandId || null;
     existing.brand = existing.brand || product.brand || null;
+    existing.brands = existing.brands || product.brands || null;
     existing.description = existing.description || product.description;
     existing.inStock = existing.inStock || product.inStock;
     return acc;
@@ -1854,6 +1892,7 @@ export const productFamilies = products.reduce((acc, product) => {
     subcategoryId: product.subcategoryId || null,
     brandId: product.brandId || null,
     brand: product.brand || null,
+    brands: product.brands || null,
     tags: product.tags || [],
     imgURL: product.imgURL,
     inStock: product.inStock,

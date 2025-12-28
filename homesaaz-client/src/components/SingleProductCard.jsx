@@ -62,6 +62,11 @@ const SingleProductCard = ({
         {/* Product Details */}
         <div className={`flex flex-col ${hasDetails ? 'justify-start' : 'justify-center items-center mt-0'} w-full`}>
           {/* Product Name */}
+
+          {/*<h3 className={`text-xl sm:text-2xl leading-normal font-semibold font-palanquin ${!hasDetails ? 'text-center' : ''}`}>*/}
+          {/*  {displayName}*/}
+          {/*</h3>*/}
+
           <h3 className={`text-xl sm:text-2xl leading-normal font-semibold font-palanquin ${!hasDetails ? 'text-center' : ''}`}>
             {displayName}
           </h3>
