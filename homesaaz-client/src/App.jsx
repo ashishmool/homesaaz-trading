@@ -1,6 +1,5 @@
 import {
   Cart,
-  CustomerReviews,
   Footer,
   Hero,
   ProductCategories,
@@ -76,7 +75,7 @@ const App = () => {
                 <Route path={'/single_category/:id'} element={<SingleCategory />} />
                 <Route path={'/categories'} element={<ProductCategories />} />
                 <Route path={'/products'} element={<AllProducts />} />
-                <Route path={'/product/:productId'} element={<SingleProduct />} /> {/* Added route */}
+                <Route path={'/product/:productSlug'} element={<SingleProduct />} /> {/* Updated to slug-based route */}
                 <Route path={'/login'} element={<Signin />} />
                 <Route path={'/register'} element={<Signup />} />
                 <Route path="/catalogue" element={<Catalogue />} />

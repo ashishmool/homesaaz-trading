@@ -1,5 +1,5 @@
-import { Link } from 'react-router-dom';
-import SearchDemo from '../components/SearchDemo.jsx';
+
+import ProductGrid from '../components/ProductGrid';
 import { categories, brands } from '../constants';
 
 const ProductCategories = ({ searchResults }) => {
@@ -24,17 +24,22 @@ const ProductCategories = ({ searchResults }) => {
             </Link> */}
           </div>
 
-          {/* View All Categories Link */}
-          <div className="mt-12 text-center">
-            <Link 
-              to="/products" 
-              className="inline-flex items-center px-6 py-3 border-2 border-coral-red text-coral-red font-semibold rounded-lg hover:bg-coral-red hover:text-white transition-colors duration-200"
-            >
-              View All Categories & Products
-              <svg className="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-              </svg>
-            </Link>
+          {/* Inline All Products grid with pagination */}
+          <div className="mt-12 w-full">
+            <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4 mb-6">
+              <h3 className="text-2xl font-palanquin font-bold text-gray-900 dark:text-white">
+                All Products
+              </h3>
+              <p className="text-sm text-slate-gray dark:text-gray-400">
+                Browse everything right here — 16 items per page with filters and sort.
+              </p>
+            </div>
+            <ProductGrid
+              showFilters={true}
+              showSortOptions={true}
+              showViewToggle={true}
+              itemsPerPage={16}
+            />
           </div>
 
           {/* Featured Brands Section */}

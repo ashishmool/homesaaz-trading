@@ -1,5 +1,4 @@
 import Cart from './Cart';
-import CustomerReviews from './CustomerReviews';
 import Footer from './Footer';
 import Hero from './Hero';
 import ProductCategories from './ProductCategories.jsx';
@@ -11,7 +10,6 @@ import ScrollToTopButton from './ScrollToTopButton';
 
 export {
   Cart,
-  CustomerReviews,
   Footer,
   Hero,
   ProductCategories,

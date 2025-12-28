@@ -1,7 +1,7 @@
 import { Link, useLocation } from 'react-router-dom';
-import { useEffect } from 'react';
+import { useEffect, useMemo } from 'react';
 
-const Breadcrumbs = ({ categoryName }) => {
+const Breadcrumbs = ({ items, categoryName }) => {
     const location = useLocation();
 
     // Scroll to the corresponding section when the hash changes
@@ -14,34 +14,33 @@ const Breadcrumbs = ({ categoryName }) => {
         }
     }, [location]);
 
-    const parts = location.pathname.split('/').filter(Boolean);
+    const trail = useMemo(() => {
+        if (items?.length) return items;
+        if (categoryName) return [{ label: categoryName }];
+        return [];
+    }, [items, categoryName]);
 
     return (
-        <nav className="text-sm font-montserrat mb-4">
-            <ol className="list-reset flex">
+        <nav className="text-sm font-montserrat mb-6">
+            <ol className="flex flex-wrap items-center gap-1 text-gray-500 dark:text-gray-400">
                 <li>
                     <Link to="/" className="text-coral-red hover:underline">Home</Link>
                 </li>
-                {parts.length > 1 && (
-                    <>
-                        {/*<li>*/}
-                        {/*    <span className="mx-2">/</span>*/}
-                        {/*</li>*/}
-                        {/*<li>*/}
-                        {/*    <Link to="/#categories" className="text-coral-red hover:underline">Categories</Link>*/}
-                        {/*</li>*/}
-                        <li>
-                            <span className="mx-2">/</span>
-                        </li>
-                        <li className="text-gray-500">
-                            {categoryName}
-                        </li>
-                    </>
-                )}
+                {trail.map((crumb, index) => (
+                    <li key={`${crumb.label}-${index}`} className="flex items-center gap-1">
+                        <span className="text-gray-400">/</span>
+                        {crumb.to ? (
+                            <Link to={crumb.to} className="text-coral-red hover:underline">
+                                {crumb.label}
+                            </Link>
+                        ) : (
+                            <span className="text-gray-700 dark:text-gray-200">{crumb.label}</span>
+                        )}
+                    </li>
+                ))}
             </ol>
         </nav>
     );
 };
 
-// Make sure this is exported as the default export
 export default Breadcrumbs;

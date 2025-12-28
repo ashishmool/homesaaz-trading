@@ -95,7 +95,8 @@ const FilterPanel = ({ className = '' }) => {
     <label className="flex items-center cursor-pointer hover:bg-gray-50 dark:hover:bg-slate-700 p-2 rounded">
       <input
         type="radio"
-        value={value}
+        // Avoid passing null as a value prop to satisfy React's controlled input expectations
+        value={value ?? ''}
         checked={checked}
         onChange={onChange}
         className="text-coral-red focus:ring-coral-red"

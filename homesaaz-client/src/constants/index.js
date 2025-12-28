@@ -53,8 +53,8 @@ import {
   client5,
   client6,
   client7,
-  ad1,
-  ad2,
+  // ad1,
+  // ad2,
   categoryBathrobe,
   categoryPillow,
   categoryCarpet,
@@ -74,10 +74,6 @@ import {
   categorySpc,
   categoryTowel,
   springtekRollaway1,
-  customer1,
-  customer2,
-  customer3,
-  customer4,
   comfyPillow,
   mattressProtector,
   mattressTopper,
@@ -97,6 +93,7 @@ import {
   springtekLogo,
   darlingLogo,
   tridentLogo,
+  greenpanelLogo,
   fabric101op,
   fabric102op,
   fabric103op,
@@ -366,33 +363,33 @@ export const services = [
   }
 ];
 
-export const reviews = [
-  {
-    imgURL: customer1,
-    customerName: 'Morich Brown',
-    rating: 4.5,
-    feedback: 'The attention to detail and the quality of the product exceeded my expectations. Highly recommended!'
-  },
-  {
-    imgURL: customer2,
-    customerName: 'Lota Mongeskar',
-    rating: 4.5,
-    feedback: "The product not only met but exceeded my expectations. I'll definitely be a returning customer!"
-  },
-  {
-    imgURL: customer3,
-    customerName: 'Ramesh Aggarwal',
-    rating: 4.3,
-    feedback: "The product not only met but exceeded my expectations. I'll definitely be a returning customer!"
-  },
-  {
-    imgURL: customer4,
-    customerName: 'Christina Yu',
-    rating: 4.3,
-    feedback:
-      'I got a pair of boots from nike and I’m very satisfied. They are high-quality and worth the money. The store also offered free shipping at that price so that’s a plus!'
-  }
-];
+// export const reviews = [
+//   {
+//     imgURL: customer1,
+//     customerName: 'Morich Brown',
+//     rating: 4.5,
+//     feedback: 'The attention to detail and the quality of the product exceeded my expectations. Highly recommended!'
+//   },
+//   {
+//     imgURL: customer2,
+//     customerName: 'Lota Mongeskar',
+//     rating: 4.5,
+//     feedback: "The product not only met but exceeded my expectations. I'll definitely be a returning customer!"
+//   },
+//   {
+//     imgURL: customer3,
+//     customerName: 'Ramesh Aggarwal',
+//     rating: 4.3,
+//     feedback: "The product not only met but exceeded my expectations. I'll definitely be a returning customer!"
+//   },
+//   {
+//     imgURL: customer4,
+//     customerName: 'Christina Yu',
+//     rating: 4.3,
+//     feedback:
+//       'I got a pair of boots from nike and I’m very satisfied. They are high-quality and worth the money. The store also offered free shipping at that price so that’s a plus!'
+//   }
+// ];
 
 export const footerLinks = [
   {
@@ -741,7 +738,7 @@ export const products = [
     productId: 1009,
     imgURL: fiberPillow,
     name: 'Hollow Fiber',
-    description: 'Fiber Pillow',
+    description: 'Hollow Fiber Pillow',
     dimensions: '17" x 26"',
     color: 'White (Standard)',
     categoryId: 101, // Category: Pillows
@@ -776,7 +773,7 @@ export const products = [
     productId: 1012,
     imgURL: springtekRollaway1,
     name: 'Springtek Rollaway Bed',
-    description: 'Folding Rollaway Bed with Mattress',
+    description: 'Folding Rollaway Bed with 6" Mattress',
     dimensions: '36" x 75"',
     categoryId: 102, // Category: Rollaway Bed
     brand: springtekLogo,
@@ -785,7 +782,7 @@ export const products = [
     productId: 1013,
     imgURL: kingkoilRollaway,
     name: 'King Koil Rollaway Bed',
-    description: 'Folding Rollaway Bed with Mattress',
+    description: 'Folding Rollaway Bed with 5" Mattress',
     dimensions: '36" x 75"',
     categoryId: 102, // Category: Rollaway Bed
     brand: kkLogo,
@@ -861,237 +858,237 @@ export const products = [
     categoryId: 106, // Category: Bathrobe
     brand: tridentLogo,
   },
-  {
-    productId: 1025,
-    imgURL: fabric101op,
-    name: '101',
-    description: 'Outdoor Plain',
-    categoryId: 119, // Category: Outdoor Fabric
-  },
-  {
-    productId: 1026,
-    imgURL: fabric102op,
-    name: '102',
-    description: 'Outdoor Plain',
-    categoryId: 119,
-  },
-  {
-    productId: 1027,
-    imgURL: fabric103op,
-    name: '103',
-    description: 'Outdoor Plain',
-    categoryId: 119,
-  },
-  {
-    productId: 1028,
-    imgURL: fabric104op,
-    name: '104',
-    description: 'Outdoor Plain',
-    categoryId: 119,
-  },
-  {
-    productId: 1029,
-    imgURL: fabric105op,
-    name: '105',
-    description: 'Outdoor Plain',
-    categoryId: 119,
-  },
-  {
-    productId: 1030,
-    imgURL: fabric106op,
-    name: '106',
-    description: 'Outdoor Plain',
-    categoryId: 119,
-  },
-  {
-    productId: 1031,
-    imgURL: fabric107op,
-    name: '107',
-    description: 'Outdoor Plain',
-    categoryId: 119,
-  },
-  {
-    productId: 1032,
-    imgURL: fabric108op,
-    name: '108',
-    description: 'Outdoor Plain',
-    categoryId: 119,
-  },
-  {
-    productId: 1033,
-    imgURL: fabric109op,
-    name: '109',
-    description: 'Outdoor Plain',
-    categoryId: 119,
-  },
-  {
-    productId: 1034,
-    imgURL: fabric110op,
-    name: '110',
-    description: 'Outdoor Plain',
-    categoryId: 119,
-  },
-  {
-    productId: 1035,
-    imgURL: fabric111op,
-    name: '111',
-    description: 'Outdoor Plain',
-    categoryId: 119,
-  },
-  {
-    productId: 1036,
-    imgURL: fabric112op,
-    name: '112',
-    description: 'Outdoor Plain',
-    categoryId: 119,
-  },
-  {
-    productId: 1037,
-    imgURL: fabric113op,
-    name: '113',
-    description: 'Outdoor Plain',
-    categoryId: 119,
-  },
-  {
-    productId: 1038,
-    imgURL: fabric114op,
-    name: '114',
-    description: 'Outdoor Plain',
-    categoryId: 119,
-  },
-  {
-    productId: 1039,
-    imgURL: fabric115op,
-    name: '115',
-    description: 'Outdoor Plain',
-    categoryId: 119,
-  },
-  {
-    productId: 1040,
-    imgURL: fabric116op,
-    name: '116',
-    description: 'Outdoor Plain',
-    categoryId: 119,
-  },
-  {
-    productId: 1041,
-    imgURL: fabric118op,
-    name: '118',
-    description: 'Outdoor Plain',
-    categoryId: 119,
-  },
-  {
-    productId: 1042,
-    imgURL: fabric119op,
-    name: '119',
-    description: 'Outdoor Plain',
-    categoryId: 119,
-  },
-  {
-    productId: 1043,
-    imgURL: fabric120op,
-    name: '120',
-    description: 'Outdoor Plain',
-    categoryId: 119,
-  },
-  {
-    productId: 1044,
-    imgURL: fabric121op,
-    name: '121',
-    description: 'Outdoor Plain',
-    categoryId: 119,
-  },
-  {
-    productId: 1045,
-    imgURL: fabric122op,
-    name: '122',
-    description: 'Outdoor Plain',
-    categoryId: 119,
-  },
-  {
-    productId: 1046,
-    imgURL: fabric123op,
-    name: '123',
-    description: 'Outdoor Plain',
-    categoryId: 119,
-  },
-  {
-    productId: 1047,
-    imgURL: fabric1004of,
-    name: '1004',
-    description: 'Outdoor Texture',
-    categoryId: 119,
-  },
-  {
-    productId: 1048,
-    imgURL: fabric1011of,
-    name: '1011',
-    description: 'Outdoor Texture',
-    categoryId: 119,
-  },
-  {
-    productId: 1049,
-    imgURL: fabric1019of,
-    name: '1019',
-    description: 'Outdoor Texture',
-    categoryId: 119,
-  },
-  {
-    productId: 1050,
-    imgURL: fabric1022of,
-    name: '1022',
-    description: 'Outdoor Texture',
-    categoryId: 119,
-  },
-  {
-    productId: 1051,
-    imgURL: fabric1027of,
-    name: '1027',
-    description: 'Outdoor Texture',
-    categoryId: 119,
-  },
-  {
-    productId: 1052,
-    imgURL: fabric1030of,
-    name: '1030',
-    description: 'Outdoor Texture',
-    categoryId: 119,
-  },
-  {
-    productId: 1053,
-    imgURL: fabric1041of,
-    name: '1041',
-    description: 'Outdoor Texture',
-    categoryId: 119,
-  },
-  {
-    productId: 1054,
-    imgURL: fabric1047of,
-    name: '1047',
-    description: 'Outdoor Texture',
-    categoryId: 119,
-  },
-  {
-    productId: 1055,
-    imgURL: fabric1059of,
-    name: '1059',
-    description: 'Outdoor Texture',
-    categoryId: 119,
-  },
-  {
-    productId: 1056,
-    imgURL: fabric1069of,
-    name: '1069',
-    description: 'Outdoor Texture',
-    categoryId: 119,
-  },
-  {
-    productId: 1057,
-    imgURL: fabric1074of,
-    name: '1074',
-    description: 'Outdoor Texture',
-    categoryId: 119,
-  },
+  // {
+  //   productId: 1025,
+  //   imgURL: fabric101op,
+  //   name: '101',
+  //   description: 'Outdoor Plain',
+  //   categoryId: 119, // Category: Outdoor Fabric
+  // },
+  // {
+  //   productId: 1026,
+  //   imgURL: fabric102op,
+  //   name: '102',
+  //   description: 'Outdoor Plain',
+  //   categoryId: 119,
+  // },
+  // {
+  //   productId: 1027,
+  //   imgURL: fabric103op,
+  //   name: '103',
+  //   description: 'Outdoor Plain',
+  //   categoryId: 119,
+  // },
+  // {
+  //   productId: 1028,
+  //   imgURL: fabric104op,
+  //   name: '104',
+  //   description: 'Outdoor Plain',
+  //   categoryId: 119,
+  // },
+  // {
+  //   productId: 1029,
+  //   imgURL: fabric105op,
+  //   name: '105',
+  //   description: 'Outdoor Plain',
+  //   categoryId: 119,
+  // },
+  // {
+  //   productId: 1030,
+  //   imgURL: fabric106op,
+  //   name: '106',
+  //   description: 'Outdoor Plain',
+  //   categoryId: 119,
+  // },
+  // {
+  //   productId: 1031,
+  //   imgURL: fabric107op,
+  //   name: '107',
+  //   description: 'Outdoor Plain',
+  //   categoryId: 119,
+  // },
+  // {
+  //   productId: 1032,
+  //   imgURL: fabric108op,
+  //   name: '108',
+  //   description: 'Outdoor Plain',
+  //   categoryId: 119,
+  // },
+  // {
+  //   productId: 1033,
+  //   imgURL: fabric109op,
+  //   name: '109',
+  //   description: 'Outdoor Plain',
+  //   categoryId: 119,
+  // },
+  // {
+  //   productId: 1034,
+  //   imgURL: fabric110op,
+  //   name: '110',
+  //   description: 'Outdoor Plain',
+  //   categoryId: 119,
+  // },
+  // {
+  //   productId: 1035,
+  //   imgURL: fabric111op,
+  //   name: '111',
+  //   description: 'Outdoor Plain',
+  //   categoryId: 119,
+  // },
+  // {
+  //   productId: 1036,
+  //   imgURL: fabric112op,
+  //   name: '112',
+  //   description: 'Outdoor Plain',
+  //   categoryId: 119,
+  // },
+  // {
+  //   productId: 1037,
+  //   imgURL: fabric113op,
+  //   name: '113',
+  //   description: 'Outdoor Plain',
+  //   categoryId: 119,
+  // },
+  // {
+  //   productId: 1038,
+  //   imgURL: fabric114op,
+  //   name: '114',
+  //   description: 'Outdoor Plain',
+  //   categoryId: 119,
+  // },
+  // {
+  //   productId: 1039,
+  //   imgURL: fabric115op,
+  //   name: '115',
+  //   description: 'Outdoor Plain',
+  //   categoryId: 119,
+  // },
+  // {
+  //   productId: 1040,
+  //   imgURL: fabric116op,
+  //   name: '116',
+  //   description: 'Outdoor Plain',
+  //   categoryId: 119,
+  // },
+  // {
+  //   productId: 1041,
+  //   imgURL: fabric118op,
+  //   name: '118',
+  //   description: 'Outdoor Plain',
+  //   categoryId: 119,
+  // },
+  // {
+  //   productId: 1042,
+  //   imgURL: fabric119op,
+  //   name: '119',
+  //   description: 'Outdoor Plain',
+  //   categoryId: 119,
+  // },
+  // {
+  //   productId: 1043,
+  //   imgURL: fabric120op,
+  //   name: '120',
+  //   description: 'Outdoor Plain',
+  //   categoryId: 119,
+  // },
+  // {
+  //   productId: 1044,
+  //   imgURL: fabric121op,
+  //   name: '121',
+  //   description: 'Outdoor Plain',
+  //   categoryId: 119,
+  // },
+  // {
+  //   productId: 1045,
+  //   imgURL: fabric122op,
+  //   name: '122',
+  //   description: 'Outdoor Plain',
+  //   categoryId: 119,
+  // },
+  // {
+  //   productId: 1046,
+  //   imgURL: fabric123op,
+  //   name: '123',
+  //   description: 'Outdoor Plain',
+  //   categoryId: 119,
+  // },
+  // {
+  //   productId: 1047,
+  //   imgURL: fabric1004of,
+  //   name: '1004',
+  //   description: 'Outdoor Texture',
+  //   categoryId: 119,
+  // },
+  // {
+  //   productId: 1048,
+  //   imgURL: fabric1011of,
+  //   name: '1011',
+  //   description: 'Outdoor Texture',
+  //   categoryId: 119,
+  // },
+  // {
+  //   productId: 1049,
+  //   imgURL: fabric1019of,
+  //   name: '1019',
+  //   description: 'Outdoor Texture',
+  //   categoryId: 119,
+  // },
+  // {
+  //   productId: 1050,
+  //   imgURL: fabric1022of,
+  //   name: '1022',
+  //   description: 'Outdoor Texture',
+  //   categoryId: 119,
+  // },
+  // {
+  //   productId: 1051,
+  //   imgURL: fabric1027of,
+  //   name: '1027',
+  //   description: 'Outdoor Texture',
+  //   categoryId: 119,
+  // },
+  // {
+  //   productId: 1052,
+  //   imgURL: fabric1030of,
+  //   name: '1030',
+  //   description: 'Outdoor Texture',
+  //   categoryId: 119,
+  // },
+  // {
+  //   productId: 1053,
+  //   imgURL: fabric1041of,
+  //   name: '1041',
+  //   description: 'Outdoor Texture',
+  //   categoryId: 119,
+  // },
+  // {
+  //   productId: 1054,
+  //   imgURL: fabric1047of,
+  //   name: '1047',
+  //   description: 'Outdoor Texture',
+  //   categoryId: 119,
+  // },
+  // {
+  //   productId: 1055,
+  //   imgURL: fabric1059of,
+  //   name: '1059',
+  //   description: 'Outdoor Texture',
+  //   categoryId: 119,
+  // },
+  // {
+  //   productId: 1056,
+  //   imgURL: fabric1069of,
+  //   name: '1069',
+  //   description: 'Outdoor Texture',
+  //   categoryId: 119,
+  // },
+  // {
+  //   productId: 1057,
+  //   imgURL: fabric1074of,
+  //   name: '1074',
+  //   description: 'Outdoor Texture',
+  //   categoryId: 119,
+  // },
   {
     productId: 1058,
     imgURL: cloudyAlley,
@@ -1099,6 +1096,7 @@ export const products = [
     color: 'Smoke Grey • Bordo Red • Hazel • Carmine',
     description: 'Anti-Skid by Prestige',
     categoryId: 122,
+    brand: prestigeLogo,
   },
   {
     productId: 1059,
@@ -1107,6 +1105,7 @@ export const products = [
     description: 'Anti-Skid by Prestige',
     color: 'Scarlet Red • Silver • Laguna • Cherry • Coffee • Walnut • Mocha • Moss Green',
     categoryId: 122,
+    brand: prestigeLogo,
   },
   {
     productId: 1060,
@@ -1115,6 +1114,7 @@ export const products = [
     color: 'Rust • Scarlet Red • Mocha • Wine',
     description: 'Anti-Skid by Prestige',
     categoryId: 122,
+    brand: prestigeLogo,
   },
   {
     productId: 1061,
@@ -1123,6 +1123,7 @@ export const products = [
     color: 'Grey • Brown • Green • Chocolate',
     description: 'Anti-Skid by Prestige',
     categoryId: 122,
+    brand: prestigeLogo,
   },
   {
     productId: 1062,
@@ -1131,6 +1132,7 @@ export const products = [
     color: 'Golden Yellow • Beige • Brown',
     description: 'Anti-Skid by Prestige',
     categoryId: 122,
+    brand: prestigeLogo,
   },
   {
     productId: 1063,
@@ -1139,6 +1141,7 @@ export const products = [
     description: 'Anti-Skid by Prestige',
     color: 'Silver • Red • Wine • Mocha • Moss Green • Rust',
     categoryId: 122,
+    brand: prestigeLogo,
   },
   {
     productId: 1064,
@@ -1147,6 +1150,7 @@ export const products = [
     color: 'Green • Med. Grey • Blue • Red',
     description: 'Anti-Skid by Prestige',
     categoryId: 122,
+    brand: prestigeLogo,
   },
   {
     productId: 1065,
@@ -1155,6 +1159,7 @@ export const products = [
     color: 'Brown • Chocolate • Green • Grey',
     description: 'Anti-Skid by Prestige',
     categoryId: 122,
+    brand: prestigeLogo,
   },
   {
     productId: 1066,
@@ -1163,6 +1168,7 @@ export const products = [
     description: 'Anti-Skid by Prestige',
     color: 'L. Grey • Ivory • D. Grey • Salte Blue • Tortilla Beige • Taos Taupe • Stone Grey',
     categoryId: 122,
+    brand: prestigeLogo,
   },
   {
     productId: 1067,
@@ -1171,6 +1177,7 @@ export const products = [
     color: 'Grey • Beige • Brown • Red',
     description: 'Anti-Skid by Prestige',
     categoryId: 122,
+    brand: prestigeLogo,
   },
   {
     productId: 1068,
@@ -1179,6 +1186,7 @@ export const products = [
     description: 'Anti-Skid by Prestige',
     color: 'Brown • Chocolate • Green • Grey',
     categoryId: 122,
+    brand: prestigeLogo,
   },
   {
     productId: 1069,
@@ -1187,6 +1195,7 @@ export const products = [
     color: 'Royal Blue • Beige • Brown • Red • Chocolate • Grey • Red/Grey • Silver/Green • Red/Black',
     description: 'Anti-Skid by Prestige',
     categoryId: 122,
+    brand: prestigeLogo,
   },
   {
     productId: 1070,
@@ -1195,6 +1204,7 @@ export const products = [
     color: 'Chocolate • Brown • Red • Grey',
     description: 'Anti-Skid by Prestige',
     categoryId: 122,
+    brand: prestigeLogo,
   },
   {
     productId: 1071,
@@ -1203,6 +1213,7 @@ export const products = [
     color: 'Silver • Cherry Red • Almond • Moss Green',
     description: 'Anti-Skid by Prestige',
     categoryId: 122,
+    brand: prestigeLogo,
   },
   {
     productId: 1072,
@@ -1265,6 +1276,9 @@ export const products = [
     imgURL: avalon1,
     name: '111',
     description: 'Avalon',
+    familySlug: 'avalon',
+    familyName: 'Avalon Sofa Fabric',
+    variantCode: '111',
     categoryId: 112,
     subcategoryId: 1121, // Avalon Collection
     brandId: null,
@@ -1278,6 +1292,9 @@ export const products = [
     imgURL: avalon2,
     name: '112',
     description: 'Avalon',
+    familySlug: 'avalon',
+    familyName: 'Avalon Sofa Fabric',
+    variantCode: '112',
     categoryId: 112,
     subcategoryId: 1121, // Avalon Collection
     brandId: null,
@@ -1291,6 +1308,9 @@ export const products = [
     imgURL: avalon3,
     name: '113',
     description: 'Avalon',
+    familySlug: 'avalon',
+    familyName: 'Avalon Sofa Fabric',
+    variantCode: '113',
     categoryId: 112,
   },
   {
@@ -1298,6 +1318,9 @@ export const products = [
     imgURL: avalon4,
     name: '114',
     description: 'Avalon',
+    familySlug: 'avalon',
+    familyName: 'Avalon Sofa Fabric',
+    variantCode: '114',
     categoryId: 114,
   },
   {
@@ -1305,6 +1328,9 @@ export const products = [
     imgURL: avalon5,
     name: '115',
     description: 'Avalon',
+    familySlug: 'avalon',
+    familyName: 'Avalon Sofa Fabric',
+    variantCode: '115',
     categoryId: 112,
   },
   {
@@ -1312,6 +1338,9 @@ export const products = [
     imgURL: bitcoin1,
     name: '1111',
     description: 'Bitcoin',
+    familySlug: 'bitcoin',
+    familyName: 'Bitcoin Sofa Fabric',
+    variantCode: '1111',
     categoryId: 112,
     subcategoryId: 1122, // Bitcoin Collection
     brandId: null,
@@ -1325,6 +1354,9 @@ export const products = [
     imgURL: bitcoin2,
     name: '1112',
     description: 'Bitcoin',
+    familySlug: 'bitcoin',
+    familyName: 'Bitcoin Sofa Fabric',
+    variantCode: '1112',
     categoryId: 112,
   },
   {
@@ -1332,6 +1364,9 @@ export const products = [
     imgURL: bitcoin3,
     name: '1113',
     description: 'Bitcoin',
+    familySlug: 'bitcoin',
+    familyName: 'Bitcoin Sofa Fabric',
+    variantCode: '1113',
     categoryId: 112,
   },
   {
@@ -1339,6 +1374,9 @@ export const products = [
     imgURL: canosa1,
     name: '11113',
     description: 'Canosa',
+    familySlug: 'canosa',
+    familyName: 'Canosa Sofa Fabric',
+    variantCode: '11113',
     categoryId: 112,
     subcategoryId: 1123, // Canosa Collection
     brandId: null,
@@ -1352,6 +1390,9 @@ export const products = [
     imgURL: canosa2,
     name: '11114',
     description: 'Canosa',
+    familySlug: 'canosa',
+    familyName: 'Canosa Sofa Fabric',
+    variantCode: '11114',
     categoryId: 112,
   },
 
@@ -1361,6 +1402,7 @@ export const products = [
     name: 'Grey 05 SRC',
     description: 'Garware Hi-Tech Films',
     categoryId: 123,
+    brand: garwareLogo,
   },
 
   {
@@ -1369,6 +1411,7 @@ export const products = [
     name: 'Grey 20',
     description: 'Garware Hi-Tech Films',
     categoryId: 123,
+    brand: garwareLogo,
   },
   {
     productId: 1092,
@@ -1376,6 +1419,7 @@ export const products = [
     name: 'Charcol 06',
     description: 'Garware Hi-Tech Films',
     categoryId: 123,
+    brand: garwareLogo,
   },
   {
     productId: 1093,
@@ -1383,6 +1427,7 @@ export const products = [
     name: 'Charcol 20',
     description: 'Garware Hi-Tech Films',
     categoryId: 123,
+    brand: garwareLogo,
   },
   {
     productId: 1094,
@@ -1390,12 +1435,14 @@ export const products = [
     name: 'Charcol 50',
     description: 'Garware Hi-Tech Films',
     categoryId: 123,
+    brand: garwareLogo,
   },{
     productId: 1095,
     imgURL: garwareCharcol,
     name: 'Charcol 70',
     description: 'Garware Hi-Tech Films',
     categoryId: 123,
+    brand: garwareLogo,
   },
   {
     productId: 1096,
@@ -1403,12 +1450,14 @@ export const products = [
     name: 'Reflective Silver 20',
     description: 'Garware Hi-Tech Films',
     categoryId: 123,
+    brand: garwareLogo,
   },{
     productId: 1097,
     imgURL: garwareReflewctive2,
     name: 'Reflective Silver 50',
     description: 'Garware Hi-Tech Films',
     categoryId: 123,
+    brand: garwareLogo,
   },
   {
     productId: 1098,
@@ -1416,30 +1465,35 @@ export const products = [
     name: 'Reflective Silver 70',
     description: 'Garware Hi-Tech Films',
     categoryId: 123,
+    brand: garwareLogo,
   },{
     productId: 1099,
     imgURL: garwareReflective2,
     name: 'Reflective Grey 10',
     description: 'Garware Hi-Tech Films',
     categoryId: 123,
+    brand: garwareLogo,
   },{
     productId: 4000,
     imgURL: garwareReflective,
     name: 'Reflective Blue 15',
     description: 'Garware Hi-Tech Films',
     categoryId: 123,
+    brand: garwareLogo,
   },{
     productId: 4001,
     imgURL: garware4Mil,
     name: '4 Mil Safety Film',
     description: 'Garware Hi-Tech Films',
     categoryId: 123,
+    brand: garwareLogo,
   },{
     productId: 4002,
     imgURL: garwareSHR,
     name: 'Supreme Heat Rejection - SHR Grey 70',
     description: 'Garware Hi-Tech Films',
     categoryId: 123,
+    brand: garwareLogo,
   },
   {
     productId: 4003,
@@ -1447,6 +1501,7 @@ export const products = [
     name: 'Matte White Film',
     description: 'Garware Hi-Tech Films',
     categoryId: 123,
+    brand: garwareLogo,
   },
   {
     productId: 4004,
@@ -1454,6 +1509,7 @@ export const products = [
     name: 'Whiteout Film',
     description: 'Garware Hi-Tech Films',
     categoryId: 123,
+    brand: garwareLogo,
   },
   {
     productId: 4005,
@@ -1461,6 +1517,7 @@ export const products = [
     name: 'Ice Line',
     description: 'Garware Hi-Tech Films',
     categoryId: 123,
+    brand: garwareLogo,
   },
   {
     productId: 4006,
@@ -1468,6 +1525,7 @@ export const products = [
     name: 'Ice Blind',
     description: 'Garware Hi-Tech Films',
     categoryId: 123,
+    brand: garwareLogo,
   },
   {
     productId: 4007,
@@ -1475,6 +1533,7 @@ export const products = [
     name: 'Ice Cube',
     description: 'Garware Hi-Tech Films',
     categoryId: 123,
+    brand: garwareLogo,
   },
   {
     productId: 4008,
@@ -1482,6 +1541,7 @@ export const products = [
     name: 'Writable',
     description: 'Garware Hi-Tech Films',
     categoryId: 123,
+    brand: garwareLogo,
   },
 
 
@@ -1691,14 +1751,14 @@ export const products = [
   {
     productId: 5001,
     imgURL: categoryLaminate,
-    name: 'Classic Oak AC4',
+    name: 'Greenpanel AC4',
     description: 'Grade AC4 Laminate',
     dimensions: 'Custom',
     color: 'Oak Brown',
     categoryId: 109, // Laminate Flooring
     subcategoryId: 1091, // Grade AC4
     brandId: null,
-    brand: null,
+    brand: greenpanelLogo,
     tags: ['laminate', 'flooring', 'ac4', 'oak', 'heavy domestic'],
     price: null,
     inStock: true,
@@ -1706,14 +1766,14 @@ export const products = [
   {
     productId: 5002,
     imgURL: categoryLaminate,
-    name: 'Premium Walnut AC4',
-    description: 'Grade AC4 Laminate',
+    name: 'Greenpanel AC4',
+    description: 'Premium Walnut AC4 Laminate',
     dimensions: 'Custom',
     color: 'Walnut',
     categoryId: 109, // Laminate Flooring
     subcategoryId: 1091, // Grade AC4
     brandId: null,
-    brand: null,
+    brand: greenpanelLogo,
     tags: ['laminate', 'flooring', 'ac4', 'walnut', 'heavy domestic'],
     price: null,
     inStock: true,
@@ -1721,14 +1781,14 @@ export const products = [
   {
     productId: 5003,
     imgURL: categoryLaminate,
-    name: 'Commercial Grey AC5',
+    name: 'Greenpanel AC5',
     description: 'Grade AC5 Laminate',
     dimensions: 'Custom',
     color: 'Grey',
     categoryId: 109, // Laminate Flooring
     subcategoryId: 1092, // Grade AC5
     brandId: null,
-    brand: null,
+    brand: greenpanelLogo,
     tags: ['laminate', 'flooring', 'ac5', 'grey', 'commercial'],
     price: null,
     inStock: true,
@@ -1750,3 +1810,58 @@ export const products = [
   }
 
 ];
+
+// Utility: create URL-friendly slugs for grouping similar variants
+const createSlug = (value) => (
+  (value || '')
+    .toString()
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/(^-|-$)+/g, '') || 'product'
+);
+
+// Group individual product variants into family objects
+export const productFamilies = products.reduce((acc, product) => {
+  const familySlug = product.familySlug || createSlug(product.familyName || product.description || product.name);
+  const familyName = product.familyName || product.description || product.name;
+
+  const existing = acc.find((item) => item.familySlug === familySlug);
+
+  const variantEntry = {
+    ...product,
+    variantId: product.productId,
+    variantCode: product.variantCode || product.name,
+    gallery: product.gallery || (product.imgURL ? [product.imgURL] : [])
+  };
+
+  if (existing) {
+    existing.variants.push(variantEntry);
+    existing.tags = Array.from(new Set([...(existing.tags || []), ...((product.tags || []))]));
+    existing.imgURL = existing.imgURL || product.imgURL;
+    existing.subcategoryId = existing.subcategoryId || product.subcategoryId || null;
+    existing.brandId = existing.brandId || product.brandId || null;
+    existing.brand = existing.brand || product.brand || null;
+    existing.description = existing.description || product.description;
+    existing.inStock = existing.inStock || product.inStock;
+    return acc;
+  }
+
+  acc.push({
+    familySlug,
+    familyName,
+    description: product.description,
+    categoryId: product.categoryId,
+    subcategoryId: product.subcategoryId || null,
+    brandId: product.brandId || null,
+    brand: product.brand || null,
+    tags: product.tags || [],
+    imgURL: product.imgURL,
+    inStock: product.inStock,
+    variants: [variantEntry]
+  });
+
+  return acc;
+}, []).map((family) => ({
+  ...family,
+  variantCount: family.variants.length
+}));

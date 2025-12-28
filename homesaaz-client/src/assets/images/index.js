@@ -1,71 +1,66 @@
+import hotelRoom1 from './others/hotel-room-1.jpg';
+import hotelRoom2 from './others/hotel-room-2.jpg';
 
-import hotelRoom1 from './hotel-room-1.jpg';
-import hotelRoom2 from './hotel-room-2.jpg';
+import springtekRollaway1 from './products/rollaway-beds/springtek-rollaway.png';
+import kingkoilRollaway from './products/rollaway-beds/rollaway-kingkoil.png';
+import mattressTopper from './products/mattress-toppers/mattress-topper.png';
+import comfyPillow from './products/pillows/comfy-pillow.png';
+import ecstacyPillow from './products/pillows/feather-pillow.png';
+import gravityPillow from './products/pillows/gravity-pillow.png';
+import mattressProtector from './products/mattress-protectors/kingkoil-protector.png';
+import springtekEndurance from './products/pillows/springtek-endurance.jpg';
+import darlingMicrogel from './products/pillows/darling-nanogel.png';
+import gemSprinkle from './products/pillows/gem-sprinkle.png';
+import gemJasmine from './products/pillows/gem-jasmine.png';
+import gemSerenity from './products/pillows/gem-serenity.png';
+import darlingProtector from './products/mattress-protectors/darling-protector.jpg';
+import featherPillow from './products/pillows/feather-pillow.jpg';
+import memoryPillow from './products/pillows/memory-pillow.png';
+import fiberPillow from './products/pillows/fiber-pillow-darling.jpg';
+import towel from './products/towels/towel.jpg';
+import tridentBathrobe from './products/bath-robe/bathrobe-4.jpg';
 
-import springtekRollaway1 from './springtek-rollaway.png';
-import kingkoilRollaway from './products/rollaway-kingkoil.png';
-import mattressTopper from './mattress-topper.png';
-import comfyPillow from './comfy-pillow.png';
-import ecstacyPillow from './products/feather-pillow.png';
-import gravityPillow from './products/gravity-pillow.png';
-import mattressProtector from './kingkoil-protector.png';
-import springtekEndurance from './products/springtek-endurance.jpg';
-import darlingMicrogel from './products/darling-nanogel.png';
-import gemSprinkle from './products/gem-sprinkle.png';
-import gemJasmine from './products/gem-jasmine.png';
-import gemSerenity from './products/gem-serenity.png';
-import darlingProtector from './products/darling-protector.jpg';
-import featherPillow from './products/feather-pillow.jpg';
-import memoryPillow from './products/memory-pillow.png';
-import fiberPillow from './products/fiber-pillow-darling.jpg';
-import towel from './products/towel.jpg';
-import tridentBathrobe from './category-bathrobe.jpg';
-
-import garwareFilm from './category-garware.jpg';
-import garwareTowel from './Trident-towel.jpg';
-import garwareWhiteout from './White-out.png';
-import garwareIce from './Ice-Garware.jpg';
-import garwareWritable from './writable-board.png';
-import garwareReflective from './reflective-film.png';
-import garwareReflewctive1 from './Reflective-01.png';
-import garwareReflewctive2 from './Reflective-02.jpg';
-import garwareRejection from './ir-rejection-film.jpg';
-import garwareReflective2 from './Grey-Reflective.jpg';
-import garwareIce2 from './Ice-Garware.jpg';
-import garwareSHR from './SHR-Grey-70.jpg';
-import garware4Mil from './4 MIL-SAFETY-FILM.jpg';
-import garwareGrey from './Grey-Reflective.jpg';
-import garwareSilver from './Silver-Reflective.jpg';
-import garwareCharcol from './Charcoal.jpg';
-import garwareMatte from './MATTE-WHITE.jpg';
+import garwareFilm from './products/garware-films/category-garware.jpg';
+import garwareTowel from './products/towels/Trident-towel.jpg';
+import garwareWhiteout from './products/garware-films/White-out.png';
+import garwareIce from './products/garware-films/Ice-Garware.jpg';
+import garwareWritable from './products/garware-films/writable-board.png';
+import garwareReflective from './products/garware-films/reflective-film.png';
+import garwareReflewctive1 from './products/garware-films/Reflective-01.png';
+import garwareReflewctive2 from './products/garware-films/Reflective-02.jpg';
+import garwareRejection from './products/garware-films/ir-rejection-film.jpg';
+import garwareReflective2 from './products/garware-films/Grey-Reflective.jpg';
+import garwareIce2 from './products/garware-films/Ice-Garware.jpg';
+import garwareSHR from './products/garware-films/SHR-Grey-70.jpg';
+import garware4Mil from './products/garware-films/4 MIL-SAFETY-FILM.jpg';
+import garwareGrey from './products/garware-films/Grey-Reflective.jpg';
+import garwareSilver from './products/garware-films/Silver-Reflective.jpg';
+import garwareCharcol from './products/garware-films/Charcoal.jpg';
+import garwareMatte from './products/garware-films/MATTE-WHITE.jpg';
 
 
-import categoryBathrobe from './category-robe.jpg';
-import categoryPillow from './category-pillows.jpg';
-import categoryCarpet from './category-carpet.jpg';
-import categoryChairTableCover from './category-chair-table-cover.jpg';
-import categoryCurtain from './category-curtain.jpg';
-import categoryCushion from './category-cushion.jpg';
-import categoryDoormat from './category-doormat.jpg';
-import categoryGymTile from './category-gym-rubbertile.jpg';
-import categoryLaminate from './category-laminate.jpg';
-import categoryLinen from './category-linens.jpg';
-import categoryNapkin from './category-napkin.jpg';
-import categoryOutdoorFabric from './category-outdoor-fabric.jpg';
-import categoryRug from './category-rugs.jpg';
-import categoryRunner from './category-runner.jpg';
-import categorySofaFabric from './category-safoa-fabric.jpg';
-import categoryShowerCurtain from './category-shower-curtain.jpg';
-import categorySpc from './category-spc.jpg';
-import categoryTowel from './category-towel.jpg';
-import categoryRollaway from './category-rollaway.jpg';
-import categoryProtector from './category-protector.jpg';
-import categoryTopper from './category-topper.jpg';
+import categoryBathrobe from './products/bath-robe/category-robe.jpg';
+import categoryPillow from './products/pillows/category-pillows.jpg';
+import categoryCarpet from './products/carpets/category-carpet.jpg';
+import categoryChairTableCover from './products/chair-table-covers/category-chair-table-cover.jpg';
+import categoryCurtain from './products/curtains/category-curtain.jpg';
+import categoryCushion from './products/cushion-cover/category-cushion.jpg';
+import categoryDoormat from './products/doormats/category-doormat.jpg';
+import categoryGymTile from './products/gym-rubber-tiles/category-gym-rubbertile.jpg';
+import categoryLaminate from './products/laminates/category-laminate.jpg';
+import categoryLinen from './products/linens/category-linens.jpg';
+import categoryNapkin from './products/napkins/category-napkin.jpg';
+import categoryOutdoorFabric from './products/outdoor-fabric/category-outdoor-fabric.jpg';
+import categoryRug from './products/rugs/category-rugs.jpg';
+import categoryRunner from './products/bed-runner/category-runner.jpg';
+import categorySofaFabric from './products/sofa-fabric/category-sofa-fabric.jpg';
+import categoryShowerCurtain from './products/shower-curtain/category-shower-curtain.jpg';
+import categorySpc from './products/spc-flooring/category-spc.jpg';
+import categoryTowel from './products/towels/category-towel.jpg';
+import categoryRollaway from './products/rollaway-beds/category-rollaway.jpg';
+import categoryProtector from './products/mattress-protectors/category-protector.jpg';
+import categoryTopper from './products/mattress-toppers/category-topper.jpg';
 
-import customer1 from './customer1.jpeg';
-import customer2 from './customer2.svg';
-import customer3 from './customer3.jpg';
-import customer4 from './customer4.jpg';
 
 import footerLogo from './footer-logo.svg';
 import headerLogo from './header-logo.svg';
@@ -73,7 +68,7 @@ import homesaazLogo from './homesaazLogo.png';
 
 
 
-import thumbnailBackground from './thumbnail-background.svg';
+// import thumbnailBackground from './thumbnail-background.svg';
 
 
 import client1 from './clients/dusit-black.svg';
@@ -92,91 +87,91 @@ import darlingLogo from '../logos/darling-logo.svg';
 import tridentLogo from '../logos/trident-logo.svg';
 import prestigeLogo from '../logos/prestige-logo.svg';
 import garwareLogo from '../logos/garware-logo.svg';
-
-import ad1 from './ad1.jpg';
-import ad2 from './ad2.jpg';
+import greenpanelLogo from '../logos/greenpanel-logo.svg';
+// import ad1 from './ad1.jpg';
+// import ad2 from './ad2.jpg';
 
 import hsVideo from './../videos/hs-video.mp4';
 
-import fabric101op from './outdoor-fabric/101-Outdoor-Plain.jpg';
-import fabric102op from './outdoor-fabric/102-Outdoor-Plain.jpg';
-import fabric103op from './outdoor-fabric/103-Outdoor-Plain.jpg';
-import fabric104op from './outdoor-fabric/104-Outdoor-Plain.jpg';
-import fabric105op from './outdoor-fabric/105-Outdoor-Plain.jpg';
-import fabric106op from './outdoor-fabric/106-Outdoor-Plain.jpg';
-import fabric107op from './outdoor-fabric/107-Outdoor-Plain.jpg';
-import fabric108op from './outdoor-fabric/108-Outdoor-Plain.jpg';
-import fabric109op from './outdoor-fabric/109-Outdoor-Plain.jpg';
-import fabric110op from './outdoor-fabric/110-Outdoor-Plain.jpg';
-import fabric111op from './outdoor-fabric/111-Outdoor-Plain.jpg';
-import fabric112op from './outdoor-fabric/112-Outdoor-Plain.jpg';
-import fabric113op from './outdoor-fabric/113-Outdoor-Plain.jpg';
-import fabric114op from './outdoor-fabric/114-Outdoor-Plain.jpg';
-import fabric115op from './outdoor-fabric/115-Outdoor-Plain.jpg';
-import fabric116op from './outdoor-fabric/116-Outdoor-Plain.jpg';
-import fabric118op from './outdoor-fabric/118-Outdoor-Plain.jpg';
-import fabric119op from './outdoor-fabric/119-Outdoor-Plain.jpg';
-import fabric120op from './outdoor-fabric/120-Outdoor-Plain.jpg';
-import fabric121op from './outdoor-fabric/121-Outdoor-Plain.jpg';
-import fabric122op from './outdoor-fabric/122-Outdoor-Plain.jpg';
-import fabric123op from './outdoor-fabric/123-Outdoor-Plain.jpg';
+import fabric101op from './products/outdoor-fabric/101-Outdoor-Plain.jpg';
+import fabric102op from './products/outdoor-fabric/102-Outdoor-Plain.jpg';
+import fabric103op from './products/outdoor-fabric/103-Outdoor-Plain.jpg';
+import fabric104op from './products/outdoor-fabric/104-Outdoor-Plain.jpg';
+import fabric105op from './products/outdoor-fabric/105-Outdoor-Plain.jpg';
+import fabric106op from './products/outdoor-fabric/106-Outdoor-Plain.jpg';
+import fabric107op from './products/outdoor-fabric/107-Outdoor-Plain.jpg';
+import fabric108op from './products/outdoor-fabric/108-Outdoor-Plain.jpg';
+import fabric109op from './products/outdoor-fabric/109-Outdoor-Plain.jpg';
+import fabric110op from './products/outdoor-fabric/110-Outdoor-Plain.jpg';
+import fabric111op from './products/outdoor-fabric/111-Outdoor-Plain.jpg';
+import fabric112op from './products/outdoor-fabric/112-Outdoor-Plain.jpg';
+import fabric113op from './products/outdoor-fabric/113-Outdoor-Plain.jpg';
+import fabric114op from './products/outdoor-fabric/114-Outdoor-Plain.jpg';
+import fabric115op from './products/outdoor-fabric/115-Outdoor-Plain.jpg';
+import fabric116op from './products/outdoor-fabric/116-Outdoor-Plain.jpg';
+import fabric118op from './products/outdoor-fabric/118-Outdoor-Plain.jpg';
+import fabric119op from './products/outdoor-fabric/119-Outdoor-Plain.jpg';
+import fabric120op from './products/outdoor-fabric/120-Outdoor-Plain.jpg';
+import fabric121op from './products/outdoor-fabric/121-Outdoor-Plain.jpg';
+import fabric122op from './products/outdoor-fabric/122-Outdoor-Plain.jpg';
+import fabric123op from './products/outdoor-fabric/123-Outdoor-Plain.jpg';
 
-import fabric1004of from './outdoor-fabric/1004-Outdoor-Texture.jpg';
-import fabric1011of from './outdoor-fabric/1011-Outdoor-Texture.jpg';
-import fabric1019of from './outdoor-fabric/1019-Outdoor-Texture.jpg';
-import fabric1022of from './outdoor-fabric/1022-Outdoor-Texture.jpg';
-import fabric1027of from './outdoor-fabric/1027-Outdoor-Texture.jpg';
-import fabric1030of from './outdoor-fabric/1030-Outdoor-Texture.jpg';
-import fabric1041of from './outdoor-fabric/1041-Outdoor-Texture.jpg';
-import fabric1047of from './outdoor-fabric/1047-Outdoor-Texture.jpg';
-import fabric1059of from './outdoor-fabric/1059-Outdoor-Texture.jpg';
-import fabric1069of from './outdoor-fabric/1069-Outdoor-Texture.jpg';
-import fabric1074of from './outdoor-fabric/1074-Outdoor-Texture.jpg';
+import fabric1004of from './products/outdoor-fabric/1004-Outdoor-Texture.jpg';
+import fabric1011of from './products/outdoor-fabric/1011-Outdoor-Texture.jpg';
+import fabric1019of from './products/outdoor-fabric/1019-Outdoor-Texture.jpg';
+import fabric1022of from './products/outdoor-fabric/1022-Outdoor-Texture.jpg';
+import fabric1027of from './products/outdoor-fabric/1027-Outdoor-Texture.jpg';
+import fabric1030of from './products/outdoor-fabric/1030-Outdoor-Texture.jpg';
+import fabric1041of from './products/outdoor-fabric/1041-Outdoor-Texture.jpg';
+import fabric1047of from './products/outdoor-fabric/1047-Outdoor-Texture.jpg';
+import fabric1059of from './products/outdoor-fabric/1059-Outdoor-Texture.jpg';
+import fabric1069of from './products/outdoor-fabric/1069-Outdoor-Texture.jpg';
+import fabric1074of from './products/outdoor-fabric/1074-Outdoor-Texture.jpg';
 
-import cloudyAlley from './prestige-doormat/CloudyAlley.png';
-import diana from './prestige-doormat/Diana.png';
-import dianaAlley from './prestige-doormat/DianaAlley.png';
-import honeyComb from './prestige-doormat/Honeycomb.png';
-import nigel from './prestige-doormat/Nigel.png';
-import parity from './prestige-doormat/Parity.jpg';
-import ripple from './prestige-doormat/Ripple.png';
-import river from './prestige-doormat/River.png';
-import softy from './prestige-doormat/Softy.png';
-import sprinkle from './prestige-doormat/Sprinkle.png';
-import stones from './prestige-doormat/Stones.png';
-import stripe from './prestige-doormat/Stripe.png';
-import twill from './prestige-doormat/Twill.png';
-import wavy from './prestige-doormat/Wavy.png';
+import cloudyAlley from './products/doormats/CloudyAlley.png';
+import diana from './products/doormats/Diana.png';
+import dianaAlley from './products/doormats/DianaAlley.png';
+import honeyComb from './products/doormats/Honeycomb.png';
+import nigel from './products/doormats/Nigel.png';
+import parity from './products/doormats/Parity.png';
+import ripple from './products/doormats/Ripple.png';
+import river from './products/doormats/River.png';
+import softy from './products/doormats/Softy.png';
+import sprinkle from './products/doormats/Sprinkle.png';
+import stones from './products/doormats/Stones.png';
+import stripe from './products/doormats/Stripe.png';
+import twill from './products/doormats/Twill.png';
+import wavy from './products/doormats/Wavy.png';
 
-import catOutdoorImage1 from './category/cat-outdoor-fabric/Image1.jpg';
-import catOutdoorImage2 from './category/cat-outdoor-fabric/Image2.jpg';
-import catOutdoorImage3 from './category/cat-outdoor-fabric/Image3.jpg';
-import catOutdoorImage4 from './category/cat-outdoor-fabric/Image4.jpg';
-import catOutdoorImage5 from './category/cat-outdoor-fabric/Image5.jpg';
-import catOutdoorImage6 from './category/cat-outdoor-fabric/Image6.jpg';
+import catOutdoorImage1 from './products/outdoor-fabric/outdoor-photos/Image1.jpg';
+import catOutdoorImage2 from './products/outdoor-fabric/outdoor-photos/Image2.jpg';
+import catOutdoorImage3 from './products/outdoor-fabric/outdoor-photos/Image3.jpg';
+import catOutdoorImage4 from './products/outdoor-fabric/outdoor-photos/Image4.jpg';
+import catOutdoorImage5 from './products/outdoor-fabric/outdoor-photos/Image5.jpg';
+import catOutdoorImage6 from './products/outdoor-fabric/outdoor-photos/Image6.jpg';
 
-import aquasafeD2836 from './aquasafe-spc/d-2836.jpg';
-import aquasafeD2837 from './aquasafe-spc/d-2837.jpg';
-import aquasafeD2839 from './aquasafe-spc/d-2839.jpg';
-import aquasafeD2861 from './aquasafe-spc/d-2861.jpg';
-import aquasafeD2864 from './aquasafe-spc/d-2864.jpg';
-import aquasafeD2865 from './aquasafe-spc/d-2865.jpg';
-import aquasafeD2873 from './aquasafe-spc/d-2873.jpg';
-import aquasafeD2885 from './aquasafe-spc/d-2885.jpg';
+import aquasafeD2836 from './products/spc-flooring/d-2836.jpg';
+import aquasafeD2837 from './products/spc-flooring/d-2837.jpg';
+import aquasafeD2839 from './products/spc-flooring/d-2839.jpg';
+import aquasafeD2861 from './products/spc-flooring/d-2861.jpg';
+import aquasafeD2864 from './products/spc-flooring/d-2864.jpg';
+import aquasafeD2865 from './products/spc-flooring/d-2865.jpg';
+import aquasafeD2873 from './products/spc-flooring/d-2873.jpg';
+import aquasafeD2885 from './products/spc-flooring/d-2885.jpg';
 
 
-import avalon1 from './sofa-fabric/avalon/1.jpg';
-import avalon2 from './sofa-fabric/avalon/2A.jpg';
-import avalon3 from './sofa-fabric/avalon/3.jpg';
-import avalon4 from './sofa-fabric/avalon/4.jpg';
-import avalon5 from './sofa-fabric/avalon/5.jpg';
+import avalon1 from './products/sofa-fabric/avalon/1.jpg';
+import avalon2 from './products/sofa-fabric/avalon/2A.jpg';
+import avalon3 from './products/sofa-fabric/avalon/3.jpg';
+import avalon4 from './products/sofa-fabric/avalon/4.jpg';
+import avalon5 from './products/sofa-fabric/avalon/5.jpg';
 
-import bitcoin1 from './sofa-fabric/bitcoin/1.jpg';
-import bitcoin2 from './sofa-fabric/bitcoin/2.jpg';
-import bitcoin3 from './sofa-fabric/bitcoin/4.jpg';
+import bitcoin1 from './products/sofa-fabric/bitcoin/1.jpg';
+import bitcoin2 from './products/sofa-fabric/bitcoin/2.jpg';
+import bitcoin3 from './products/sofa-fabric/bitcoin/4.jpg';
 
-import canosa1 from './sofa-fabric/canosa/4.jpg';
-import canosa2 from './sofa-fabric/canosa/5.jpg';
+import canosa1 from './products/sofa-fabric/canosa/4.jpg';
+import canosa2 from './products/sofa-fabric/canosa/5.jpg';
 
 
 
@@ -218,8 +213,9 @@ export {
   kingkoilRollaway, categoryRollaway, categoryProtector, categoryTopper,
   gemSprinkle, hsVideo, gemJasmine, gemSerenity, featherPillow, memoryPillow, fiberPillow,
   client1,client2, client3, client4,client5, client6, client7,
-  kkLogo, coirtuffLogo, gemLogo, springtekLogo, darlingLogo, tridentLogo,
-  ad1, ad2, tridentBathrobe, towel,
+  kkLogo, coirtuffLogo, gemLogo, springtekLogo, darlingLogo, tridentLogo,greenpanelLogo,
+  // ad1, ad2, 
+  tridentBathrobe, towel,
   mattressTopper,
   comfyPillow,
   mattressProtector,
@@ -242,14 +238,10 @@ export {
   categoryShowerCurtain,
   categorySpc,
   categoryTowel,
-  thumbnailBackground,
+  // thumbnailBackground,
 
   hotelRoom1,
   hotelRoom2,
-  customer1,
-  customer2,
-  customer3,
-  customer4,
   footerLogo,
   headerLogo,
   homesaazLogo

@@ -1,4 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import { MagnifyingGlassIcon, XMarkIcon, AdjustmentsHorizontalIcon } from '@heroicons/react/24/outline';
 import { useSearchContext } from '../contexts/SearchContext';
 
@@ -126,26 +127,27 @@ const SearchBar = ({ className = '', showFilterToggle = true }) => {
           className="absolute top-full left-0 right-0 mt-1 bg-white dark:bg-slate-800 border border-gray-200 dark:border-gray-600 rounded-lg shadow-lg z-50 max-h-60 overflow-y-auto"
         >
           {filteredProducts.slice(0, 5).map((product) => (
-            <div
-              key={product.productId}
-              className="p-3 hover:bg-gray-50 dark:hover:bg-slate-700 cursor-pointer border-b border-gray-100 dark:border-gray-700 last:border-b-0"
+            <Link
+              key={product.familySlug || product.productId}
+              to={`/product/${product.familySlug || product.productId}`}
+              className="block p-3 hover:bg-gray-50 dark:hover:bg-slate-700 cursor-pointer border-b border-gray-100 dark:border-gray-700 last:border-b-0"
             >
               <div className="flex items-center space-x-3">
                 <img
                   src={product.imgURL}
-                  alt={product.name}
+                  alt={product.familyName || product.name}
                   className="w-10 h-10 object-cover rounded"
                 />
                 <div className="flex-1 min-w-0">
                   <p className="text-sm font-medium text-gray-900 dark:text-white truncate">
-                    {product.name}
+                    {product.familyName || product.name}
                   </p>
                   <p className="text-xs text-gray-500 dark:text-gray-400 truncate">
                     {product.description}
                   </p>
                 </div>
               </div>
-            </div>
+            </Link>
           ))}
           
           {filteredProducts.length > 5 && (

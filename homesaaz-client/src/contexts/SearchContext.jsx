@@ -1,5 +1,5 @@
 import React, { createContext, useContext, useState, useMemo } from 'react';
-import { products, categories, brands, enhancedCategories } from '../constants';
+import { categories, brands, enhancedCategories, productFamilies } from '../constants';
 
 const SearchContext = createContext();
 
@@ -26,52 +26,87 @@ export const SearchProvider = ({ children }) => {
 
   // Filter products based on all criteria
   const filteredProducts = useMemo(() => {
-    let filtered = [...products];
+    let filtered = productFamilies.map((family) => ({
+      ...family,
+      tags: family.tags || [],
+    }));
 
     // Search query filter
     if (searchQuery.trim()) {
       const query = searchQuery.toLowerCase();
-      filtered = filtered.filter(product =>
-        product.name.toLowerCase().includes(query) ||
-        product.description.toLowerCase().includes(query) ||
-        product.color.toLowerCase().includes(query) ||
-        (product.tags && product.tags.some(tag => tag.toLowerCase().includes(query)))
-      );
+      filtered = filtered.filter(family => {
+        const familyName = (family.familyName || '').toLowerCase();
+        const description = (family.description || '').toLowerCase();
+        const tags = Array.isArray(family.tags) ? family.tags : [];
+
+        const variantMatch = family.variants?.some((variant) => {
+          const variantName = (variant.name || '').toLowerCase();
+          const variantDescription = (variant.description || '').toLowerCase();
+          const variantColor = (variant.color || '').toLowerCase();
+          return (
+            variantName.includes(query) ||
+            variantDescription.includes(query) ||
+            variantColor.includes(query)
+          );
+        });
+
+        return (
+          familyName.includes(query) ||
+          description.includes(query) ||
+          tags.some(tag => (tag || '').toLowerCase().includes(query)) ||
+          variantMatch
+        );
+      });
     }
 
     // Category filter
     if (selectedCategory) {
-      filtered = filtered.filter(product => product.categoryId === selectedCategory);
+      filtered = filtered.filter(family => 
+        family.categoryId === selectedCategory ||
+        family.variants?.some(v => v.categoryId === selectedCategory)
+      );
     }
 
     // Subcategory filter
     if (selectedSubcategory) {
-      filtered = filtered.filter(product => product.subcategoryId === selectedSubcategory);
+      filtered = filtered.filter(family => 
+        family.subcategoryId === selectedSubcategory ||
+        family.variants?.some(v => v.subcategoryId === selectedSubcategory)
+      );
     }
 
     // Brand filter
     if (selectedBrand) {
-      filtered = filtered.filter(product => product.brandId === selectedBrand);
+      filtered = filtered.filter(family => 
+        family.brandId === selectedBrand ||
+        family.variants?.some(v => v.brandId === selectedBrand)
+      );
     }
 
     // Tags filter
     if (selectedTags.length > 0) {
-      filtered = filtered.filter(product =>
-        product.tags && selectedTags.every(tag => product.tags.includes(tag))
+      filtered = filtered.filter(family =>
+        family.tags && selectedTags.every(tag => family.tags.includes(tag))
       );
     }
 
     // Price range filter
     if (priceRange.min > 0 || priceRange.max < 10000) {
-      filtered = filtered.filter(product =>
-        product.price === null || 
-        (product.price >= priceRange.min && product.price <= priceRange.max)
-      );
+      filtered = filtered.filter(family => {
+        const hasPricedVariant = family.variants?.some((variant) =>
+          variant.price !== null &&
+          variant.price >= priceRange.min &&
+          variant.price <= priceRange.max
+        );
+
+        // If no variant has price, keep it visible
+        return hasPricedVariant || family.variants?.every(v => v.price === null);
+      });
     }
 
     // Stock filter
     if (inStockOnly) {
-      filtered = filtered.filter(product => product.inStock);
+      filtered = filtered.filter(family => family.inStock || family.variants?.some(v => v.inStock));
     }
 
     // Sorting
@@ -80,8 +115,8 @@ export const SearchProvider = ({ children }) => {
       
       switch (sortBy) {
         case 'name':
-          aValue = a.name;
-          bValue = b.name;
+          aValue = a.familyName || a.name;
+          bValue = b.familyName || b.name;
           break;
         case 'category':
           aValue = categories.find(cat => cat.categoryId === a.categoryId)?.category || '';
@@ -92,8 +127,8 @@ export const SearchProvider = ({ children }) => {
           bValue = brands.find(brand => brand.brandId === b.brandId)?.name || '';
           break;
         default:
-          aValue = a.name;
-          bValue = b.name;
+          aValue = a.familyName || a.name;
+          bValue = b.familyName || b.name;
       }
 
       if (sortOrder === 'asc') {

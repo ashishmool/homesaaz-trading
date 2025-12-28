@@ -167,7 +167,7 @@ const ProductGrid = ({
               }>
                 {paginatedProducts.map((product) => (
                   <SingleProductCard
-                    key={product.productId}
+                    key={product.familySlug || product.productId}
                     {...product}
                     viewMode={viewMode}
                   />
