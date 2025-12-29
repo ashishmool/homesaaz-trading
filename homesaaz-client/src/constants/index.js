@@ -2178,7 +2178,7 @@ export const products = [
     categoryId: 109, // Laminate Flooring
     subcategoryId: 1093, // Herringbone
     brandId: null,
-    brand: null,
+    brand: greenpanelLogo,
     tags: ['laminate', 'flooring', 'herringbone', 'pattern', 'multi-tone'],
     price: null,
     inStock: true,
@@ -2196,7 +2196,7 @@ export const products = [
     categoryId: 109, // Laminate Flooring
     subcategoryId: 1093, // Herringbone
     brandId: null,
-    brand: null,
+    brand: greenpanelLogo,
     tags: ['laminate', 'flooring', 'herringbone', 'pattern', 'lf01'],
     price: null,
     inStock: true,
@@ -2214,7 +2214,7 @@ export const products = [
     categoryId: 109, // Laminate Flooring
     subcategoryId: 1093, // Herringbone
     brandId: null,
-    brand: null,
+    brand: greenpanelLogo,
     tags: ['laminate', 'flooring', 'herringbone', 'pattern', 'lf02'],
     price: null,
     inStock: true,
@@ -2232,7 +2232,7 @@ export const products = [
     categoryId: 109, // Laminate Flooring
     subcategoryId: 1093, // Herringbone
     brandId: null,
-    brand: null,
+    brand: greenpanelLogo,
     tags: ['laminate', 'flooring', 'herringbone', 'pattern', 'lf03'],
     price: null,
     inStock: true,
@@ -2250,7 +2250,7 @@ export const products = [
     categoryId: 109, // Laminate Flooring
     subcategoryId: 1093, // Herringbone
     brandId: null,
-    brand: null,
+    brand: greenpanelLogo,
     tags: ['laminate', 'flooring', 'herringbone', 'pattern', 'lf04'],
     price: null,
     inStock: true,
@@ -2268,7 +2268,7 @@ export const products = [
     categoryId: 109, // Laminate Flooring
     subcategoryId: 1093, // Herringbone
     brandId: null,
-    brand: null,
+    brand: greenpanelLogo,
     tags: ['laminate', 'flooring', 'herringbone', 'pattern', 'lf05'],
     price: null,
     inStock: true,
