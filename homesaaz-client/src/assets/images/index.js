@@ -188,7 +188,28 @@ import eurosoft from './products/kingkoil-Hospitality/Eurosoft.jpeg';
 import maharajagrand from './products/kingkoil-Hospitality/Maharaja-Grand.jpeg';
 import romanluxury from './products/kingkoil-Hospitality/Roman-Luxury.jpeg';
 
+import americanOak from './products/laminates/American-Oak.png';
+import bleachedOak from './products/laminates/bleachedoak.png';
+import categoryOak from './products/laminates/category-laminate.jpg';
+import coffeeOak from './products/laminates/coffeeoak.png';
+import colardoOak from './products/laminates/colardooak.png';
+import heritageOak from './products/laminates/heritageoak.png';
+import hickorywalnut from './products/laminates/Hickory-Walnut.jpg';
+import naturalOak from './products/laminates/naturaloak.png';
+import navaraOak from './products/laminates/navaraoak.png';
+import nevadaOak from './products/laminates/Nevada-Oak.png';
 
+import acasia from './products/laminates/acasia01.png';
+import irish from './products/laminates/irishoak02.png';
+import taxus from './products/laminates/taxus06.png';
+import vintage from './products/laminates/vintageoak16.png';
+import acer from './products/laminates/AC5-Acer419.jpg';
+
+import lf01 from './products/laminates/LF-01.jpg';
+import lf02 from './products/laminates/LF-02.jpg';
+import lf03 from './products/laminates/LF-03.jpg';
+import lf04 from './products/laminates/LF-04.jpg';
+import lf05 from './products/laminates/LF-05.jpg';
 
 export {
   restazure,restazure2,
@@ -270,6 +291,28 @@ export {
   hotelRoom2,
   footerLogo,
   headerLogo,
-  homesaazLogo
-  
+  homesaazLogo,
+
+  americanOak,
+  bleachedOak,
+  categoryOak,
+  coffeeOak,
+  colardoOak,
+  heritageOak,
+  hickorywalnut,
+  naturalOak,
+  navaraOak,
+  nevadaOak,
+
+  acasia,
+  irish,
+  taxus,
+  vintage,
+  acer,
+
+    lf01,
+    lf02,
+    lf03,
+    lf04,
+    lf05,
 };

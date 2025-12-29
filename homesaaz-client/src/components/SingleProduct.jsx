@@ -12,7 +12,11 @@ const SingleProduct = () => {
   );
 
   const [selectedVariantId, setSelectedVariantId] = useState(() => family?.variants?.[0]?.variantId);
-  const selectedVariant = family?.variants?.find((variant) => variant.variantId === selectedVariantId) || family?.variants?.[0];
+  
+  const selectedVariant = useMemo(() => {
+    return family?.variants?.find((variant) => variant.variantId === selectedVariantId) || family?.variants?.[0];
+  }, [family, selectedVariantId]);
+  
   const [selectedGalleryImage, setSelectedGalleryImage] = useState(() => {
     const variant = family?.variants?.[0];
     return variant?.gallery?.[0] || variant?.imgURL || null;
@@ -26,7 +30,14 @@ const SingleProduct = () => {
       const firstGalleryImage = selectedVariant.gallery?.[0] || selectedVariant.imgURL;
       setSelectedGalleryImage(firstGalleryImage);
     }
-  }, [selectedVariantId, selectedVariant]);
+  }, [selectedVariant]);
+
+  // Reset selected variant when product family changes
+  useEffect(() => {
+    if (family?.variants?.[0]?.variantId) {
+      setSelectedVariantId(family.variants[0].variantId);
+    }
+  }, [productSlug, family]);
 
   // Scroll to top when component mounts or product changes
   useEffect(() => {
@@ -118,7 +129,10 @@ const SingleProduct = () => {
                 {family.variants.map((variant) => (
                   <button
                     key={variant.variantId}
-                    onClick={() => setSelectedVariantId(variant.variantId)}
+                    onClick={(e) => {
+                      e.preventDefault();
+                      setSelectedVariantId(variant.variantId);
+                    }}
                     className={`px-3 py-2 rounded-lg border text-sm transition-colors ${
                       selectedVariantId === variant.variantId
                         ? 'border-coral-red bg-coral-red/10 text-coral-red'
