@@ -64,7 +64,7 @@ const SingleCategory = () => {
                         showFilters={true}
                         showSortOptions={true}
                         showViewToggle={true}
-                        itemsPerPage={12}
+                        itemsPerPage={16}
                     />
                 </div>
 

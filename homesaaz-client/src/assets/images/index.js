@@ -9,7 +9,7 @@ import ecstacyPillow from './products/pillows/feather-pillow.png';
 import gravityPillow from './products/pillows/gravity-pillow.png';
 import mattressProtector from './products/mattress-protectors/kingkoil-protector.png';
 import mattressProtectorImg from './products/mattress-protectors/mattress-protector.png';
-import terryProtector from './products/mattress-protectors/terry.jpg';
+import terryProtector from './products/mattress-protectors/terry.png';
 import terryProtector1 from './products/mattress-protectors/terry-protector-1.jpg';
 import springtekEndurance from './products/pillows/springtek-endurance.jpg';
 import darlingMicrogel from './products/pillows/darling-nanogel.png';

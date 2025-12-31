@@ -29,7 +29,7 @@ const AllProducts = () => {
           showFilters={true}
           showSortOptions={true}
           showViewToggle={true}
-          itemsPerPage={24}
+          itemsPerPage={16}
         />
       </div>
     </section>
