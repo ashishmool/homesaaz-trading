@@ -170,7 +170,7 @@ import {
   lf02,
   lf03,
   lf04,
-  lf05
+  lf05, AC4, herringbone, spcflooring, gymtiles, gemcollectionLogo
 
 } from '../assets/images';
 
@@ -301,12 +301,35 @@ export const categories = [
     description: 'Custom',
     category: 'Sofa Fabric'
   },
+
+
   {
     categoryId: 113,
     imgURL: categoryCurtain,
     description: 'Custom',
     category: 'Curtain Fabric'
   },
+  {
+    categoryId: 125,
+    imgURL: categoryCurtain,
+    description: 'Custom',
+    category: 'Curtain Fabric'
+  },
+  {
+    categoryId: 126,
+    imgURL: categoryCurtain,
+    description: 'Custom',
+    category: 'Curtain Fabric'
+  },
+  {
+    categoryId: 127,
+    imgURL: categoryCurtain,
+    description: 'Custom',
+    category: 'Curtain Fabric'
+  },
+
+
+
   {
     categoryId: 114,
     imgURL: categoryChairTableCover,
@@ -464,24 +487,24 @@ export const socialMedia = [
   { src: instagram, alt: 'instagram logo', link: 'https://www.instagram.com/homesaaz.trading/' }
 ];
 
-export const cartItems = [
-  {
-    id: 1,
-    name: 'Nike Air Max 2019',
-    size: '36EU - 4US',
-    price: 1259.0,
-    quantity: 1,
-    image: 'https://images.unsplash.com/photo-1588484628369-dd7a85bfdc38?ixlib=rb-1.2.1&auto=format&fit=crop&w=150&q=60'
-  },
-  {
-    id: 2,
-    name: 'Nike Air Max 2019',
-    size: '36EU - 4US',
-    price: 1259.0,
-    quantity: 1,
-    image: 'https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?ixlib=rb-1.2.1&auto=format&fit=crop&w=150&q=60'
-  }
-];
+// export const cartItems = [
+//   {
+//     id: 1,
+//     name: 'Nike Air Max 2019',
+//     size: '36EU - 4US',
+//     price: 1259.0,
+//     quantity: 1,
+//     image: 'https://images.unsplash.com/photo-1588484628369-dd7a85bfdc38?ixlib=rb-1.2.1&auto=format&fit=crop&w=150&q=60'
+//   },
+//   {
+//     id: 2,
+//     name: 'Nike Air Max 2019',
+//     size: '36EU - 4US',
+//     price: 1259.0,
+//     quantity: 1,
+//     image: 'https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?ixlib=rb-1.2.1&auto=format&fit=crop&w=150&q=60'
+//   }
+// ];
 
 export const popUpScreenData = [
 
@@ -1189,6 +1212,16 @@ export const products = [
   //   description: 'Outdoor Texture',
   //   categoryId: 119,
   // },
+
+  {
+    productId: 4010,
+    imgURL: categoryDoormat,
+    name: 'Doormats',
+    // color: 'Smoke Grey • Bordo Red • Hazel • Carmine',
+    description: 'Anti-Skid by Prestige',
+    categoryId: 122,
+    brand: prestigeLogo,
+  },
   {
     productId: 1058,
     imgURL: cloudyAlley,
@@ -1315,6 +1348,15 @@ export const products = [
     categoryId: 122,
     brand: prestigeLogo,
   },
+
+  {
+    productId: 4009,
+    imgURL: categorySpc,
+    name: 'Spc Flooring',
+    description: '5mm (Thickness) with IXPE Backing',
+    categoryId: 110,
+    brand: gemLogo,
+  },
   {
     productId: 1072,
     imgURL: aquasafeD2836,
@@ -1322,6 +1364,7 @@ export const products = [
     description: '5mm (Thickness) with IXPE Backing',
     categoryId: 110,
   },
+
   {
     productId: 1073,
     imgURL: aquasafeD2837,
@@ -1382,7 +1425,7 @@ export const products = [
     categoryId: 112,
     subcategoryId: 1121, // Avalon Collection
     brandId: null,
-    brand: null,
+    brand: gemcollectionLogo,
     tags: ['sofa fabric', 'avalon', 'premium', 'collection'],
     price: null,
     inStock: true,
@@ -1398,7 +1441,7 @@ export const products = [
     categoryId: 112,
     subcategoryId: 1121, // Avalon Collection
     brandId: null,
-    brand: null,
+    brand: gemcollectionLogo,
     tags: ['sofa fabric', 'avalon', 'premium', 'collection'],
     price: null,
     inStock: true,
@@ -1444,7 +1487,7 @@ export const products = [
     categoryId: 112,
     subcategoryId: 1122, // Bitcoin Collection
     brandId: null,
-    brand: null,
+    brand: gemcollectionLogo,
     tags: ['sofa fabric', 'bitcoin', 'modern', 'collection'],
     price: null,
     inStock: true,
@@ -1458,6 +1501,7 @@ export const products = [
     familyName: 'Bitcoin Sofa Fabric',
     variantCode: '1112',
     categoryId: 112,
+
   },
   {
     productId: 1087,
@@ -1480,7 +1524,7 @@ export const products = [
     categoryId: 112,
     subcategoryId: 1123, // Canosa Collection
     brandId: null,
-    brand: null,
+    brand: gemcollectionLogo,
     tags: ['sofa fabric', 'canosa', 'classic', 'collection'],
     price: null,
     inStock: true,
@@ -1850,7 +1894,7 @@ export const products = [
   // Laminate Flooring Products with Grades
   {
     productId: 5001,
-    imgURL: categoryLaminate,
+    imgURL: AC4,
     name: 'Greenpanel AC4',
     familySlug: 'grade-ac4-laminate',
     familyName: 'Grade AC4 Laminate',
@@ -1864,7 +1908,7 @@ export const products = [
     tags: ['laminate', 'flooring', 'ac4', 'oak', 'heavy domestic'],
     price: null,
     inStock: true,
-    variantCode: 'Oak Brown',
+    variantCode: 'AC4 Laminate',
   },
   {
     productId: 5002,
@@ -2074,7 +2118,7 @@ export const products = [
     tags: ['laminate', 'flooring', 'ac5', 'grey', 'commercial'],
     price: null,
     inStock: true,
-    variantCode: 'Grey',
+    variantCode: 'AC5 Laminate',
   },
   {
     productId: 5013,
@@ -2168,7 +2212,7 @@ export const products = [
   },
   {
     productId: 5004,
-    imgURL: categoryLaminate,
+    imgURL: herringbone,
     name: 'Herringbone Pattern',
     familySlug: 'herringbone-laminate',
     familyName: 'Herringbone Laminate',
@@ -2182,7 +2226,7 @@ export const products = [
     tags: ['laminate', 'flooring', 'herringbone', 'pattern', 'multi-tone'],
     price: null,
     inStock: true,
-    variantCode: 'Multi-tone',
+    variantCode: 'Herringbone',
   },
   {
     productId: 5018,
@@ -2333,9 +2377,9 @@ export const products = [
   {
     productId: 6004,
     imgURL: categoryCurtain,
-    name: 'Curtain Fabric',
-    familySlug: 'curtain-fabric',
-    familyName: 'Curtain Fabric',
+    name: 'Annapurna Curtains',
+    familySlug: 'annapurna-curtain-fabric',
+    familyName: 'Annapurna Curtain Fabric',
     description: 'Custom',
     dimensions: 'Custom',
     color: 'Various',
@@ -2343,9 +2387,55 @@ export const products = [
     brandId: null,
     brand: gemLogo,
     tags: ['curtain', 'fabric', 'custom'],
-    price: null,
-    inStock: true,
   },
+
+
+  {
+    productId: 4011,
+    imgURL: categoryCurtain,
+    name: 'Hilton Curtains',
+    familySlug: 'hilton-curtain-fabric',
+    familyName: 'Hilton Curtain Fabric',
+    description: 'Custom',
+    dimensions: 'Custom',
+    color: 'Various',
+    categoryId: 125, // Curtain Fabric
+    brandId: null,
+    brand: gemLogo,
+    tags: ['curtain', 'fabric', 'custom'],
+  },
+
+  {
+    productId: 4012,
+    imgURL: categoryCurtain,
+    name: 'Mustang Curtains',
+    familySlug: 'mustang-curtain-fabric',
+    familyName: 'Mustang Curtain Fabric',
+    description: 'Custom',
+    dimensions: 'Custom',
+    color: 'Various',
+    categoryId: 125, // Curtain Fabric
+    brandId: null,
+    brand: gemLogo,
+    tags: ['curtain', 'fabric', 'custom'],
+  },
+
+  {
+    productId: 4013,
+    imgURL: categoryCurtain,
+    name: 'Rara Curtains',
+    familySlug: 'rara-curtain-fabric',
+    familyName: 'Rara Curtain Fabric',
+    description: 'Custom',
+    dimensions: 'Custom',
+    color: 'Various',
+    categoryId: 125, // Curtain Fabric
+    brandId: null,
+    brand: gemLogo,
+    tags: ['curtain', 'fabric', 'custom'],
+  },
+
+
 
   // Table Napkin - Gem
   {
@@ -2402,6 +2492,23 @@ export const products = [
   },
 
   // Gym Rubber Tiles - Gem
+
+  {
+    productId: 6050,
+    imgURL: gymtiles,
+    name: 'Gym Rubber Tiles',
+    familySlug: 'gym-rubber-tiles',
+    familyName: 'Gym Rubber Tiles',
+    description: '507mm x 507mm x 20mm (LxBxH)',
+    dimensions: '507mm x 507mm x 20mm (LxBxH)',
+    color: 'Various',
+    categoryId: 118, // Gym Rubber Tiles
+    brandId: null,
+    brand: gemLogo,
+    tags: ['gym', 'rubber tiles', 'flooring'],
+    price: null,
+    inStock: true,
+  },
   {
     productId: 6008,
     imgURL: categoryGymTile,
@@ -2431,7 +2538,7 @@ export const products = [
     color: 'Various',
     categoryId: 119, // Outdoor Fabric
     brandId: null,
-    brand: gemLogo,
+    brand: gemcollectionLogo,
     tags: ['outdoor', 'fabric', 'custom'],
     price: null,
     inStock: true,
@@ -2448,7 +2555,7 @@ export const products = [
     color: '101',
     categoryId: 119, // Outdoor Fabric
     brandId: null,
-    brand: gemLogo,
+    brand: gemcollectionLogo,
     tags: ['outdoor', 'fabric', 'custom'],
     price: null,
     inStock: true,
@@ -2465,7 +2572,7 @@ export const products = [
     color: '102',
     categoryId: 119, // Outdoor Fabric
     brandId: null,
-    brand: gemLogo,
+    brand: gemcollectionLogo,
     tags: ['outdoor', 'fabric', 'custom'],
     price: null,
     inStock: true,
@@ -2482,7 +2589,7 @@ export const products = [
     color: '103',
     categoryId: 119, // Outdoor Fabric
     brandId: null,
-    brand: gemLogo,
+    brand: gemcollectionLogo,
     tags: ['outdoor', 'fabric', 'custom'],
     price: null,
     inStock: true,
@@ -2499,7 +2606,7 @@ export const products = [
     color: '104',
     categoryId: 119, // Outdoor Fabric
     brandId: null,
-    brand: gemLogo,
+    brand: gemcollectionLogo,
     tags: ['outdoor', 'fabric', 'custom'],
     price: null,
     inStock: true,
@@ -2516,7 +2623,7 @@ export const products = [
     color: '105',
     categoryId: 119, // Outdoor Fabric
     brandId: null,
-    brand: gemLogo,
+    brand: gemcollectionLogo,
     tags: ['outdoor', 'fabric', 'custom'],
     price: null,
     inStock: true,
@@ -2533,7 +2640,7 @@ export const products = [
     color: '106',
     categoryId: 119, // Outdoor Fabric
     brandId: null,
-    brand: gemLogo,
+    brand: gemcollectionLogo,
     tags: ['outdoor', 'fabric', 'custom'],
     price: null,
     inStock: true,
@@ -2550,7 +2657,7 @@ export const products = [
     color: '107',
     categoryId: 119, // Outdoor Fabric
     brandId: null,
-    brand: gemLogo,
+    brand: gemcollectionLogo,
     tags: ['outdoor', 'fabric', 'custom'],
     price: null,
     inStock: true,
@@ -2567,7 +2674,7 @@ export const products = [
     color: '108',
     categoryId: 119, // Outdoor Fabric
     brandId: null,
-    brand: gemLogo,
+    brand: gemcollectionLogo,
     tags: ['outdoor', 'fabric', 'custom'],
     price: null,
     inStock: true,
@@ -2584,7 +2691,7 @@ export const products = [
     color: '109',
     categoryId: 119, // Outdoor Fabric
     brandId: null,
-    brand: gemLogo,
+    brand: gemcollectionLogo,
     tags: ['outdoor', 'fabric', 'custom'],
     price: null,
     inStock: true,
@@ -2601,7 +2708,7 @@ export const products = [
     color: '110',
     categoryId: 119, // Outdoor Fabric
     brandId: null,
-    brand: gemLogo,
+    brand: gemcollectionLogo,
     tags: ['outdoor', 'fabric', 'custom'],
     price: null,
     inStock: true,
@@ -2618,7 +2725,7 @@ export const products = [
     color: '111',
     categoryId: 119, // Outdoor Fabric
     brandId: null,
-    brand: gemLogo,
+    brand: gemcollectionLogo,
     tags: ['outdoor', 'fabric', 'custom'],
     price: null,
     inStock: true,
@@ -2635,7 +2742,7 @@ export const products = [
     color: '112',
     categoryId: 119, // Outdoor Fabric
     brandId: null,
-    brand: gemLogo,
+    brand: gemcollectionLogo,
     tags: ['outdoor', 'fabric', 'custom'],
     price: null,
     inStock: true,
@@ -2652,7 +2759,7 @@ export const products = [
     color: '113',
     categoryId: 119, // Outdoor Fabric
     brandId: null,
-    brand: gemLogo,
+    brand: gemcollectionLogo,
     tags: ['outdoor', 'fabric', 'custom'],
     price: null,
     inStock: true,
@@ -2669,7 +2776,7 @@ export const products = [
     color: '114',
     categoryId: 119, // Outdoor Fabric
     brandId: null,
-    brand: gemLogo,
+    brand: gemcollectionLogo,
     tags: ['outdoor', 'fabric', 'custom'],
     price: null,
     inStock: true,
@@ -2686,7 +2793,7 @@ export const products = [
     color: '115',
     categoryId: 119, // Outdoor Fabric
     brandId: null,
-    brand: gemLogo,
+    brand: gemcollectionLogo,
     tags: ['outdoor', 'fabric', 'custom'],
     price: null,
     inStock: true,
@@ -2703,7 +2810,7 @@ export const products = [
     color: '116',
     categoryId: 119, // Outdoor Fabric
     brandId: null,
-    brand: gemLogo,
+    brand: gemcollectionLogo,
     tags: ['outdoor', 'fabric', 'custom'],
     price: null,
     inStock: true,
@@ -2720,7 +2827,7 @@ export const products = [
     color: '118',
     categoryId: 119, // Outdoor Fabric
     brandId: null,
-    brand: gemLogo,
+    brand: gemcollectionLogo,
     tags: ['outdoor', 'fabric', 'custom'],
     price: null,
     inStock: true,
@@ -2737,7 +2844,7 @@ export const products = [
     color: '119',
     categoryId: 119, // Outdoor Fabric
     brandId: null,
-    brand: gemLogo,
+    brand: gemcollectionLogo,
     tags: ['outdoor', 'fabric', 'custom'],
     price: null,
     inStock: true,
@@ -2754,7 +2861,7 @@ export const products = [
     color: '120',
     categoryId: 119, // Outdoor Fabric
     brandId: null,
-    brand: gemLogo,
+    brand: gemcollectionLogo,
     tags: ['outdoor', 'fabric', 'custom'],
     price: null,
     inStock: true,
@@ -2771,7 +2878,7 @@ export const products = [
     color: '121',
     categoryId: 119, // Outdoor Fabric
     brandId: null,
-    brand: gemLogo,
+    brand: gemcollectionLogo,
     tags: ['outdoor', 'fabric', 'custom'],
     price: null,
     inStock: true,
@@ -2788,7 +2895,7 @@ export const products = [
     color: '122',
     categoryId: 119, // Outdoor Fabric
     brandId: null,
-    brand: gemLogo,
+    brand: gemcollectionLogo,
     tags: ['outdoor', 'fabric', 'custom'],
     price: null,
     inStock: true,
@@ -2805,7 +2912,7 @@ export const products = [
     color: '123',
     categoryId: 119, // Outdoor Fabric
     brandId: null,
-    brand: gemLogo,
+    brand: gemcollectionLogo,
     tags: ['outdoor', 'fabric', 'custom'],
     price: null,
     inStock: true,
@@ -2822,7 +2929,7 @@ export const products = [
     color: '1004',
     categoryId: 119, // Outdoor Fabric
     brandId: null,
-    brand: gemLogo,
+    brand: gemcollectionLogo,
     tags: ['outdoor', 'fabric', 'custom'],
     price: null,
     inStock: true,
@@ -2839,7 +2946,7 @@ export const products = [
     color: '1011',
     categoryId: 119, // Outdoor Fabric
     brandId: null,
-    brand: gemLogo,
+    brand: gemcollectionLogo,
     tags: ['outdoor', 'fabric', 'custom'],
     price: null,
     inStock: true,
@@ -2856,7 +2963,7 @@ export const products = [
     color: '1019',
     categoryId: 119, // Outdoor Fabric
     brandId: null,
-    brand: gemLogo,
+    brand: gemcollectionLogo,
     tags: ['outdoor', 'fabric', 'custom'],
     price: null,
     inStock: true,
@@ -2873,7 +2980,7 @@ export const products = [
     color: '1022',
     categoryId: 119, // Outdoor Fabric
     brandId: null,
-    brand: gemLogo,
+    brand: gemcollectionLogo,
     tags: ['outdoor', 'fabric', 'custom'],
     price: null,
     inStock: true,
@@ -2890,7 +2997,7 @@ export const products = [
     color: '1027',
     categoryId: 119, // Outdoor Fabric
     brandId: null,
-    brand: gemLogo,
+    brand: gemcollectionLogo,
     tags: ['outdoor', 'fabric', 'custom'],
     price: null,
     inStock: true,
@@ -2907,7 +3014,7 @@ export const products = [
     color: '1030',
     categoryId: 119, // Outdoor Fabric
     brandId: null,
-    brand: gemLogo,
+    brand: gemcollectionLogo,
     tags: ['outdoor', 'fabric', 'custom'],
     price: null,
     inStock: true,
@@ -2924,7 +3031,7 @@ export const products = [
     color: '1041',
     categoryId: 119, // Outdoor Fabric
     brandId: null,
-    brand: gemLogo,
+    brand: gemcollectionLogo,
     tags: ['outdoor', 'fabric', 'custom'],
     price: null,
     inStock: true,
@@ -2941,7 +3048,7 @@ export const products = [
     color: '1047',
     categoryId: 119, // Outdoor Fabric
     brandId: null,
-    brand: gemLogo,
+    brand: gemcollectionLogo,
     tags: ['outdoor', 'fabric', 'custom'],
     price: null,
     inStock: true,
@@ -2958,7 +3065,7 @@ export const products = [
     color: '1059',
     categoryId: 119, // Outdoor Fabric
     brandId: null,
-    brand: gemLogo,
+    brand: gemcollectionLogo,
     tags: ['outdoor', 'fabric', 'custom'],
     price: null,
     inStock: true,
@@ -2975,7 +3082,7 @@ export const products = [
     color: '1069',
     categoryId: 119, // Outdoor Fabric
     brandId: null,
-    brand: gemLogo,
+    brand: gemcollectionLogo,
     tags: ['outdoor', 'fabric', 'custom'],
     price: null,
     inStock: true,
@@ -2992,7 +3099,7 @@ export const products = [
     color: '1074',
     categoryId: 119, // Outdoor Fabric
     brandId: null,
-    brand: gemLogo,
+    brand: gemcollectionLogo,
     tags: ['outdoor', 'fabric', 'custom'],
     price: null,
     inStock: true,

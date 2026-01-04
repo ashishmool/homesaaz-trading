@@ -9,7 +9,7 @@ import ecstacyPillow from './products/pillows/feather-pillow.png';
 import gravityPillow from './products/pillows/gravity-pillow.png';
 import mattressProtector from './products/mattress-protectors/kingkoil-protector.png';
 import mattressProtectorImg from './products/mattress-protectors/mattress-protector.png';
-import terryProtector from './products/mattress-protectors/terry.png';
+import terryProtector from './products/mattress-protectors/terry.jpg';
 import terryProtector1 from './products/mattress-protectors/terry-protector-1.jpg';
 import springtekEndurance from './products/pillows/springtek-endurance.jpg';
 import darlingMicrogel from './products/pillows/darling-nanogel.png';
@@ -56,6 +56,9 @@ import categoryCurtain from './products/curtains/category-curtain.jpg';
 import categoryCushion from './products/cushion-cover/category-cushion.jpg';
 import categoryDoormat from './products/doormats/category-doormat.jpg';
 import categoryGymTile from './products/gym-rubber-tiles/category-gym-rubbertile.jpg';
+import gymtiles from './products/gym-rubber-tiles/gym-rubber-tyles.png';
+
+
 import categoryLaminate from './products/laminates/category-laminate.jpg';
 import categoryLinen from './products/linens/category-linens.jpg';
 import categoryNapkin from './products/napkins/category-napkin.jpg';
@@ -65,6 +68,7 @@ import categoryRunner from './products/bed-runner/category-runner.jpg';
 import categorySofaFabric from './products/sofa-fabric/category-sofa-fabric.jpg';
 import categoryShowerCurtain from './products/shower-curtain/category-shower-curtain.jpg';
 import categorySpc from './products/spc-flooring/category-spc.jpg';
+
 import categoryTowel from './products/towels/category-towel.jpg';
 import categoryRollaway from './products/rollaway-beds/category-rollaway.jpg';
 import categoryProtector from './products/mattress-protectors/category-protector.jpg';
@@ -91,6 +95,9 @@ import client7 from './clients/soaltee.svg';
 import kkLogo from '../logos/kk-logo.svg';
 import coirtuffLogo from '../logos/coirtuff-logo.svg';
 import gemLogo from '../logos/gem-logo.svg';
+import gemfloorinfLogo from '../logos/gem-flooring.svg';
+import gemcollectionLogo from '../logos/gem-collection.svg';
+
 import springtekLogo from '../logos/springtek-logo.svg';
 import darlingLogo from '../logos/darling-logo.svg';
 import tridentLogo from '../logos/trident-logo.svg';
@@ -167,6 +174,7 @@ import aquasafeD2864 from './products/spc-flooring/d-2864.jpg';
 import aquasafeD2865 from './products/spc-flooring/d-2865.jpg';
 import aquasafeD2873 from './products/spc-flooring/d-2873.jpg';
 import aquasafeD2885 from './products/spc-flooring/d-2885.jpg';
+import spcflooring from './products/spc-flooring/spc-flooring.jpg';
 
 
 import avalon1 from './products/sofa-fabric/avalon/1.jpg';
@@ -204,14 +212,47 @@ import irish from './products/laminates/irishoak02.png';
 import taxus from './products/laminates/taxus06.png';
 import vintage from './products/laminates/vintageoak16.png';
 import acer from './products/laminates/AC5-Acer419.jpg';
-
 import lf01 from './products/laminates/LF-01.jpg';
 import lf02 from './products/laminates/LF-02.jpg';
 import lf03 from './products/laminates/LF-03.jpg';
 import lf04 from './products/laminates/LF-04.jpg';
 import lf05 from './products/laminates/LF-05.jpg';
+import herringbone from './products/laminates/laminate-grey-herringbone.png';
+import AC4 from './products/laminates/GP_415.jpg';
+
+import A1 from './products/Annapurna-curtains/A1.jpg';
+import A2 from './products/Annapurna-curtains/A2.jpg';
+import A3 from './products/Annapurna-curtains/A3.jpg';
+import A4 from './products/Annapurna-curtains/A4.jpg';
+import A5 from './products/Annapurna-curtains/A5.jpg';
+
+import H1 from './products/Hilton-Curtains/H1.jpg';
+import H2 from './products/Hilton-Curtains/H2.jpg';
+import H3 from './products/Hilton-Curtains/H3.jpg';
+import H4 from './products/Hilton-Curtains/H4.jpg';
+import H5 from './products/Hilton-Curtains/H5.jpg';
+import H6 from './products/Hilton-Curtains/H6.jpg';
+import H7 from './products/Hilton-Curtains/H7.jpg';
+
+import M1 from './products/Mustang-Curtains/M1.jpg';
+import M2 from './products/Mustang-Curtains/M2.jpg';
+import M3 from './products/Mustang-Curtains/M3.jpg';
+import M4 from './products/Mustang-Curtains/M4.jpg';
+import M5 from './products/Mustang-Curtains/M5.jpg';
+import M6 from './products/Mustang-Curtains/M6.jpg';
+
+import R1 from './products/Rara-Curtains/R1.jpg';
+import R2 from './products/Rara-Curtains/R2.jpg';
+import R3 from './products/Rara-Curtains/R3.jpg';
+import R4 from './products/Rara-Curtains/R4.jpg';
+import R5 from './products/Rara-Curtains/R5.jpg';
+import R6 from './products/Rara-Curtains/R6.jpg';
+import R7 from './products/Rara-Curtains/R7.jpg';
+
 
 export {
+  A1,A2,A3,A4,A5, H1, H2, H3, H4, H5, H6, H7, M1, M2, M3, M4, M5, M6, R1, R2, R3, R4, R5, R6, R7,
+  acasia,irish,taxus,vintage,acer,lf01,lf02,lf03,lf04,lf05,herringbone,AC4,
   restazure,restazure2,
   eurosoft,
   maharajagrand,
@@ -234,11 +275,11 @@ export {
   garwareGrey,
   garwareSilver,
   garwareSHR,
-    garwareMatte,
+  garwareMatte,
   canosa1, canosa2,
   bitcoin1, bitcoin2, bitcoin3,
   avalon1, avalon2, avalon3, avalon4, avalon5,
-  aquasafeD2836, aquasafeD2837, aquasafeD2839, aquasafeD2861, aquasafeD2864, aquasafeD2865, aquasafeD2873, aquasafeD2885,
+  aquasafeD2836, aquasafeD2837, aquasafeD2839, aquasafeD2861, aquasafeD2864, aquasafeD2865, aquasafeD2873, aquasafeD2885,spcflooring,
   cloudyAlley, diana, dianaAlley, honeyComb, nigel, parity, ripple, river, softy, sprinkle, stones, stripe, twill, wavy,
 
   catOutdoorImage1, catOutdoorImage2, catOutdoorImage3, catOutdoorImage4, catOutdoorImage5, catOutdoorImage6,
@@ -253,7 +294,7 @@ export {
   kingkoilRollaway, categoryRollaway, categoryProtector, categoryTopper,
   gemSprinkle, hsVideo, gemJasmine, gemSerenity, featherPillow, memoryPillow, fiberPillow,
   client1,client2, client3, client4,client5, client6, client7,
-  kkLogo, coirtuffLogo, gemLogo, springtekLogo, darlingLogo, tridentLogo,greenpanelLogo,
+  kkLogo, coirtuffLogo, gemLogo,gemfloorinfLogo,gemcollectionLogo, springtekLogo, darlingLogo, tridentLogo,greenpanelLogo,
   // ad1, ad2, 
   tridentBathrobe, bathrobe3, bathrobe4, 
   // Uncomment these when bathrobe-5.jpg and bathrobe-6.jpg files are added:
@@ -275,6 +316,8 @@ export {
   categoryCushion,
   categoryDoormat,
   categoryGymTile,
+  gymtiles,
+
   categoryLaminate,
   categoryLinen,
   categoryNapkin,
@@ -292,7 +335,6 @@ export {
   footerLogo,
   headerLogo,
   homesaazLogo,
-
   americanOak,
   bleachedOak,
   categoryOak,
@@ -303,16 +345,5 @@ export {
   naturalOak,
   navaraOak,
   nevadaOak,
-
-  acasia,
-  irish,
-  taxus,
-  vintage,
-  acer,
-
-    lf01,
-    lf02,
-    lf03,
-    lf04,
-    lf05,
+  
 };
