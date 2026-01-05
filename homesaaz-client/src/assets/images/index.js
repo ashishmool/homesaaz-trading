@@ -303,20 +303,86 @@ import H40 from './products/Hilton-Curtains/140.png';
 import H41 from './products/Hilton-Curtains/141.png';
 import H42 from './products/Hilton-Curtains/142.png';
 
-import M1 from './products/Mustang-Curtains/M1.jpg';
-import M2 from './products/Mustang-Curtains/M2.jpg';
-import M3 from './products/Mustang-Curtains/M3.jpg';
-import M4 from './products/Mustang-Curtains/M4.jpg';
-import M5 from './products/Mustang-Curtains/M5.jpg';
-import M6 from './products/Mustang-Curtains/M6.jpg';
+import mustang from './products/Mustang-Curtains/M1.jpg';
+import mustang2 from './products/Mustang-Curtains/M2.jpg';
+import mustang3 from './products/Mustang-Curtains/M3.jpg';
+import mustang4 from './products/Mustang-Curtains/M4.jpg';
+import mustang5 from './products/Mustang-Curtains/M5.jpg';
+import mustang6 from './products/Mustang-Curtains/M6.jpg';
+import M1 from './products/Mustang-Curtains/201.png';
+import M2 from './products/Mustang-Curtains/202.png';
+import M3 from './products/Mustang-Curtains/203.png';
+import M4 from './products/Mustang-Curtains/204.png';
+import M5 from './products/Mustang-Curtains/205.png';
+import M6 from './products/Mustang-Curtains/206.png';
+import M7 from './products/Mustang-Curtains/207.png';
+import M8 from './products/Mustang-Curtains/208.png';
+import M9 from './products/Mustang-Curtains/209.png';
+import M10 from './products/Mustang-Curtains/210.png';
+import M11 from './products/Mustang-Curtains/211.png';
+import M12 from './products/Mustang-Curtains/212.png';
+import M13 from './products/Mustang-Curtains/213.png';
+import M14 from './products/Mustang-Curtains/214.png';
+import M15 from './products/Mustang-Curtains/215.png';
+import M16 from './products/Mustang-Curtains/216.png';
+import M17 from './products/Mustang-Curtains/217.png';
+import M18 from './products/Mustang-Curtains/218.png';
+import M19 from './products/Mustang-Curtains/219.png';
+import M20 from './products/Mustang-Curtains/220.png';
+import M21 from './products/Mustang-Curtains/221.png';
+import M22 from './products/Mustang-Curtains/222.png';
+import M23 from './products/Mustang-Curtains/223.png';
+import M24 from './products/Mustang-Curtains/224.png';
+import M25 from './products/Mustang-Curtains/225.png';
+import M26 from './products/Mustang-Curtains/226.png';
+import M27 from './products/Mustang-Curtains/227.png';
+import M28 from './products/Mustang-Curtains/228.png';
+import M29 from './products/Mustang-Curtains/229.png';
+import M30 from './products/Mustang-Curtains/230.png';
+import M31 from './products/Mustang-Curtains/231.png';
+import M32 from './products/Mustang-Curtains/232.png';
+import M33 from './products/Mustang-Curtains/233.png';
+import M34 from './products/Mustang-Curtains/234.png';
+import M35 from './products/Mustang-Curtains/235.png';
+import M36 from './products/Mustang-Curtains/236.png';
 
-import R1 from './products/Rara-Curtains/R1.jpg';
-import R2 from './products/Rara-Curtains/R2.jpg';
-import R3 from './products/Rara-Curtains/R3.jpg';
-import R4 from './products/Rara-Curtains/R4.jpg';
-import R5 from './products/Rara-Curtains/R5.jpg';
-import R6 from './products/Rara-Curtains/R6.jpg';
-import R7 from './products/Rara-Curtains/R7.jpg';
+import rara from './products/Rara-Curtains/R1.jpg';
+import rara2 from './products/Rara-Curtains/R2.jpg';
+import rara3 from './products/Rara-Curtains/R3.jpg';
+import rara4 from './products/Rara-Curtains/R4.jpg';
+import rara5 from './products/Rara-Curtains/R5.jpg';
+import rara6 from './products/Rara-Curtains/R6.jpg';
+import rara7 from './products/Rara-Curtains/R7.jpg';
+import R1 from './products/Rara-Curtains/301.png';
+import R2 from './products/Rara-Curtains/302.png';
+import R4 from './products/Rara-Curtains/304.png';
+import R5 from './products/Rara-Curtains/305.png';
+import R6 from './products/Rara-Curtains/306.png';
+import R7 from './products/Rara-Curtains/307.png';
+import R8 from './products/Rara-Curtains/308.png';
+import R9 from './products/Rara-Curtains/309.png';
+import R11 from './products/Rara-Curtains/311.png';
+import R12 from './products/Rara-Curtains/312.png';
+import R13 from './products/Rara-Curtains/313.png';
+import R14 from './products/Rara-Curtains/314.png';
+import R15 from './products/Rara-Curtains/315.png';
+import R16 from './products/Rara-Curtains/316.png';
+import R18 from './products/Rara-Curtains/318.png';
+import R19 from './products/Rara-Curtains/319.png';
+import R20 from './products/Rara-Curtains/320.png';
+import R21 from './products/Rara-Curtains/321.png';
+import R22 from './products/Rara-Curtains/322.png';
+import R23 from './products/Rara-Curtains/323.png';
+import R24 from './products/Rara-Curtains/324.png';
+import R26 from './products/Rara-Curtains/326.png';
+import R27 from './products/Rara-Curtains/327.png';
+import R28 from './products/Rara-Curtains/328.png';
+import R29 from './products/Rara-Curtains/329.png';
+import R30 from './products/Rara-Curtains/330.png';
+import R31 from './products/Rara-Curtains/331.png';
+import R33 from './products/Rara-Curtains/333.png';
+import R34 from './products/Rara-Curtains/334.png';
+import R35 from './products/Rara-Curtains/335.png';
 
 import bedrunner2 from './products/bed-runner/bedrunner2.jpeg';
 import bedrunner3 from './products/bed-runner/bedrunner3.jpeg';
@@ -328,8 +394,8 @@ export {
   bedrunner, bedrunner2, bedrunner3, bedrunner4,
   A1,A2,A3,A4,A5, B1, B2, B3, B4, B5, B6, B7, B8, B9, B10, B11, B12, B13, B14, B15, B16, B17, B18, B19, B20, B21, B22, B23, B24, B25, B26, B27, B28, B29, B30,
   hilton, hilton2, hilton3, hilton4, hilton5, hilton6, hilton7, H1, H2, H3, H4, H5, H6, H7, H8, H9, H10, H11, H12, H13, H14, H15, H16, H17, H18, H19, H20, H21, H22, H23, H24, H25, H26, H27, H28, H29, H30, H31, H32, H33, H34, H35, H36, H37, H38, H39, H40, H41, H42,
-  M1, M2, M3, M4, M5, M6,
-  R1, R2, R3, R4, R5, R6, R7,
+  mustang, mustang2, mustang3, mustang4, mustang5, mustang6, M1, M2, M3, M4, M5, M6, M7, M8, M9, M10, M11, M12, M13, M14, M15, M16, M17, M18, M19, M20, M21, M22, M23, M24, M25, M26, M27, M28, M29, M30, M31, M32, M33, M34, M35, M36,
+  rara, rara2, rara3, rara4, rara5, rara6, rara7, R1, R2, R4, R5, R6, R7, R8, R9, R11, R12, R13, R14, R15, R16, R18, R19, R20, R21, R22, R23, R24, R26, R27, R28, R29, R30, R31, R33, R34, R35,
   acasia,irish,taxus,vintage,acer,lf01,lf02,lf03,lf04,lf05,herringbone,AC4,
   restazure,restazure2,
   eurosoft,
