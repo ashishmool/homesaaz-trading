@@ -24,9 +24,8 @@ import towel from './products/towels/towel.jpg';
 import tridentBathrobe from './products/bath-robe/bathrobe-4.jpg';
 import bathrobe3 from './products/bath-robe/bathrobe-3.jpg';
 import bathrobe4 from './products/bath-robe/bathrobe-4.jpg';
-// Uncomment these when bathrobe-5.jpg and bathrobe-6.jpg files are added:
-// import bathrobe5 from './products/bath-robe/bathrobe-5.jpg';
-// import bathrobe6 from './products/bath-robe/bathrobe-6.jpg';
+import bathrobe5 from './products/bath-robe/Waffle.jpeg';
+import bathrobe6 from './products/bath-robe/Waffle-bathrobe.jpeg';
 
 import garwareFilm from './products/garware-films/category-garware.jpg';
 import garwareTowel from './products/towels/Trident-towel.jpg';
@@ -78,8 +77,6 @@ import categoryTopper from './products/mattress-toppers/category-topper.jpg';
 import footerLogo from './footer-logo.svg';
 import headerLogo from './header-logo.svg';
 import homesaazLogo from './homesaazLogo.png';
-
-
 
 // import thumbnailBackground from './thumbnail-background.svg';
 
@@ -225,14 +222,86 @@ import A2 from './products/Annapurna-curtains/A2.jpg';
 import A3 from './products/Annapurna-curtains/A3.jpg';
 import A4 from './products/Annapurna-curtains/A4.jpg';
 import A5 from './products/Annapurna-curtains/A5.jpg';
+import B1 from './products/Annapurna-curtains/401.png';
+import B2 from './products/Annapurna-curtains/402.png';
+import B3 from './products/Annapurna-curtains/403.png';
+import B4 from './products/Annapurna-curtains/404.png';
+import B5 from './products/Annapurna-curtains/405.png';
+import B6 from './products/Annapurna-curtains/406.png';
+import B7 from './products/Annapurna-curtains/407.png';
+import B8 from './products/Annapurna-curtains/408.png';
+import B9 from './products/Annapurna-curtains/409.png';
+import B10 from './products/Annapurna-curtains/410.png';
+import B11 from './products/Annapurna-curtains/411.png';
+import B12 from './products/Annapurna-curtains/412.png';
+import B13 from './products/Annapurna-curtains/413.png';
+import B14 from './products/Annapurna-curtains/414.png';
+import B15 from './products/Annapurna-curtains/415.png';
+import B16 from './products/Annapurna-curtains/416.png';
+import B17 from './products/Annapurna-curtains/417.png';
+import B18 from './products/Annapurna-curtains/418.png';
+import B19 from './products/Annapurna-curtains/419.png';
+import B20 from './products/Annapurna-curtains/420.png';
+import B21 from './products/Annapurna-curtains/421.png';
+import B22 from './products/Annapurna-curtains/422.png';
+import B23 from './products/Annapurna-curtains/423.png';
+import B24 from './products/Annapurna-curtains/424.png';
+import B25 from './products/Annapurna-curtains/425.png';
+import B26 from './products/Annapurna-curtains/426.png';
+import B27 from './products/Annapurna-curtains/427.png';
+import B28 from './products/Annapurna-curtains/428.png';
+import B29 from './products/Annapurna-curtains/429.png';
+import B30 from './products/Annapurna-curtains/430.png';
 
-import H1 from './products/Hilton-Curtains/H1.jpg';
-import H2 from './products/Hilton-Curtains/H2.jpg';
-import H3 from './products/Hilton-Curtains/H3.jpg';
-import H4 from './products/Hilton-Curtains/H4.jpg';
-import H5 from './products/Hilton-Curtains/H5.jpg';
-import H6 from './products/Hilton-Curtains/H6.jpg';
-import H7 from './products/Hilton-Curtains/H7.jpg';
+import hilton from './products/Hilton-Curtains/H1.jpg';
+import hilton2 from './products/Hilton-Curtains/H2.jpg';
+import hilton3 from './products/Hilton-Curtains/H3.jpg';
+import hilton4 from './products/Hilton-Curtains/H4.jpg';
+import hilton5 from './products/Hilton-Curtains/H5.jpg';
+import hilton6 from './products/Hilton-Curtains/H6.jpg';
+import hilton7 from './products/Hilton-Curtains/H7.jpg';
+import H1 from './products/Hilton-Curtains/101.png';
+import H2 from './products/Hilton-Curtains/102.png';
+import H3 from './products/Hilton-Curtains/103.png';
+import H4 from './products/Hilton-Curtains/104.png';
+import H5 from './products/Hilton-Curtains/105.png';
+import H6 from './products/Hilton-Curtains/106.png';
+import H7 from './products/Hilton-Curtains/107.png';
+import H8 from './products/Hilton-Curtains/108.png';
+import H9 from './products/Hilton-Curtains/109.png';
+import H10 from './products/Hilton-Curtains/110.png';
+import H11 from './products/Hilton-Curtains/111.png';
+import H12 from './products/Hilton-Curtains/112.png';
+import H13 from './products/Hilton-Curtains/113.png';
+import H14 from './products/Hilton-Curtains/114.png';
+import H15 from './products/Hilton-Curtains/115.png';
+import H16 from './products/Hilton-Curtains/116.png';
+import H17 from './products/Hilton-Curtains/117.png';
+import H18 from './products/Hilton-Curtains/118.png';
+import H19 from './products/Hilton-Curtains/119.png';
+import H20 from './products/Hilton-Curtains/120.png';
+import H21 from './products/Hilton-Curtains/121.png';
+import H22 from './products/Hilton-Curtains/122.png';
+import H23 from './products/Hilton-Curtains/123.png';
+import H24 from './products/Hilton-Curtains/124.png';
+import H25 from './products/Hilton-Curtains/125.png';
+import H26 from './products/Hilton-Curtains/126.png';
+import H27 from './products/Hilton-Curtains/127.png';
+import H28 from './products/Hilton-Curtains/128.png';
+import H29 from './products/Hilton-Curtains/129.png';
+import H30 from './products/Hilton-Curtains/130.png';
+import H31 from './products/Hilton-Curtains/131.png';
+import H32 from './products/Hilton-Curtains/132.png';
+import H33 from './products/Hilton-Curtains/133.png';
+import H34 from './products/Hilton-Curtains/134.png';
+import H35 from './products/Hilton-Curtains/135.png';
+import H36 from './products/Hilton-Curtains/136.png';
+import H37 from './products/Hilton-Curtains/137.png';
+import H38 from './products/Hilton-Curtains/138.png';
+import H39 from './products/Hilton-Curtains/139.png';
+import H40 from './products/Hilton-Curtains/140.png';
+import H41 from './products/Hilton-Curtains/141.png';
+import H42 from './products/Hilton-Curtains/142.png';
 
 import M1 from './products/Mustang-Curtains/M1.jpg';
 import M2 from './products/Mustang-Curtains/M2.jpg';
@@ -249,9 +318,18 @@ import R5 from './products/Rara-Curtains/R5.jpg';
 import R6 from './products/Rara-Curtains/R6.jpg';
 import R7 from './products/Rara-Curtains/R7.jpg';
 
+import bedrunner2 from './products/bed-runner/bedrunner2.jpeg';
+import bedrunner3 from './products/bed-runner/bedrunner3.jpeg';
+import bedrunner4 from './products/bed-runner/bedrunner4.jpeg';
+import bedrunner from './products/bed-runner/bed-runner.jpg';
+
 
 export {
-  A1,A2,A3,A4,A5, H1, H2, H3, H4, H5, H6, H7, M1, M2, M3, M4, M5, M6, R1, R2, R3, R4, R5, R6, R7,
+  bedrunner, bedrunner2, bedrunner3, bedrunner4,
+  A1,A2,A3,A4,A5, B1, B2, B3, B4, B5, B6, B7, B8, B9, B10, B11, B12, B13, B14, B15, B16, B17, B18, B19, B20, B21, B22, B23, B24, B25, B26, B27, B28, B29, B30,
+  hilton, hilton2, hilton3, hilton4, hilton5, hilton6, hilton7, H1, H2, H3, H4, H5, H6, H7, H8, H9, H10, H11, H12, H13, H14, H15, H16, H17, H18, H19, H20, H21, H22, H23, H24, H25, H26, H27, H28, H29, H30, H31, H32, H33, H34, H35, H36, H37, H38, H39, H40, H41, H42,
+  M1, M2, M3, M4, M5, M6,
+  R1, R2, R3, R4, R5, R6, R7,
   acasia,irish,taxus,vintage,acer,lf01,lf02,lf03,lf04,lf05,herringbone,AC4,
   restazure,restazure2,
   eurosoft,
@@ -297,8 +375,7 @@ export {
   kkLogo, coirtuffLogo, gemLogo,gemfloorinfLogo,gemcollectionLogo, springtekLogo, darlingLogo, tridentLogo,greenpanelLogo,
   // ad1, ad2, 
   tridentBathrobe, bathrobe3, bathrobe4, 
-  // Uncomment these when bathrobe-5.jpg and bathrobe-6.jpg files are added:
-  // bathrobe5, bathrobe6, 
+  bathrobe5, bathrobe6,
   towel,
   mattressTopper,
   comfyPillow,
