@@ -140,6 +140,7 @@ import {
   fabric1059of,
   fabric1069of,
   fabric1074of,
+  fabric1, fabric2, fabric3, fabric4, fabric5, fabric6,
   garwareFilm,
   garwareGrey,
   garwareCharcol,
@@ -183,6 +184,7 @@ import {
   hilton, hilton2, hilton3, hilton4, hilton5, hilton6, hilton7,H1, H2, H3, H4, H5, H6, H7, H8, H9, H10, H11, H12, H13, H14, H15, H16, H17, H18, H19, H20, H21, H22, H23, H24, H25, H26, H27, H28, H29, H30, H31, H32, H33, H34, H35, H36, H37, H38, H39, H40, H41, H42,
   mustang, mustang2, mustang3, mustang4, mustang5, mustang6, M1, M2, M3, M4, M5, M6, M7, M8, M9, M10, M11, M12, M13, M14, M15, M16, M17, M18, M19, M20, M21, M22, M23, M24, M25, M26, M27, M28, M29, M30, M31, M32, M33, M34, M35, M36,
   rara, rara2, rara3, rara4, rara5, rara6, R1, R2, R4, R5, R6, R7, R8, R9, R11, R12, R13, R14, R15, R16, R18, R19, R20, R21, R22, R23, R24, R26, R27, R28, R29, R30, R31, R33, R34, R35,
+  C1, C2, C3, C4, C5, C6, C7, C8, C9, C10, C11, C12, C13, C14, C15, C16, C17, C18, C19, C20, C21, C22,
   bedrunner,
   bedrunner2, bedrunner3, bedrunner4,
 
@@ -2366,6 +2368,7 @@ export const products = [
     tags: ['carpet', 'flooring', 'digital printed', 'custom'],
     price: null,
     inStock: true,
+    gallery: [ categoryCarpet, C2, C4, C6, C7, C8, C9, C10, C11, C13, C14, C15, C16, C18, C19, C20, C21, C22, C1 ],
   },
 
   // Rugs - Prestige
@@ -4242,6 +4245,7 @@ export const products = [
     price: null,
     inStock: true,
     variantCode: 'Various',
+    gallery: [ categoryOutdoorFabric, fabric1, fabric2, fabric3, fabric4, fabric5, fabric6 ],
   },
   {
     productId: 6011,

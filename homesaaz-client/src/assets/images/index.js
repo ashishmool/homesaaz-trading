@@ -129,6 +129,14 @@ import fabric121op from './products/outdoor-fabric/121-Outdoor-Plain.jpg';
 import fabric122op from './products/outdoor-fabric/122-Outdoor-Plain.jpg';
 import fabric123op from './products/outdoor-fabric/123-Outdoor-Plain.jpg';
 
+import fabric1 from './products/outdoor-fabric/outdoor-photos/Image1.jpg';
+import fabric2 from './products/outdoor-fabric/outdoor-photos/Image2.jpg';
+import fabric3 from './products/outdoor-fabric/outdoor-photos/Image3.jpg';
+import fabric4 from './products/outdoor-fabric/outdoor-photos/Image4.jpg';
+import fabric5 from './products/outdoor-fabric/outdoor-photos/Image5.jpg';
+import fabric6 from './products/outdoor-fabric/outdoor-photos/Image6.jpg';
+
+
 import fabric1004of from './products/outdoor-fabric/1004-Outdoor-Texture.jpg';
 import fabric1011of from './products/outdoor-fabric/1011-Outdoor-Texture.jpg';
 import fabric1019of from './products/outdoor-fabric/1019-Outdoor-Texture.jpg';
@@ -384,6 +392,29 @@ import R33 from './products/Rara-Curtains/333.png';
 import R34 from './products/Rara-Curtains/334.png';
 import R35 from './products/Rara-Curtains/335.png';
 
+import C1 from './products/carpets/C1.jpeg';
+ import C2 from './products/carpets/C2.jpeg';
+import C3 from './products/carpets/C3.jpeg';
+import C4 from './products/carpets/C4.jpeg';
+import C5 from './products/carpets/C5.jpeg';
+import C6 from './products/carpets/C6.jpeg';
+import C7 from './products/carpets/C7.jpeg';
+import C8 from './products/carpets/C8.jpeg';
+import C9 from './products/carpets/C9.jpeg';
+import C10 from './products/carpets/C10.jpeg';
+import C11 from './products/carpets/C11.jpeg';
+import C12 from './products/carpets/C12.jpeg';
+import C13 from './products/carpets/C13.jpeg';
+import C14 from './products/carpets/C14.jpeg';
+import C15 from './products/carpets/C15.jpeg';
+import C16 from './products/carpets/C16.jpeg';
+import C17 from './products/carpets/C17.jpeg';
+import C18 from './products/carpets/C18.jpeg';
+import C19 from './products/carpets/C19.jpeg';
+import C20 from './products/carpets/C20.jpeg';
+import C21 from './products/carpets/C21.jpeg';
+import C22 from './products/carpets/C22.jpeg';
+
 import bedrunner2 from './products/bed-runner/bedrunner2.jpeg';
 import bedrunner3 from './products/bed-runner/bedrunner3.jpeg';
 import bedrunner4 from './products/bed-runner/bedrunner4.jpeg';
@@ -397,10 +428,8 @@ export {
   mustang, mustang2, mustang3, mustang4, mustang5, mustang6, M1, M2, M3, M4, M5, M6, M7, M8, M9, M10, M11, M12, M13, M14, M15, M16, M17, M18, M19, M20, M21, M22, M23, M24, M25, M26, M27, M28, M29, M30, M31, M32, M33, M34, M35, M36,
   rara, rara2, rara3, rara4, rara5, rara6, rara7, R1, R2, R4, R5, R6, R7, R8, R9, R11, R12, R13, R14, R15, R16, R18, R19, R20, R21, R22, R23, R24, R26, R27, R28, R29, R30, R31, R33, R34, R35,
   acasia,irish,taxus,vintage,acer,lf01,lf02,lf03,lf04,lf05,herringbone,AC4,
-  restazure,restazure2,
-  eurosoft,
-  maharajagrand,
-  romanluxury,
+  C1, C2, C3, C4, C5, C6, C7, C8, C9, C10, C11, C12, C13, C14, C15, C16, C17, C18, C19, C20, C21, C22,
+  restazure,restazure2, eurosoft, maharajagrand, romanluxury,
   garwareLogo,
   prestigeLogo,
   garwareFilm,
@@ -434,6 +463,7 @@ export {
   fabric122op, fabric123op, fabric1004of, fabric1011of, fabric1019of,
   fabric1022of, fabric1027of, fabric1030of, fabric1041of, fabric1047of,
   fabric1059of, fabric1069of, fabric1074of,
+  fabric1, fabric2, fabric3, fabric4, fabric5, fabric6,
   gravityPillow, ecstacyPillow, categoryPillow,springtekEndurance, darlingMicrogel, darlingProtector,
   kingkoilRollaway, categoryRollaway, categoryProtector, categoryTopper,
   gemSprinkle, hsVideo, gemJasmine, gemSerenity, featherPillow, memoryPillow, fiberPillow,
