@@ -392,7 +392,7 @@ import R33 from './products/Rara-Curtains/333.png';
 import R34 from './products/Rara-Curtains/334.png';
 import R35 from './products/Rara-Curtains/335.png';
 
-import C1 from './products/carpets/C1.jpeg';
+import C1 from './products/carpets/C1.jpg';
  import C2 from './products/carpets/C2.jpeg';
 import C3 from './products/carpets/C3.jpeg';
 import C4 from './products/carpets/C4.jpeg';
@@ -415,6 +415,18 @@ import C20 from './products/carpets/C20.jpeg';
 import C21 from './products/carpets/C21.jpeg';
 import C22 from './products/carpets/C22.jpeg';
 
+import CC1 from './products/cushion-cover/CC1.jpg';
+import CC2 from './products/cushion-cover/CC2.jpg';
+import CC4 from './products/cushion-cover/CC4.jpg';
+import CC5 from './products/cushion-cover/CC5.jpg';
+import CC6 from './products/cushion-cover/CC6.jpg';
+import CC7 from './products/cushion-cover/CC7.jpg';
+import CC8 from './products/cushion-cover/CC8.jpg';
+import CC9 from './products/cushion-cover/CC9.jpg';
+import CC10 from './products/cushion-cover/CC10.jpg';
+import CC11 from './products/cushion-cover/CC11.jpg';
+import CC12 from './products/cushion-cover/CC12.jpg';
+
 import bedrunner2 from './products/bed-runner/bedrunner2.jpeg';
 import bedrunner3 from './products/bed-runner/bedrunner3.jpeg';
 import bedrunner4 from './products/bed-runner/bedrunner4.jpeg';
@@ -430,6 +442,7 @@ export {
   acasia,irish,taxus,vintage,acer,lf01,lf02,lf03,lf04,lf05,herringbone,AC4,
   C1, C2, C3, C4, C5, C6, C7, C8, C9, C10, C11, C12, C13, C14, C15, C16, C17, C18, C19, C20, C21, C22,
   restazure,restazure2, eurosoft, maharajagrand, romanluxury,
+  CC1, CC2, CC4, CC5, CC6, CC7, CC8, CC9, CC10, CC11, CC12,
   garwareLogo,
   prestigeLogo,
   garwareFilm,
