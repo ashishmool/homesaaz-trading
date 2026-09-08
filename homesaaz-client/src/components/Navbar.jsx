@@ -75,7 +75,20 @@ const Navbar = () => {
         aria-label="Primary"
         onMouseLeave={scheduleCloseMega}
       >
-        <Link to="/" className="relative z-10 shrink-0" onClick={() => setMegaOpen(false)}>
+        <Link
+          to="/"
+          className="relative z-10 shrink-0"
+          onClick={(e) => {
+            setMegaOpen(false);
+            if (location.pathname === '/') {
+              e.preventDefault();
+              window.scrollTo({ top: 0, behavior: 'smooth' });
+              if (location.hash) {
+                window.history.replaceState(null, '', '/');
+              }
+            }
+          }}
+        >
           <img src={headerLogo} className="hidden h-8 w-auto lg:block" alt="Homesaaz" />
           <img src={homesaazLogo} className="h-10 w-auto lg:hidden" alt="Homesaaz" />
         </Link>
