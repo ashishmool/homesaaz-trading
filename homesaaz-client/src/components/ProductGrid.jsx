@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import { 
-  Bars3Icon, 
-  Squares2X2Icon, 
+import {
+  Bars3Icon,
+  Squares2X2Icon,
   FunnelIcon,
   ArrowsUpDownIcon,
   ArrowUpIcon,
@@ -11,7 +11,7 @@ import { useSearchContext } from '../contexts/SearchContext';
 import SingleProductCard from './SingleProductCard';
 import FilterPanel from './FilterPanel';
 
-const ProductGrid = ({ 
+const ProductGrid = ({
   className = '',
   showFilters = true,
   showSortOptions = true,
@@ -28,10 +28,9 @@ const ProductGrid = ({
     setShowFilters
   } = useSearchContext();
 
-  const [viewMode, setViewMode] = useState('grid'); // 'grid' or 'list'
+  const [viewMode, setViewMode] = useState('grid');
   const [currentPage, setCurrentPage] = useState(1);
 
-  // Calculate pagination
   const totalPages = Math.ceil(filteredProducts.length / itemsPerPage);
   const startIndex = (currentPage - 1) * itemsPerPage;
   const endIndex = startIndex + itemsPerPage;
@@ -44,24 +43,28 @@ const ProductGrid = ({
       setSortBy(newSortBy);
       setSortOrder('asc');
     }
+    setCurrentPage(1);
   };
 
   const getSortIcon = (sortKey) => {
     if (sortBy !== sortKey) {
-      return <ArrowsUpDownIcon className="h-4 w-4 text-gray-400" />;
+      return <ArrowsUpDownIcon className="h-3.5 w-3.5 opacity-50" />;
     }
-    return sortOrder === 'asc' ? 
-      <ArrowUpIcon className="h-4 w-4 text-coral-red" /> : 
-      <ArrowDownIcon className="h-4 w-4 text-coral-red" />;
+    return sortOrder === 'asc' ? (
+      <ArrowUpIcon className="h-3.5 w-3.5" />
+    ) : (
+      <ArrowDownIcon className="h-3.5 w-3.5" />
+    );
   };
 
   const SortButton = ({ sortKey, children }) => (
     <button
+      type="button"
       onClick={() => handleSortChange(sortKey)}
-      className={`flex items-center space-x-1 px-3 py-2 text-sm rounded-md transition-colors ${
+      className={`inline-flex items-center gap-1.5 rounded-brand px-3 py-2 text-xs font-semibold transition ${
         sortBy === sortKey
-          ? 'bg-coral-red text-white'
-          : 'bg-gray-100 dark:bg-slate-700 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-slate-600'
+          ? 'bg-brand text-white'
+          : 'border border-black/10 bg-white text-ink-muted hover:border-brand/40 hover:text-ink dark:border-white/10 dark:bg-surface-dark-raised dark:text-gray-300'
       }`}
     >
       <span>{children}</span>
@@ -70,60 +73,52 @@ const ProductGrid = ({
   );
 
   return (
-    <div className={`${className}`}>
-      {/* Controls Bar */}
-      <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 mb-6">
-        {/* Results Info */}
-        <div className="text-sm text-gray-600 dark:text-gray-400">
-          Showing {startIndex + 1}-{Math.min(endIndex, filteredProducts.length)} of {filteredProducts.length} products
-        </div>
+    <div className={className}>
+      <div className="mb-6 flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+        <p className="text-sm text-ink-muted dark:text-gray-400">
+          Showing {filteredProducts.length === 0 ? 0 : startIndex + 1}–
+          {Math.min(endIndex, filteredProducts.length)} of {filteredProducts.length}
+        </p>
 
-        {/* Controls */}
-        <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4">
-          {/* Filter Toggle */}
+        <div className="flex flex-wrap items-center gap-2">
           {showFilters && (
             <button
+              type="button"
               onClick={() => setShowFilters(!showFiltersPanel)}
-              className={`flex items-center space-x-2 px-4 py-2 rounded-md transition-colors ${
+              className={`inline-flex items-center gap-2 rounded-brand px-3 py-2 text-xs font-semibold transition ${
                 showFiltersPanel
-                  ? 'bg-coral-red text-white'
-                  : 'bg-gray-100 dark:bg-slate-700 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-slate-600'
+                  ? 'bg-brand text-white'
+                  : 'border border-black/10 text-ink-muted hover:border-brand/40 dark:border-white/10 dark:text-gray-300'
               }`}
             >
               <FunnelIcon className="h-4 w-4" />
-              <span>Filters</span>
-              {showFiltersPanel && (
-                <span className="ml-1 text-xs bg-white/20 px-2 py-0.5 rounded-full">
-                  ON
-                </span>
-              )}
+              Filters
             </button>
           )}
 
-          {/* Sort Options */}
           {showSortOptions && (
-            <div className="flex items-center space-x-2">
-              <span className="text-sm text-gray-600 dark:text-gray-400">Sort by:</span>
-              <div className="flex space-x-1">
-                <SortButton sortKey="name">Name</SortButton>
-                <SortButton sortKey="category">Category</SortButton>
-                <SortButton sortKey="brand">Brand</SortButton>
-              </div>
+            <div className="flex flex-wrap items-center gap-1.5">
+              <SortButton sortKey="name">Name</SortButton>
+              <SortButton sortKey="category">Category</SortButton>
+              <SortButton sortKey="brand">Brand</SortButton>
             </div>
           )}
 
-          {/* View Toggle */}
           {showViewToggle && (
-            <div className="flex items-center border border-gray-200 dark:border-gray-600 rounded-md">
+            <div className="inline-flex overflow-hidden rounded-brand border border-black/10 dark:border-white/10">
               <button
+                type="button"
+                aria-label="Grid view"
                 onClick={() => setViewMode('grid')}
-                className={`p-2 ${viewMode === 'grid' ? 'bg-coral-red text-white' : 'text-gray-500 hover:text-gray-700 dark:hover:text-gray-300'}`}
+                className={`p-2 ${viewMode === 'grid' ? 'bg-brand text-white' : 'text-ink-muted hover:bg-surface-muted dark:hover:bg-white/5'}`}
               >
                 <Squares2X2Icon className="h-4 w-4" />
               </button>
               <button
+                type="button"
+                aria-label="List view"
                 onClick={() => setViewMode('list')}
-                className={`p-2 ${viewMode === 'list' ? 'bg-coral-red text-white' : 'text-gray-500 hover:text-gray-700 dark:hover:text-gray-300'}`}
+                className={`p-2 ${viewMode === 'list' ? 'bg-brand text-white' : 'text-ink-muted hover:bg-surface-muted dark:hover:bg-white/5'}`}
               >
                 <Bars3Icon className="h-4 w-4" />
               </button>
@@ -132,39 +127,30 @@ const ProductGrid = ({
         </div>
       </div>
 
-      {/* Main Content */}
-      <div className="flex gap-6">
-        {/* Filters Panel */}
+      <div className={`flex flex-col gap-6 ${showFilters && showFiltersPanel ? 'lg:flex-row' : ''}`}>
         {showFilters && showFiltersPanel && (
-          <div className="w-64 flex-shrink-0">
+          <aside className="w-full shrink-0 lg:w-64">
             <FilterPanel />
-          </div>
+          </aside>
         )}
 
-        {/* Products Grid/List */}
-        <div className="flex-1">
+        <div className="min-w-0 flex-1">
           {paginatedProducts.length === 0 ? (
-            <div className="text-center py-12">
-              <div className="text-gray-400 dark:text-gray-600 mb-4">
-                <svg className="mx-auto h-12 w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M9.172 16.172a4 4 0 015.656 0M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
-                </svg>
-              </div>
-              <h3 className="text-lg font-medium text-gray-900 dark:text-white mb-2">
-                No products found
-              </h3>
-              <p className="text-gray-500 dark:text-gray-400">
-                Try adjusting your search criteria or filters.
+            <div className="rounded-brand-lg border border-dashed border-black/10 px-6 py-16 text-center dark:border-white/10">
+              <h3 className="font-display text-xl font-semibold text-ink dark:text-white">No products found</h3>
+              <p className="mt-2 text-sm text-ink-muted dark:text-gray-400">
+                Try adjusting your search or filters.
               </p>
             </div>
           ) : (
             <>
-              {/* Products Grid */}
-              <div className={
-                viewMode === 'grid'
-                  ? 'grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6'
-                  : 'space-y-4'
-              }>
+              <div
+                className={
+                  viewMode === 'grid'
+                    ? 'grid grid-cols-1 gap-4 sm:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4'
+                    : 'space-y-3'
+                }
+              >
                 {paginatedProducts.map((product) => (
                   <SingleProductCard
                     key={product.familySlug || product.productId}
@@ -174,35 +160,41 @@ const ProductGrid = ({
                 ))}
               </div>
 
-              {/* Pagination */}
               {totalPages > 1 && (
-                <div className="flex justify-center items-center space-x-2 mt-8">
+                <div className="mt-10 flex flex-wrap items-center justify-center gap-2">
                   <button
-                    onClick={() => setCurrentPage(prev => Math.max(1, prev - 1))}
+                    type="button"
+                    onClick={() => setCurrentPage((prev) => Math.max(1, prev - 1))}
                     disabled={currentPage === 1}
-                    className="px-3 py-2 text-sm font-medium text-gray-500 bg-white dark:bg-slate-800 border border-gray-300 dark:border-gray-600 rounded-md hover:bg-gray-50 dark:hover:bg-slate-700 disabled:opacity-50 disabled:cursor-not-allowed"
+                    className="rounded-brand border border-black/10 px-3 py-2 text-sm disabled:opacity-40 dark:border-white/10"
                   >
                     Previous
                   </button>
-
-                  {Array.from({ length: totalPages }, (_, i) => i + 1).map((page) => (
-                    <button
-                      key={page}
-                      onClick={() => setCurrentPage(page)}
-                      className={`px-3 py-2 text-sm font-medium rounded-md ${
-                        currentPage === page
-                          ? 'bg-coral-red text-white'
-                          : 'text-gray-700 dark:text-gray-300 bg-white dark:bg-slate-800 border border-gray-300 dark:border-gray-600 hover:bg-gray-50 dark:hover:bg-slate-700'
-                      }`}
-                    >
-                      {page}
-                    </button>
-                  ))}
-
+                  {Array.from({ length: totalPages }, (_, i) => i + 1)
+                    .filter((page) => page === 1 || page === totalPages || Math.abs(page - currentPage) <= 1)
+                    .map((page, idx, arr) => (
+                      <React.Fragment key={page}>
+                        {idx > 0 && arr[idx - 1] !== page - 1 && (
+                          <span className="px-1 text-ink-soft">…</span>
+                        )}
+                        <button
+                          type="button"
+                          onClick={() => setCurrentPage(page)}
+                          className={`min-w-10 rounded-brand px-3 py-2 text-sm font-medium ${
+                            currentPage === page
+                              ? 'bg-brand text-white'
+                              : 'border border-black/10 dark:border-white/10'
+                          }`}
+                        >
+                          {page}
+                        </button>
+                      </React.Fragment>
+                    ))}
                   <button
-                    onClick={() => setCurrentPage(prev => Math.min(totalPages, prev + 1))}
+                    type="button"
+                    onClick={() => setCurrentPage((prev) => Math.min(totalPages, prev + 1))}
                     disabled={currentPage === totalPages}
-                    className="px-3 py-2 text-sm font-medium text-gray-500 bg-white dark:bg-slate-800 border border-gray-300 dark:border-gray-600 rounded-md hover:bg-gray-50 dark:hover:bg-slate-700 disabled:opacity-50 disabled:cursor-not-allowed"
+                    className="rounded-brand border border-black/10 px-3 py-2 text-sm disabled:opacity-40 dark:border-white/10"
                   >
                     Next
                   </button>

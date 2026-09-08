@@ -1,14 +1,14 @@
-import React, { useState } from 'react';
-import { 
-  ChevronDownIcon, 
-  ChevronUpIcon, 
+import { useState } from 'react';
+import {
+  ChevronDownIcon,
+  ChevronUpIcon,
   XMarkIcon,
   TagIcon,
   CurrencyDollarIcon,
   CheckCircleIcon
 } from '@heroicons/react/24/outline';
 import { useSearchContext } from '../contexts/SearchContext';
-import { categories, brands } from '../constants';
+import { categories } from '../constants';
 
 const FilterPanel = ({ className = '' }) => {
   const {
@@ -24,7 +24,6 @@ const FilterPanel = ({ className = '' }) => {
     setSelectedCategory,
     setSelectedSubcategory,
     setSelectedBrand,
-    setSelectedTags,
     setPriceRange,
     setInStockOnly,
     clearFilters,
@@ -48,27 +47,24 @@ const FilterPanel = ({ className = '' }) => {
   };
 
   const FilterSection = ({ title, icon: Icon, sectionKey, children }) => (
-    <div className="border-b border-gray-200 dark:border-gray-700 pb-4 mb-4 last:border-b-0 last:mb-0">
+    <div className="mb-4 border-b border-black/[0.06] pb-4 last:mb-0 last:border-b-0 dark:border-white/10">
       <button
+        type="button"
         onClick={() => toggleSection(sectionKey)}
-        className="flex items-center justify-between w-full text-left py-2"
+        className="flex w-full items-center justify-between py-2 text-left"
       >
-        <div className="flex items-center space-x-2">
-          {Icon && <Icon className="h-5 w-5 text-gray-500" />}
-          <span className="font-medium text-gray-900 dark:text-white">{title}</span>
+        <div className="flex items-center gap-2">
+          {Icon && <Icon className="h-4 w-4 text-ink-soft" />}
+          <span className="text-sm font-semibold text-ink dark:text-white">{title}</span>
         </div>
         {expandedSections[sectionKey] ? (
-          <ChevronUpIcon className="h-4 w-4 text-gray-500" />
+          <ChevronUpIcon className="h-4 w-4 text-ink-soft" />
         ) : (
-          <ChevronDownIcon className="h-4 w-4 text-gray-500" />
+          <ChevronDownIcon className="h-4 w-4 text-ink-soft" />
         )}
       </button>
-      
-      {expandedSections[sectionKey] && (
-        <div className="mt-3 space-y-2">
-          {children}
-        </div>
-      )}
+
+      {expandedSections[sectionKey] && <div className="mt-2 space-y-1">{children}</div>}
     </div>
   );
 
@@ -106,22 +102,21 @@ const FilterPanel = ({ className = '' }) => {
   );
 
   return (
-    <div className={`bg-white dark:bg-slate-800 border border-gray-200 dark:border-gray-700 rounded-lg p-4 ${className}`}>
-      {/* Header */}
-      <div className="flex items-center justify-between mb-4">
-        <h3 className="text-lg font-semibold text-gray-900 dark:text-white">Filters</h3>
+    <div className={`card-surface p-4 ${className}`}>
+      <div className="mb-4 flex items-center justify-between">
+        <h3 className="font-display text-lg font-semibold text-ink dark:text-white">Filters</h3>
         <button
+          type="button"
           onClick={clearFilters}
-          className="text-sm text-coral-red hover:underline flex items-center space-x-1"
+          className="inline-flex items-center gap-1 text-sm text-brand hover:underline"
         >
           <XMarkIcon className="h-4 w-4" />
-          <span>Clear all</span>
+          Clear
         </button>
       </div>
 
-      {/* Results Count */}
-      <div className="text-sm text-gray-600 dark:text-gray-400 mb-4">
-        {filteredProducts.length} product{filteredProducts.length !== 1 ? 's' : ''} found
+      <div className="mb-4 text-sm text-ink-muted dark:text-gray-400">
+        {filteredProducts.length} product{filteredProducts.length !== 1 ? 's' : ''}
       </div>
 
       {/* Category Filter */}

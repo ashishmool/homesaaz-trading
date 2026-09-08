@@ -1,90 +1,85 @@
-import { categories, products } from '../constants/index.js';
-import SingleProductCard from './SingleProductCard.jsx';
+import { categories } from '../constants/index.js';
 import { useLocation } from 'react-router-dom';
 import { useEffect, useState } from 'react';
-import Breadcrumbs from './Breadcrumbs.jsx'; // Import the Breadcrumbs component
+import Breadcrumbs from './Breadcrumbs.jsx';
 import ProductGrid from './ProductGrid.jsx';
 import { useSearchContext } from '../contexts/SearchContext';
 
 const SingleCategory = () => {
-    const currentURL = useLocation();
-    const urlString = currentURL.pathname;
-    const parts = urlString.split('/');
-    const urlCategoryId = parseInt(parts[parts.length - 1]);
-    const [categoryName, setCategoryName] = useState('');
-    const [categoryDescription, setCategoryDescription] = useState('');
-    const [categoryImages, setCategoryImages] = useState([]);
-    
-    // Use search context for filtering
-    const { setSelectedCategory, filteredProducts } = useSearchContext();
+  const currentURL = useLocation();
+  const urlCategoryId = parseInt(currentURL.pathname.split('/').pop(), 10);
+  const [categoryName, setCategoryName] = useState('');
+  const [categoryDescription, setCategoryDescription] = useState('');
+  const [categoryImages, setCategoryImages] = useState([]);
+  const { setSelectedCategory } = useSearchContext();
 
-    useEffect(() => {
-        window.scrollTo(0, 0); // Scroll to top
+  useEffect(() => {
+    window.scrollTo(0, 0);
+    const category = categories.find((cat) => cat.categoryId === urlCategoryId);
+    setCategoryName(category ? category.category : 'Unknown Category');
+    setCategoryDescription(category ? category.description : '');
+    setSelectedCategory(urlCategoryId);
 
-        // Find the category based on the category ID
-        const category = categories.find(cat => cat.categoryId === urlCategoryId);
-        setCategoryName(category ? category.category : 'Unknown Category');
-        setCategoryDescription(category ? category.description : ''); // Set category description
+    const images = [];
+    for (let i = 1; i <= 10; i++) {
+      const imageKey = `categoryImage${i}`;
+      if (category && category[imageKey]) {
+        images.push(category[imageKey]);
+      } else {
+        break;
+      }
+    }
+    setCategoryImages(images);
+  }, [urlCategoryId, setSelectedCategory]);
 
-        // Set the selected category in search context
-        setSelectedCategory(urlCategoryId);
+  return (
+    <section className="section-shell pt-28">
+      <div className="max-container">
+        <Breadcrumbs
+          items={[
+            { label: 'Products', to: '/#products' },
+            { label: categoryName }
+          ]}
+        />
 
-        // Collect all category images
-        const images = [];
-        for (let i = 1; i <= 10; i++) { // Assuming a maximum of 10 images for each category
-            const imageKey = `categoryImage${i}`;
-            if (category && category[imageKey]) {
-                images.push(category[imageKey]);
-            } else {
-                break; // Exit loop if no more images exist
-            }
-        }
-        setCategoryImages(images);
-    }, [urlCategoryId, setSelectedCategory]);
+        <div className="mx-auto max-w-2xl text-center">
+          <p className="section-kicker">Category</p>
+          <h1 className="section-heading">
+            <span className="text-brand">{categoryName}</span>
+          </h1>
+          <p className="section-lede">{categoryDescription}</p>
+        </div>
 
-    return (
-        <section className="padding">
-            <div className="max-container max-sm:mt-12">
+        <div className="mt-10">
+          <ProductGrid
+            showFilters={true}
+            showSortOptions={true}
+            showViewToggle={true}
+            itemsPerPage={12}
+          />
+        </div>
 
-                <div className="flex flex-col justify-center items-center gap-5">
-                    <h2 className="text-4xl font-palanquin font-bold text-center mt-24 mb-4">
-                        Products in <span className="text-coral-red">{categoryName}</span>
-                    </h2>
-                    <p className="lg:max-w-lg mt-2 font-montserrat text-slate-gray dark:text-gray-400 text-center">
-                        {categoryDescription}
-                    </p>
+        {categoryImages.length > 0 && (
+          <div className="mt-16">
+            <h2 className="mb-6 text-center font-display text-2xl font-semibold text-ink dark:text-white">
+              {categoryName} <span className="text-brand">gallery</span>
+            </h2>
+            <div className="grid grid-cols-2 gap-3 md:grid-cols-3 lg:grid-cols-4">
+              {categoryImages.map((image, index) => (
+                <div key={index} className="card-surface overflow-hidden">
+                  <img
+                    src={image}
+                    alt={`${categoryName} ${index + 1}`}
+                    className="aspect-[4/3] w-full object-cover"
+                  />
                 </div>
-
-                {/* Breadcrumbs */}
-                <Breadcrumbs categoryName={categoryName} /> {/* Pass categoryName to Breadcrumbs */}
-
-                {/* Enhanced Product Grid with Search and Filtering */}
-                <div className="mt-8">
-                    <ProductGrid 
-                        showFilters={true}
-                        showSortOptions={true}
-                        showViewToggle={true}
-                        itemsPerPage={12}
-                    />
-                </div>
-
+              ))}
             </div>
-
-            {/* Image Gallery Section */}
-            {categoryImages.length > 0 && (
-                <div className="mt-16">
-                    <h1 className="text-3xl text-coral-red font-palanquin font-bold text-center mb-8">{categoryName} Gallery</h1>
-                    <div className="grid grid-cols-2 lg:grid-cols-4 md:grid-cols-3 gap-4">
-                        {categoryImages.map((image, index) => (
-                            <div key={index} className="overflow-hidden">
-                                <img src={image} alt={`Category Image ${index + 1}`} className="w-full h-auto object-cover" />
-                            </div>
-                        ))}
-                    </div>
-                </div>
-            )}
-        </section>
-    );
+          </div>
+        )}
+      </div>
+    </section>
+  );
 };
 
 export default SingleCategory;

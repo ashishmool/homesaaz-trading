@@ -1,30 +1,15 @@
 /** @format */
 
-import { useNavigate } from 'react-router-dom';
-
-const ClientCard = ({ clientId, logoURL, clientName }) => {
-    const navigate = useNavigate();
-
-    const handleClick = (id) => {
-        // Navigate to client details or related products if needed
-        navigate(`/client/${id}`);
-    };
-
-    return (
-        <div
-            id={clientId}
-            className="relative flex flex-col w-full max-sm:w-full hover:scale-105 duration-300 ease-in-out rounded-lg p-4 shadow-lg dark:bg-slate-800"
-            onClick={() => handleClick(clientId)}
-        >
-            <img
-                src={logoURL}
-                alt={`${clientName}-logo`}
-                width={100}
-                height={100}
-                className="object-contain w-full h-24 rounded-lg text-center cursor-pointer"
-            />
-        </div>
-    );
+const ClientCard = ({ logoURL, clientName, website }) => {
+  return (
+    <div className="card-surface flex h-28 items-center justify-center p-5">
+      <img
+        src={logoURL}
+        alt={clientName || website || 'Client logo'}
+        className="max-h-14 w-full object-contain opacity-80 grayscale transition duration-brand hover:opacity-100 hover:grayscale-0 dark:brightness-110"
+      />
+    </div>
+  );
 };
 
 export default ClientCard;

@@ -1,51 +1,62 @@
-import { cataloguesData } from '../constants'; // Import the catalogues data
-import hsVideo from '../assets/videos/hs-video.mp4'; // Import the MP4 video
+import { cataloguesData } from '../constants';
+import hsVideo from '../assets/videos/hs-video.mp4';
+import { ArrowDownTrayIcon } from '@heroicons/react/24/outline';
 
 const Catalogue = () => {
-    return (
-        <section className="padding mt-20">
-            <h2 className="text-4xl font-palanquin font-bold text-center">
-                <span className="text-coral-red">Downloads</span>
-            </h2>
-            <div className="mt-16 grid grid-cols-1 lg:grid-cols-7 gap-4 max-container max-sm:mt-12">
-                {/* Left 60% grid for catalogues */}
-                <div className="lg:col-span-5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-                    {cataloguesData.map((catalogue) => (
-                        <div key={catalogue.id} className="catalogue-item p-4 border rounded-lg shadow">
-                            <iframe
-                                src={catalogue.fileUrl}
-                                title={catalogue.name}
-                                className="w-full h-48" // Smaller thumbnail
-                                frameBorder="0"
-                            ></iframe>
-                            <a
-                                href={catalogue.fileUrl}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="text-coral-red font-semibold hover:underline mt-2 block text-center"
-                            >
-                                {catalogue.name}
-                            </a>
-                        </div>
-                    ))}
-                </div>
+  return (
+    <section className="section-shell pt-28">
+      <div className="max-container">
+        <div className="mx-auto max-w-2xl text-center">
+          <p className="section-kicker">Resources</p>
+          <h1 className="section-heading">
+            Downloads & <span className="text-brand">catalogues</span>
+          </h1>
+          <p className="section-lede">
+            Download product catalogues and watch our overview video. Use these as a quick reference for specs and ranges.
+          </p>
+        </div>
 
-                {/* Right 40% column for the video */}
-                <div className="lg:col-span-2">
-                    <video
-                        className="w-full"
-                        controls
-                        autoPlay
-                        muted
-                        loop
-                    >
-                        <source src={hsVideo} type="video/mp4" />
-                        Your browser does not support the video tag.
-                    </video>
+        <div className="mt-12 grid gap-8 lg:grid-cols-7">
+          <div className="grid gap-4 sm:grid-cols-2 lg:col-span-5 lg:grid-cols-3">
+            {cataloguesData.map((catalogue) => (
+              <a
+                key={catalogue.id}
+                href={catalogue.fileUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="card-surface group flex flex-col p-4 transition hover:border-brand/40"
+              >
+                <div className="overflow-hidden rounded-brand bg-surface-muted dark:bg-white/5">
+                  <iframe
+                    src={catalogue.fileUrl}
+                    title={catalogue.name}
+                    className="pointer-events-none h-44 w-full"
+                    tabIndex={-1}
+                  />
                 </div>
+                <span className="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-ink group-hover:text-brand dark:text-white">
+                  <ArrowDownTrayIcon className="h-4 w-4" />
+                  {catalogue.name}
+                </span>
+              </a>
+            ))}
+          </div>
+
+          <div className="lg:col-span-2">
+            <div className="card-surface overflow-hidden">
+              <video className="aspect-[9/16] w-full object-cover" controls muted loop playsInline>
+                <source src={hsVideo} type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
             </div>
-        </section>
-    );
+            <p className="mt-3 text-sm text-ink-muted dark:text-gray-400">
+              Company overview — also useful as support documentation alongside the downloadable catalogues.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
 };
 
 export default Catalogue;

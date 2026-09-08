@@ -193,11 +193,34 @@ import {
 
 
 export const navLinks = [
-  { href: '/', label: 'Home' },
-  { href: '/products', label: 'All Products' },
-  { href: '/#categories', label: 'Categories' },
-  { href: '/#clients', label: 'Our Partners & Clients' },
-  { href: '/#contact-us', label: 'Contact' }
+  { href: '/', label: 'Home', type: 'route' },
+  { href: '/#products', label: 'Products', type: 'mega', hash: 'products' },
+  { href: '/#about', label: 'About', type: 'hash', hash: 'about' },
+  { href: '/#contact-us', label: 'Support', type: 'hash', hash: 'contact-us' }
+];
+
+/** Editorial groupings for Products / Categories mega menu */
+export const categoryMenuGroups = [
+  {
+    title: 'Sleep & Bedding',
+    ids: [101, 102, 103, 104, 111, 117, 124]
+  },
+  {
+    title: 'Bath',
+    ids: [105, 106, 121]
+  },
+  {
+    title: 'Flooring & Floor Coverings',
+    ids: [107, 108, 109, 110, 118, 122]
+  },
+  {
+    title: 'Fabrics & Soft Furnishings',
+    ids: [112, 113, 114, 115, 116, 119]
+  },
+  {
+    title: 'Specialty',
+    ids: [123]
+  }
 ];
 
 export const clients = [
@@ -473,19 +496,28 @@ export const services = [
 
 export const footerLinks = [
   {
-    title: 'Important Links',
+    title: 'Explore',
     links: [
       { name: 'Home', link: '/' },
-      { name: 'Products and Services', link: '/' },
-      { name: 'Our Valuable Clients', link: '/' },
-      { name: 'Contact Us', link: '/' }
+      { name: 'All Products', link: '/products' },
+      { name: 'Product Categories', link: '/#products' },
+      { name: 'Downloads', link: '/catalogue' }
     ]
   },
   {
-    title: 'Help & Information',
+    title: 'Company',
     links: [
-      { name: 'Free Delivery Policy', link: '/' },
-      { name: 'Payment Policy', link: '/' }
+      { name: 'About', link: '/#about' },
+      { name: 'Partners & Clients', link: '/#about' },
+      { name: 'Services', link: '/#services' }
+    ]
+  },
+  {
+    title: 'Support',
+    links: [
+      { name: 'Contact Us', link: '/#contact-us' },
+      { name: 'Downloads & Catalogues', link: '/catalogue' },
+      { name: 'User Guide / Documentation', link: '/catalogue' }
     ]
   },
   {

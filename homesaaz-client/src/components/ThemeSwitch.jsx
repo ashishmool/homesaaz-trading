@@ -1,33 +1,29 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { useTheme } from 'next-themes';
-import { useSpring, animated } from 'react-spring';
-import { SunIcon, MoonIcon, ShoppingCartIcon } from '@heroicons/react/24/outline';
+import { SunIcon, MoonIcon } from '@heroicons/react/24/outline';
 
-const ThemeSwitch = ({ handleClick }) => {
-  const { theme, setTheme } = useTheme();
-  const [isDarkMode, setIsDarkMode] = useState(theme === 'dark');
+const ThemeSwitch = () => {
+  const { resolvedTheme, setTheme } = useTheme();
+  const [mounted, setMounted] = useState(false);
 
-  const springProps = useSpring({
-    transform: isDarkMode ? 'rotate(0deg)' : 'rotate(180deg)', // Adjusted rotation values
-    config: { tension: 500, friction: 30 }
-  });
+  useEffect(() => setMounted(true), []);
 
-  const toggleTheme = () => {
-    setIsDarkMode(!isDarkMode);
-    setTheme(isDarkMode ? 'light' : 'dark');
-  };
+  const isDark = resolvedTheme === 'dark';
+
+  if (!mounted) {
+    return <span className="btn-ghost" aria-hidden="true" />;
+  }
 
   return (
-    <div className="inline-flex items-center">
-      <animated.div style={springProps} className="cursor-pointer" onClick={toggleTheme}>
-        {isDarkMode ? (
-          <MoonIcon className="ml-3 mr-4 h-6 w-6 text-slate-gray dark:text-coral-red" />
-        ) : (
-          <SunIcon className="ml-3 mr-4 h-6 w-6 text-slate-gray dark:text-coral-red" />
-        )}
-      </animated.div>
-      {/*<ShoppingCartIcon onClick={handleClick} className="ml-2 h-6 w-6 text-slate-gray dark:text-coral-red" />*/}
-    </div>
+    <button
+      type="button"
+      className="btn-ghost"
+      aria-label={isDark ? 'Switch to light mode' : 'Switch to dark mode'}
+      title={isDark ? 'Light mode' : 'Dark mode'}
+      onClick={() => setTheme(isDark ? 'light' : 'dark')}
+    >
+      {isDark ? <MoonIcon className="h-5 w-5" /> : <SunIcon className="h-5 w-5" />}
+    </button>
   );
 };
 

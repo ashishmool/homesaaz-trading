@@ -1,50 +1,48 @@
 /** @format */
-import { useNavigate } from 'react-router-dom';
 
-const Button = ({ children, backgroundColor, borderColor, textColor, fullWidth, icon }) => {
-  const history = useNavigate();
+const Button = ({
+  children,
+  backgroundColor,
+  borderColor,
+  textColor,
+  fullWidth,
+  icon,
+  onClick,
+  type = 'button',
+  variant = 'primary',
+  className = '',
+  ...rest
+}) => {
+  const base =
+    'inline-flex items-center justify-center gap-2 rounded-brand px-5 py-2.5 text-sm font-semibold tracking-wide transition duration-brand ease-brand focus-visible:shadow-focus disabled:opacity-60';
 
-  const handleRedirect = () => {
-    switch (children) {
-      case 'Explore Product Range':  // Handle this specific case
-        window.location.href = '#categories';  // Use anchor navigation
-        break;
-      case 'Shop now':
-        console.log(children);
-        break;
-      case 'View Details':
-        history('/shoe_details');
-        console.log(children);
-        break;
-      case 'Learn More':
-        console.log(children);
-        break;
-      case 'Sign up':
-        console.log(children);
-        break;
-      default:
-      // code block
-    }
+  const variants = {
+    primary: 'bg-brand text-white hover:bg-brand-deep',
+    secondary:
+      'border border-black/10 bg-transparent text-ink hover:border-brand hover:text-brand dark:border-white/15 dark:text-white',
+    onDark:
+      'border border-white/30 bg-transparent text-white hover:border-white hover:bg-white/10',
+    ghost: 'bg-transparent text-ink-muted hover:text-ink dark:text-gray-300'
   };
+
+  const legacy =
+    backgroundColor &&
+    `${backgroundColor} ${borderColor || ''} ${textColor || ''} border hover:opacity-90`;
 
   return (
     <button
-      onClick={handleRedirect}
-      className={`hover:text-white flex justify-center items-center gap-2 px-6 py-3 border font-montserrat text-lg leading-none rounded-full focus:outline-none transform transition-transform hover:scale-105 hover:shadow-md
-        ${
-          backgroundColor
-            ? `${backgroundColor} ${borderColor} ${textColor}  hover:bg-slate-gray hover:border-transparent hover:shadow-lg ease-in-out duration-300  dark:text-gray-100 dark:hover:bg-gray-100 dark:hover:text-gray-900 dark:hover:border-gray-100 dark:transition`
-            : 'bg-coral-red border-coral-red text-white hover:text-coral-red hover:border-transparent hover:shadow-lg ease-in-out duration-300 dark:text-gray-100 dark:hover:border-gray-100'
-        }
-        ${fullWidth && 'w-full'}
-      `}
+      type={type}
+      onClick={onClick}
+      className={`${base} ${legacy || variants[variant] || variants.primary} ${fullWidth ? 'w-full' : ''} ${className}`}
+      {...rest}
     >
-      <span className="truncate">{children}</span>
+      {children}
       {icon && (
         <img
           src={icon}
-          alt="arrow-right"
-          className="ml-2 rounded-full w-5 h-5 transform transition-transform hover:translate-x-1 hover:scale-110"
+          alt=""
+          aria-hidden="true"
+          className="h-4 w-4 rounded-full object-contain"
         />
       )}
     </button>
